@@ -1,0 +1,99 @@
+/* --------- */
+/* Footer */
+/* --------- */
+.footer {
+  background-color: rgba(76, 145, 201, 0.259);
+  height: 60px;
+}
+.footer-copyright {
+  margin-top: 20px;
+}
+
+.footer-contact {
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .footer-copyright {
+    text-align: center;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+}
+
+.footer h3 {
+  font-size: 1em;
+  height: 20px;
+  color: white;
+}
+
+.footer-signature {
+  display: inline;
+  color: var(--text-color);
+}
+
+.footer-contact a {
+  color: #fff;
+  font-size: 1em;
+  line-height: 0px;
+  opacity: 0;
+}
+
+.footer-contact a .nav-link {
+  height: 20px;
+}
+
+.footer-contact a:hover {
+  color: #fff;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 1.5s;
+  text-shadow: 4px 4px 8px var(--text-color);
+}
+
+.contacts-icons {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  list-style-type: none;
+  width: 380px;
+  padding: 0px;
+  height: 20px;
+  justify-content: center;
+}
+.contacts-icons__block {
+  position: absolute;
+  left: 0px;
+}
+.contacts-icons__block-left,
+.contacts-icons__block-right {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 20px;
+  background-color: none;
+  color: white;
+  font-size: 25px;
+  transition: 0.6s;
+}
+
+.contacts-icons__block-left {
+  clip-path: inset(0 30% 0 0);
+}
+
+.contacts-icons__block-right {
+  margin-left: 30px;
+  clip-path: inset(0 0 0 40%);
+}
+
+.contacts-icons:hover .contacts-icons__block-left {
+  transform: translateX(-50%) scale(1.2);
+}
+
+.contacts-icons:hover .contacts-icons__block-right {
+  transform: translateX(50%) scale(1.2);
+}
