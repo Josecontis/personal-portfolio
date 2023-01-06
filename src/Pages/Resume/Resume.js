@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../../Components/Particles/Particle";
@@ -6,13 +6,18 @@ import Resumecontent from "./ResumeContent";
 import { AiOutlineDownload } from "react-icons/ai";
 
 function Resume() {
-
   return (
     <Container fluid className="resume-section">
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button variant="primary" href={"https://drive.google.com/file/d/1ISQt3pawdJiW-_3eGYxbAuZeIJPI2y2_/view?usp=sharing"} target="_blank">
+          <Button
+            variant="primary"
+            href={
+              "https://drive.google.com/file/d/1ISQt3pawdJiW-_3eGYxbAuZeIJPI2y2_/view?usp=sharing"
+            }
+            target="_blank"
+          >
             <AiOutlineDownload />
             &nbsp;Download CV
           </Button>
@@ -72,8 +77,15 @@ function Resume() {
           </Col>
         </Row>
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button variant="primary" href={"https://drive.google.com/file/d/1ISQt3pawdJiW-_3eGYxbAuZeIJPI2y2_/view?usp=sharing"} target="_blank">
-            <AiOutlineDownload />&nbsp;Download CV
+          <Button
+            variant="primary"
+            href={
+              "https://drive.google.com/file/d/1ISQt3pawdJiW-_3eGYxbAuZeIJPI2y2_/view?usp=sharing"
+            }
+            target="_blank"
+          >
+            <AiOutlineDownload />
+            &nbsp;Download CV
           </Button>
         </Row>
       </Container>

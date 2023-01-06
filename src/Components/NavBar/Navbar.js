@@ -34,7 +34,7 @@ function NavBar() {
 
   useEffect(() => {
     isPlaying ? audio.play() : audio.pause();
-  }, [isPlaying]);
+  }, [isPlaying, audio]);
 
   return (
     <Navbar
@@ -128,7 +128,6 @@ function NavBar() {
                   >
                     {!isPlaying ? "ON" : "OFF"}
                   </button>
-                  {/* <Sound onFinishedPlaying={() => setIsPlaying(false)} volume={100} url={SONG} playStatus={isPlaying ? Sound.status.PLAYING : Sound.status.STOPPED} /> */}
                 </div>
               </Link>
             </Nav.Item>
