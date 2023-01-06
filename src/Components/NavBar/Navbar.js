@@ -1,20 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../../Assets/header-logo.svg";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
 import { CgHeadset, CgCoffee } from "react-icons/cg";
 
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-import Sound from "react-sound";
 import SONG from "./Songs/LudovicoEinaudi-Experience.mp3";
 import "./NavBar.css";
 import { CgFileDocument } from "react-icons/cg";
@@ -33,6 +29,12 @@ function NavBar() {
   }
 
   window.addEventListener("scroll", scrollHandler);
+
+  const [audio] = useState(typeof Audio !== "undefined" && new Audio(SONG));
+
+  useEffect(() => {
+    isPlaying ? audio.play() : audio.pause();
+  }, [isPlaying]);
 
   return (
     <Navbar
@@ -58,13 +60,18 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Link className="nav-link" to="/" onClick={() => updateExpanded(false)}>
+              <Link
+                className="nav-link"
+                to="/"
+                onClick={() => updateExpanded(false)}
+              >
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Link>
             </Nav.Item>
 
             <Nav.Item>
-            <Link className="nav-link"
+              <Link
+                className="nav-link"
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
@@ -73,7 +80,8 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-            <Link className="nav-link"
+              <Link
+                className="nav-link"
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
@@ -85,7 +93,8 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-            <Link className="nav-link"
+              <Link
+                className="nav-link"
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
@@ -93,24 +102,33 @@ function NavBar() {
               </Link>
             </Nav.Item>
 
-           
             <Nav.Item>
-            <Link className="nav-link"
+              <Link
+                className="nav-link"
                 to="/contacts"
                 onClick={() => updateExpanded(false)}
               >
                 <CgCoffee style={{ marginBottom: "2px" }} /> Contacts
               </Link>
-            </Nav.Item> 
-            
+            </Nav.Item>
+
             <Nav.Item>
-            <Link className="nav-link"
-                to=""
-              >
+              <Link className="nav-link" to="">
                 <div onClick={() => setIsPlaying(!isPlaying)}>
-                  <CgHeadset style={{ marginBottom: "2px" }} className={`sound-${!isPlaying}`} /> Music
-                  <button className="music-btn" >{!isPlaying ? "ON" : "OFF"}</button>
-                  <Sound onFinishedPlaying={() => setIsPlaying(false)} volume={100} url={SONG} playStatus={isPlaying ? Sound.status.PLAYING : Sound.status.STOPPED} />
+                  <CgHeadset
+                    style={{ marginBottom: "2px" }}
+                    className={`sound-${!isPlaying}`}
+                  />
+                  Music
+                  <button
+                    className="music-btn"
+                    onClick={() => {
+                      setIsPlaying(true);
+                    }}
+                  >
+                    {!isPlaying ? "ON" : "OFF"}
+                  </button>
+                  {/* <Sound onFinishedPlaying={() => setIsPlaying(false)} volume={100} url={SONG} playStatus={isPlaying ? Sound.status.PLAYING : Sound.status.STOPPED} /> */}
                 </div>
               </Link>
             </Nav.Item>
