@@ -1,10 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -29,7 +26,7 @@ function Home2() {
               My field of Interest's are building new &nbsp;
               <i>
                 <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
+                also in areas related to
                 <b className="purple">
                   Deep Learning and Natural Launguage Processing.
                 </b>
@@ -40,7 +37,6 @@ function Home2() {
               with <b className="purple">Node.js</b> and
               <i>
                 <b className="purple">
-                  {" "}
                   Modern Javascript Library and Frameworks
                 </b>
               </i>
@@ -53,7 +49,8 @@ function Home2() {
           <Col md={4} className="myAvtar">
             <div class="hover14 column">
               <figure>
-                <img src={myImg} alt="avatar" /></figure>
+                <img src={myImg} alt="avatar" />
+              </figure>
             </div>
           </Col>
         </Row>
