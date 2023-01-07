@@ -93,7 +93,6 @@
   cursor: pointer;
   margin-left: 20px;
   font-weight: 400;
-  min-width: 154px;
   transition: all 0.3s ease-out 0s;
   position: relative;
   z-index: 1;

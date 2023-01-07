@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
-import Button from "react-bootstrap/Button";
-import { Container, Input, Text } from "./contacts.styles";
-import CustomAlert from "./Alert/alert.component";
+import { AlertNotification } from "./Alert/AlertNotification";
+import "./Contacts.css";
 import { useLocation } from "react-router-dom";
 
 export const Contacts = () => {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [object, setObject] = useState("");
+  const [message, setMessage] = useState("");
+  const [testFlag, setTestFlag] = useState(0);
+  const [validation, setValidation] = useState(false);
+
   const location = useLocation();
 
   useEffect(() => {
@@ -13,96 +19,120 @@ export const Contacts = () => {
       document.title = "Contacts | Giuseppe Conticchio";
   }, [location]);
 
-  const [emailData, setEmailData] = useState({
-    emailFlag: false,
-    nameFlag: false,
-    txtFlag: false,
-    testFlag: 0,
-  });
-
-  function sendEmail(e) {
-    e.preventDefault();
-
+  const sendEmail = () => {
     let templateParams = {
-      from_name: document.getElementById("name").value,
-      subject: document.getElementById("subject").value,
+      from_name: name,
+      subject: object,
       to_name: "peppeco98@gmail.com",
-      message_html: document.getElementById("message").value,
-      from_email: document.getElementById("email").value,
-      reply_to: document.getElementById("email").value,
+      message_html: message,
+      from_email: email,
+      reply_to: email,
     };
 
-    if (templateParams.from_email === "") setEmailData({ testFlag: -1 });
-    else {
-      setEmailData({ testFlag: 1 });
-      emailjs.send(
-        "service_dx9tuej",
-        "template_03o7ni1",
+    emailjs
+      .send(
+        "service_71tircc",
+        "template_7iyx15d",
         templateParams,
-        "user_a25h2t1IePEbQPptKN2TZ"
+        "YRrKkrPNpgyEoqK3o"
+      )
+      .then(
+        function (response) {
+          setTestFlag(1);
+          renderAlert();
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
+          setTestFlag(-1);
+          renderAlert();
+          console.log("FAILED...", error);
+        }
+      );
+  };
+
+  const renderAlert = () => {
+    if (testFlag === 1) {
+      return (
+        <div className="alert-container">
+          <AlertNotification Success={true} />
+        </div>
+      );
+    } else if (testFlag === -1) {
+      return (
+        <div className="alert-container">
+          <AlertNotification Success={false} />
+        </div>
       );
     }
-  }
-
-  const emailConstraints = (content) => {
-    if (content.target.value === "") setEmailData({ emailFlag: false });
-    //setta dinamicamente l'attivazione del bottone
-    else setEmailData({ emailFlag: true });
-  };
-  const nameConstraints = (content) => {
-    if (content.target.value === "") setEmailData({ nameFlag: false });
-    //setta dinamicamente l'attivazione del bottone
-    else setEmailData({ nameFlag: true });
-  };
-  const txtConstraints = (content) => {
-    if (content.target.value === "") setEmailData({ txtFlag: false });
-    //setta dinamicamente l'attivazione del bottone
-    else setEmailData({ txtFlag: true });
   };
 
   return (
-    <React.Fragment>
+    <div className="form-contacts-container">
+      {renderAlert()}
       <div>
-        {emailData.testFlag === 1 ? (
-          <CustomAlert Success={true} />
-        ) : emailData.testFlag === -1 ? (
-          <CustomAlert Success={false} />
-        ) : null}
+        <div className="name-form">
+          <label className="form-label">name</label>
+          <input
+            autoComplete="off"
+            id="name"
+            className="form-input"
+            onChange={(e) => setName(e.target.value)}
+          />
+        </div>
+        <div className="email-form">
+          <label className="form-label">email</label>
+          {!validation && email !== "" && (
+            <label className="form-label-error">email</label>
+          )}
+          <input
+            autoComplete="off"
+            id="email"
+            className={
+              email === "" || validation ? "form-input" : "form-input-error"
+            }
+            onChange={(e) => {
+              setEmail(e.target.value);
+              let emailTest = new RegExp(
+                "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})"
+              );
+              email !== "" && setValidation(emailTest.test(email));
+            }}
+          />
+        </div>
       </div>
-      <Container>
-        <Input
-          placeholder="Nome"
-          type="text"
-          name="name"
-          id="name"
-          onChange={nameConstraints}
-        />
-        <Input
-          placeholder="Email"
-          type="text"
-          name="email"
-          id="email"
-          onChange={emailConstraints}
-        />
-        <Input
-          placeholder="Oggetto"
-          width="29vw"
-          type="text"
-          name="subject"
+      <div className="subject-form">
+        <label className="form-label">object</label>
+        <input
+          autoComplete="off"
           id="subject"
+          className="form-input"
+          onChange={(e) => setObject(e.target.value)}
         />
-        <Text
-          placeholder="Messaggio"
-          name="message"
+      </div>
+      <div className="message-form">
+        <label className="form-label">message</label>
+        <textarea
           id="message"
-          width="29vw"
-          rows="15"
-          onChange={txtConstraints}
-        ></Text>
-        <Button variant="primary" onClick={sendEmail} target="_blank">
-          &nbsp;Send E-mail
-        </Button>
-      </Container>
-    </React.Fragment>
+          className="form-text-area"
+          onChange={(e) => setMessage(e.target.value)}
+        />
+      </div>
+      <button
+        className={
+          name && email && object && message && validation
+            ? "form-button"
+            : "form-button-disabled"
+        }
+        onClick={(e) => {
+          name && email && object && message && validation && sendEmail(e);
+          setName("");
+          setEmail("");
+          setObject("");
+          setMessage("");
+        }}
+      >
+        send
+      </button>
+    </div>
   );
 };
