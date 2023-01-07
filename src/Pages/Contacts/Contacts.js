@@ -6,12 +6,13 @@ import CustomAlert from "./Alert/alert.component";
 import { useLocation } from "react-router-dom";
 
 export const Contacts = () => {
-  //   const location = useLocation();
+  const location = useLocation();
 
-  //   useEffect(() => {
-  //     if (location && location.pathname.includes("contact"))
-  //       document.title = "Contacts | Giuseppe Conticchio";
-  //   }, [location]);
+  useEffect(() => {
+    if (location && location.pathname === "/contacts")
+      document.title = "Contacts | Giuseppe Conticchio";
+  }, [location]);
+
   const [emailData, setEmailData] = useState({
     emailFlag: false,
     nameFlag: false,

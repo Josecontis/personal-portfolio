@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { useLocation } from "react-router-dom";
 import homeLogo from "../../Assets/Programming-amico.svg";
 import Particle from "../../Components/Particles/Particle";
 import Home2 from "./Home2";
 import Type from "./Tools/Type";
 
 export const Home = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location && location.pathname === "/")
+      document.title = "Home | Giuseppe Conticchio";
+  }, [location]);
+
   return (
     <section>
       <Particle />

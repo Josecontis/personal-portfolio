@@ -12,12 +12,13 @@ import bitsOfCode from "../../Assets/Projects/blog.png";
 import { useLocation } from "react-router-dom";
 
 export const Projects = () => {
-  // const location = useLocation();
+  const location = useLocation();
 
-  // useEffect(() => {
-  //   if (location && location.pathname.includes("projects"))
-  //     document.title = "Projects | Giuseppe Conticchio";
-  // }, [location]);
+  useEffect(() => {
+    if (location && location.pathname === "/projects")
+      document.title = "Projects | Giuseppe Conticchio";
+  }, [location]);
+
   return (
     <Container fluid className="project-section">
       <Particle />

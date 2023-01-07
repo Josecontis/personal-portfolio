@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../../Components/Particles/Particle";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/Programmer-amico.svg";
 import Toolstack from "./Toolstack";
+import { useLocation } from "react-router-dom";
 
 export const About = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location && location.pathname === "/about")
+      document.title = "About | Giuseppe Conticchio";
+  }, [location]);
+
   return (
     <Container fluid className="about-section">
       <Particle />

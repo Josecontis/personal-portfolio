@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../../Components/Particles/Particle";
 import Resumecontent from "./ResumeContent";
 import { AiOutlineDownload } from "react-icons/ai";
+import { useLocation } from "react-router-dom";
 
 export const Resume = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location && location.pathname === "/resume")
+      document.title = "Resume | Giuseppe Conticchio";
+  }, [location]);
+
   return (
     <Container fluid className="resume-section">
       <Particle />
