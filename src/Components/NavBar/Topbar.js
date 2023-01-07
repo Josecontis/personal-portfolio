@@ -50,7 +50,6 @@ export const Topbar = () => {
           <img src={logo} className="logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
-          aria-controls="responsive-topbar-nav"
           onClick={() => {
             updateExpanded(expand ? false : "expanded");
           }}
@@ -68,7 +67,8 @@ export const Topbar = () => {
                 navigate("/");
               }}
             >
-              <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+              <AiOutlineHome style={{ marginBottom: "2px" }} />
+              Home
             </Nav.Item>
 
             <Nav.Item
@@ -78,7 +78,8 @@ export const Topbar = () => {
                 navigate("/about");
               }}
             >
-              <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+              <AiOutlineUser style={{ marginBottom: "2px" }} />
+              About
             </Nav.Item>
 
             <Nav.Item
@@ -99,7 +100,8 @@ export const Topbar = () => {
                 navigate("/resume");
               }}
             >
-              <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+              <CgFileDocument style={{ marginBottom: "2px" }} />
+              Resume
             </Nav.Item>
 
             <Nav.Item
@@ -109,7 +111,8 @@ export const Topbar = () => {
                 navigate("/contacts");
               }}
             >
-              <CgCoffee style={{ marginBottom: "2px" }} /> Contacts
+              <CgCoffee style={{ marginBottom: "2px" }} />
+              Contacts
             </Nav.Item>
 
             <Nav.Item>
@@ -132,16 +135,6 @@ export const Topbar = () => {
                 </button>
               </div>
             </Nav.Item>
-            {/* <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/soumyajit4419/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -9,7 +9,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am{" "}
+            Hi Everyone, I am
             <span className="purple">Conticchio Giuseppe </span>
             from <span className="purple"> Gravina in Puglia, Italy.</span>
             <br />I am a junior software developer.
@@ -19,7 +19,7 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight className="about-icon" /> &nbsp; Playing Games{" "}
+              <ImPointRight className="about-icon" /> &nbsp; Playing Games
               <IoLogoGameControllerB className="about-icon" />
             </li>
             <li className="about-activity">
