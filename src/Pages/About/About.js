@@ -6,7 +6,7 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/Programmer-amico.svg";
 import Toolstack from "./Toolstack";
 
-function About() {
+export const About = () => {
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -46,6 +46,4 @@ function About() {
       </Container>
     </Container>
   );
-}
-
-export default About;
+};

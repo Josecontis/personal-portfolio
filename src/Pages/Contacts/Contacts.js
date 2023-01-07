@@ -3,17 +3,15 @@ import emailjs from "emailjs-com";
 import Button from "react-bootstrap/Button";
 import { Container, Input, Text } from "./contacts.styles";
 import CustomAlert from "./Alert/alert.component";
-import { useRouteMatch } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
-// document.title = "Contatti | Giuseppe Conticchio";
+export const Contacts = () => {
+  //   const location = useLocation();
 
-function Contacts() {
-  const matchUrl = useRouteMatch();
-
-  useEffect(() => {
-    if (matchUrl.path.includes("contact"))
-      document.title = "Contacts | Giuseppe Conticchio";
-  });
+  //   useEffect(() => {
+  //     if (location && location.pathname.includes("contact"))
+  //       document.title = "Contacts | Giuseppe Conticchio";
+  //   }, [location]);
   const [emailData, setEmailData] = useState({
     emailFlag: false,
     nameFlag: false,
@@ -106,6 +104,4 @@ function Contacts() {
       </Container>
     </React.Fragment>
   );
-}
-
-export default Contacts;
+};

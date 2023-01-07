@@ -5,7 +5,7 @@ import Particle from "../../Components/Particles/Particle";
 import Resumecontent from "./ResumeContent";
 import { AiOutlineDownload } from "react-icons/ai";
 
-function Resume() {
+export const Resume = () => {
   return (
     <Container fluid className="resume-section">
       <Particle />
@@ -91,6 +91,4 @@ function Resume() {
       </Container>
     </Container>
   );
-}
-
-export default Resume;
+};

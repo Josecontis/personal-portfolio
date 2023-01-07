@@ -5,7 +5,7 @@ import Particle from "../../Components/Particles/Particle";
 import Home2 from "./Home2";
 import Type from "./Tools/Type";
 
-function Home() {
+export const Home = () => {
   return (
     <section>
       <Particle />
@@ -17,7 +17,10 @@ function Home() {
             </Col>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There! <span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
+                Hi There!{" "}
+                <span className="wave" role="img" aria-labelledby="wave">
+                  👋🏻
+                </span>
               </h1>
 
               <h1 className="heading-name">
@@ -35,6 +38,4 @@ function Home() {
       <Home2 />
     </section>
   );
-}
-
-export default Home;
+};

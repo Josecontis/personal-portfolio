@@ -9,15 +9,15 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
-import { useRouteMatch } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
-function Projects() {
-  const matchUrl = useRouteMatch();
+export const Projects = () => {
+  // const location = useLocation();
 
-  useEffect(() => {
-    if (matchUrl.path.includes("projects"))
-      document.title = "Projects | Giuseppe Conticchio";
-  });
+  // useEffect(() => {
+  //   if (location && location.pathname.includes("projects"))
+  //     document.title = "Projects | Giuseppe Conticchio";
+  // }, [location]);
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -93,6 +93,4 @@ function Projects() {
       </Container>
     </Container>
   );
-}
-
-export default Projects;
+};

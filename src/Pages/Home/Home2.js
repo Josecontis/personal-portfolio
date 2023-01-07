@@ -47,7 +47,7 @@ function Home2() {
             </p>
           </Col>
           <Col md={4} className="myAvtar">
-            <div class="hover14 column">
+            <div className="hover14 column">
               <figure>
                 <img src={myImg} alt="avatar" />
               </figure>
