@@ -2,8 +2,10 @@
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgba(76, 145, 201, 0.259);
+  background-color: var(--background-top-bar);
   height: 60px;
+  z-index: 1;
+  position: absolute;
 }
 
 .footer-copyright {
