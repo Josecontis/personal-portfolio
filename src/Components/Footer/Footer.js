@@ -21,20 +21,6 @@ export const Footer = () => {
             Copyright © {year} <div className="footer-signature">GC</div>
           </div>
         </Col>
-        <Col md="4" className="footer-contact">
-          <ul className="contacts-icons">
-            <div
-              className="contacts-text"
-              onClick={() => navigate("/contacts")}
-            >
-              Have a question or want to work together?
-            </div>
-            <li className="contacts-icons__block">
-              <div className="contacts-icons__block-left">&#60;</div>
-              <div className="contacts-icons__block-right">&#47;&#62;</div>
-            </li>
-          </ul>
-        </Col>
       </Row>
     </Container>
   );

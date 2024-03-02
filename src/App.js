@@ -26,7 +26,7 @@ function App() {
   return (
     <BrowserRouter>
       <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+      <div id={load ? "no-scroll" : "scroll"}>
         <Topbar />
         <ScrollToTop />
         <Routes>
