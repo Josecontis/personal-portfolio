@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+import StarryBackground from "../../Components/Particles/StarryBackground";
 import { AlertNotification } from "./Alert/AlertNotification";
 import "./Contacts.css";
-import { useLocation } from "react-router-dom";
 
 export const Contacts = () => {
   const [email, setEmail] = useState("");
@@ -68,6 +69,7 @@ export const Contacts = () => {
 
   return (
     <div className="form-contacts-container">
+      <StarryBackground />
       {renderAlert()}
       <div>
         <div className="name-form">

@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../../Components/Particles/Particle";
-import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/Programmer-amico.svg";
-import Toolstack from "./Toolstack";
+import { Col, Container, Row } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
+import laptopImg from "../../Assets/Programmer-amico.svg";
+import StarryBackground from "../../Components/Particles/StarryBackground";
+import Aboutcard from "./AboutCard";
+import Techstack from "./Techstack";
+import Toolstack from "./Toolstack";
 
 export const About = () => {
   const location = useLocation();
@@ -17,7 +17,7 @@ export const About = () => {
 
   return (
     <Container fluid className="about-section">
-      <Particle />
+      <StarryBackground />
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
@@ -29,7 +29,7 @@ export const About = () => {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              Know Who <strong className="purple">I am</strong>
             </h1>
             <Aboutcard />
           </Col>

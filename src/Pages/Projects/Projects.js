@@ -1,15 +1,13 @@
 import React, { useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
-import Particle from "../../Components/Particles/Particle";
-import "./Projects.css";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.jpeg";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import { Col, Container, Row } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
+import bandb from "../../Assets/Projects/B&B.png";
+import fmdEr from "../../Assets/Projects/FMDER.png";
+import housePricePred from "../../Assets/Projects/housePricePred.png";
+import thesis from "../../Assets/Projects/thesis.png";
+import StarryBackground from "../../Components/Particles/StarryBackground";
+import ProjectCard from "./ProjectCards";
+import "./Projects.css";
 
 export const Projects = () => {
   const location = useLocation();
@@ -21,74 +19,77 @@ export const Projects = () => {
 
   return (
     <Container fluid className="project-section">
-      <Particle />
+      <StarryBackground />
       <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on.
-        </p>
-        <div className="project-heading-view-all">View all</div>
+        <div className="project-heading-container">
+          <div className="project-heading">
+            <div className="project-heading-title">
+              My Recent <strong className="purple">Works </strong>
+            </div>
+            <p style={{ color: "white" }}>
+              Here are a few projects I&apos;ve worked on.
+            </p>
+          </div>
+          <div className="project-heading-view-all">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Josecontis?tab=repositories"
+            >
+              View all
+            </a>
+          </div>
+        </div>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={fmdEr}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              link="https://github.com/soumyajit4419/Chatify"
+              title="FMD-ER"
+              description={
+                <>
+                  Application developed for COVID-19 emergency at university
+                  subdivided in two steps:
+                  <br />
+                  <br />
+                  FACE MASK DETECTION: Analyzing the face of any individual to
+                  verify the presence or absence of a surgical mask. <br />
+                  <br />
+                  EMOTION RECOGNITION: Recognizing the emotion of an individual,
+                  regardless of the presence of a mask.
+                </>
+              }
+              link="https://github.com/Ocen5/FMD-ER"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={thesis}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              link="https://github.com/soumyajit4419/Plant_AI"
+              title="BACHELOR'S THESIS IN COMPUTER NETWORKS"
+              description="Thesis in order to evaluate whether the dual propagation approach using rules is able to extract the direction of anger in software developers' comments."
+              link="https://github.com/Josecontis/opinion_target_extraction"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={bandb}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              link="https://github.com/soumyajit4419/Editor.io"
+              title="B&B WEBSITE"
+              description=" Website for B&B Il Belvedere, a charming bed and breakfast nestled in the picturesque town of Gravina in Puglia, Italy. The website is meticulously crafted with modern web technologies, including React.js, HTML, CSS, and JavaScript code, ensuring an elegant and user-friendly experience for visitors. "
+              link="https://github.com/Josecontis/ilbelvedere"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={housePricePred}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              link="https://github.com/soumyajit4419/Bits-0f-C0de"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              link="https://github.com/soumyajit4419/AI_For_Social_Good"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="HOUSE PRICE PREDICTION AND CLASSIFICATION"
+              description="The project analyzed a dataset of housing information from Daegu, South Korea. Operations included data preprocessing, feature extraction, algorithm implementation for classification and regression, testing, evaluation metrics, hyperparameter optimization, and further testing of classifiers and regressors."
+              link="https://github.com/Josecontis/House-Price-Prediction"
             />
           </Col>
         </Row>

@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Particle from "../../Components/Particles/Particle";
-import Resumecontent from "./ResumeContent";
 import { AiOutlineDownload } from "react-icons/ai";
 import { useLocation } from "react-router-dom";
+import StarryBackground from "../../Components/Particles/StarryBackground";
+import Resumecontent from "./ResumeContent";
 
 export const Resume = () => {
   const location = useLocation();
@@ -16,7 +16,7 @@ export const Resume = () => {
 
   return (
     <Container fluid className="resume-section">
-      <Particle />
+      <StarryBackground />
       <Container>
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button

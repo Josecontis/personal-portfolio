@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 import "./Preloader.css";
 
@@ -16,5 +17,9 @@ function Preloader(props) {
     </>
   );
 }
+
+Preloader.propTypes = {
+  load: PropTypes.bool.isRequired,
+};
 
 export default Preloader;

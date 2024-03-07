@@ -64,21 +64,38 @@
 .btn:focus {
     outline: none;
     box-shadow: none;
+    background-color: var(--scrollbar-color);
+    border-color: var(--scrollbar-color);
+}
+
+.project-heading-container {
+    display: flex;
 }
 
 .project-heading {
+    flex-direction: column;
+}
+
+.project-heading-title {
     color: white;
-    font-size: 2.3em;
+    font-size: 36px;
     font-weight: 500;
     padding-top: 10px;
 }
 
 .project-heading-view-all {
     color: white;
-    font-size: 1.5em;
+    font-size: 24px;
     font-weight: 500;
-    text-align: end;
     margin-right: 14px;
+    height: 48px;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.project-heading-view-all a {
+    text-decoration: none;
+    color: white;
 }
 
 .project-heading-view-all:hover {

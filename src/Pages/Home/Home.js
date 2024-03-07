@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { useLocation } from "react-router-dom";
-import homeLogo from "../../Assets/Programming-amico.svg";
-import Type from "./Tools/Type";
-import myImg from "../../Assets/avatar.svg";
+import { Col, Container, Row } from "react-bootstrap";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
+import homeLogo from "../../Assets/Programming-amico.svg";
+import myImg from "../../Assets/avatar.svg";
+import StarryBackground from "../../Components/Particles/StarryBackground";
 import "./Home.css";
+import Type from "./Tools/Type";
 
 export const Home = () => {
   const location = useLocation();
@@ -18,6 +19,7 @@ export const Home = () => {
 
   return (
     <section>
+      <StarryBackground />
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row>
@@ -33,7 +35,7 @@ export const Home = () => {
               </h1>
 
               <h1 className="heading-name">
-                I'M
+                I am
                 <strong className="main-name"> CONTICCHIO GIUSEPPE</strong>
               </h1>
 
@@ -61,7 +63,7 @@ export const Home = () => {
                 </i>
                 <br />
                 <br />
-                My field of Interest's are building new &nbsp;
+                My field of Interest s are building new &nbsp;
                 <i>
                   <b className="purple">Web Technologies and Products </b> and
                   also in areas related to
