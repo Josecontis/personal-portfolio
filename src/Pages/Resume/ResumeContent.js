@@ -1,5 +1,5 @@
+import PropTypes from "prop-types";
 import React from "react";
-
 function ResumeContent(props) {
   return (
     <div className="resume-item">
@@ -17,5 +17,11 @@ function ResumeContent(props) {
     </div>
   );
 }
+
+ResumeContent.propTypes = {
+  title: PropTypes.bool.isRequired,
+  date: PropTypes.string.isRequired,
+  content: PropTypes.arrayOf.isRequired,
+};
 
 export default ResumeContent;

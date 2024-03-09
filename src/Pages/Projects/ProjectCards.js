@@ -1,6 +1,7 @@
+import PropTypes from "prop-types";
 import React from "react";
-import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 import { BiLinkExternal } from "react-icons/bi";
 
 function ProjectCards(props) {
@@ -14,10 +15,18 @@ function ProjectCards(props) {
         </Card.Text>
       </Card.Body>
       <Button variant="primary" href={props.link} target="_blank">
-          <BiLinkExternal /> &nbsp;
-          {props.isBlog ? "View Blog" : "View Project"}
-        </Button>
+        <BiLinkExternal /> &nbsp;
+        {props.isBlog ? "View Blog" : "View Project"}
+      </Button>
     </Card>
   );
 }
+ProjectCards.propTypes = {
+  title: PropTypes.string.isRequired,
+  imgPath: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  isBlog: PropTypes.bool.isRequired,
+};
+
 export default ProjectCards;

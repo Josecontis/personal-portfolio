@@ -22,7 +22,7 @@ export const Resume = () => {
           <Button
             variant="primary"
             href={
-              "https://drive.google.com/file/d/1ISQt3pawdJiW-_3eGYxbAuZeIJPI2y2_/view?usp=sharing"
+              "https://drive.google.com/file/d/1G8Pm46hPBEIWhq2oPSshQxTIS4gdk6ew/view?usp=sharing"
             }
             target="_blank"
           >
@@ -34,52 +34,56 @@ export const Resume = () => {
           <Col md={6} className="resume-left">
             <h3 className="resume-title">Experience</h3>
             <Resumecontent
-              title="JUNIOR ML ENGINEER [Omdena]"
-              date="June 2020 - August 2020"
+              title="E-commerce - BIOLAND"
+              date="June 2016 - September 2018"
               content={[
-                "Assembled the data from various social media platforms using Twitter, Reddit.Interpreted the collected text using word-clouds and various other factors that affect the change of sentiments of youth.",
-                " Utilized the data to find the issues using Topic Modelling and Building models using LSTM, BERT to predict the sentiments of the youth.",
+                "Creating Listings on E-Commerce Sites",
+                "E-commerce website management ww.puladifarro.com",
+                "Database development for spelt husks site",
+                "Newsletter for spelt husk products, using mozilla thunderbird and its plug-ins",
+              ]}
+            />
+            <Resumecontent
+              title="Full-stack developer - MACNIL"
+              date="March 2021 - Today"
+              content={[
+                "Software development team that adopts the AGILE methodology for the design and development of web and mobile applications in the IoT (Internet of Things), Automotive, Fleet Management.",
               ]}
             />
             <h3 className="resume-title">Extracurricular Activities</h3>
             <Resumecontent
-              title="Web Developer [Pantheon-2019 Technical Fest of BIT Mesra]"
+              title="English Course - Cambridge B2"
               content={[
-                "Worked on creating the frontend-end of the website using Bootstrap, Javascript.",
+                "This course offers a comprehensive and structured approach to improving English proficiency at the upper-intermediate level.",
               ]}
             />
             <Resumecontent
-              title="Web Developer [Bitotsav-2020 Technical Fest of BIT Mesra]"
+              title="Phone and PC repairs"
               content={[
-                "Operated on developing the frontend end of the website using Bootstrap, Javascript and backend APIs using Node.js",
+                "Software repair and replacement of hardware components on mobile phones and computers.",
               ]}
             />
           </Col>
           <Col md={6} className="resume-right">
             <h3 className="resume-title">Education</h3>
             <Resumecontent
-              title="IMSC MATHS AND COMPUTING [BIT Mesra, Ranchi] "
-              date="2018 - Present"
-              content={[`CGPA: (Tillth Sem)`]}
+              title="IHigh School Diploma in Computer Science - Galieo Galilei, Altamura "
+              date="September 2012 - June 2018"
+              content={[`Vote 80/100`]}
             />
             <Resumecontent
-              title="12TH BOARD [ODM Public School,Odisha]"
-              date="2015 - 2017"
-              content={["Precentage: 88%"]}
-            />
-            <Resumecontent
-              title="10TH BOARD [ST Mary's School,Odisha] "
-              date="2005 - 2015"
-              content={["Precentage: 86%"]}
+              title="Bachelor's degree in computer science - University of Bari Aldo Moro"
+              date="October 2018 - March 2021"
+              content={["Vote 105/110"]}
             />
             <h3 className="resume-title">Ranks and Achivements</h3>
             <Resumecontent
               title=""
               content={[
-                `Current rank in Spoj `,
-                `Current rank in HackerRank `,
-                "Top Performer in Code-Break 1.0",
-                "Participant in Hack-A-Bit 2019",
+                "B2 English Certificate",
+                "Certificate of participation in the course for safety and protection of workers' health",
+                "Specific training course - low risk",
+                "Certificate of attendance of the school-work alternation course",
               ]}
             />
           </Col>
@@ -88,7 +92,7 @@ export const Resume = () => {
           <Button
             variant="primary"
             href={
-              "https://drive.google.com/file/d/1ISQt3pawdJiW-_3eGYxbAuZeIJPI2y2_/view?usp=sharing"
+              "https://drive.google.com/file/d/1G8Pm46hPBEIWhq2oPSshQxTIS4gdk6ew/view?usp=sharing"
             }
             target="_blank"
           >

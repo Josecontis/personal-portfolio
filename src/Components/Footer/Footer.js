@@ -1,12 +1,10 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { Col, Container, Row } from "react-bootstrap";
 import "./Footer.css";
 
 export const Footer = () => {
   let date = new Date();
   let year = date.getFullYear();
-  const navigate = useNavigate();
   return (
     <Container fluid className="footer">
       <Row>

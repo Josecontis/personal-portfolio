@@ -2,7 +2,7 @@ import emailjs from "emailjs-com";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import StarryBackground from "../../Components/Particles/StarryBackground";
-import { AlertNotification } from "./Alert/AlertNotification";
+import AlertNotification from "./Alert/AlertNotification";
 import "./Contacts.css";
 
 export const Contacts = () => {
