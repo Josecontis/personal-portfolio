@@ -1,5 +1,6 @@
 import emailjs from "emailjs-com";
 import React, { useEffect, useState } from "react";
+import { Container } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
 import StarryBackground from "../../Components/Particles/StarryBackground";
 import SolarSystem from "../../SolarSystem/SolarSystem";
@@ -69,76 +70,95 @@ export const Contacts = () => {
   };
 
   return (
-    <div className="contact-container">
-      <div className="form-contacts-container">
+    <Container fluid className="contact-section">
+      <div className="contact-container">
         <StarryBackground />
-        {renderAlert()}
-        <div>
-          <div className="name-form">
-            <label className="form-label">name</label>
-            <input
-              autoComplete="off"
-              id="name"
-              className="form-input"
-              onChange={(e) => setName(e.target.value)}
-            />
+        <div className="contact-title-container">
+          <div className="contact-title">
+            Keep in <b>contact</b> with me
           </div>
-          <div className="email-form">
-            <label className="form-label">email</label>
-            {!validation && email !== "" && (
-              <label className="form-label-error">email</label>
-            )}
-            <input
-              autoComplete="off"
-              id="email"
+          <div className="form-contacts-container">
+            {renderAlert()}
+            <div>
+              <div className="name-form">
+                <label className="form-label">Name</label>
+                <input
+                  autoComplete="off"
+                  id="name"
+                  className="form-input"
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </div>
+              <div className="email-form">
+                <label
+                  className={
+                    !validation && email !== ""
+                      ? "form-label-error"
+                      : "form-label"
+                  }
+                >
+                  E-Mail
+                </label>
+                <input
+                  autoComplete="off"
+                  id="email"
+                  className={
+                    email === "" || validation
+                      ? "form-input"
+                      : "form-input-error"
+                  }
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                    let emailTest = new RegExp(
+                      "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})"
+                    );
+                    email !== "" && setValidation(emailTest.test(email));
+                  }}
+                />
+              </div>
+            </div>
+            <div className="subject-form">
+              <label className="form-label">Object</label>
+              <input
+                autoComplete="off"
+                id="subject"
+                className="form-input"
+                onChange={(e) => setObject(e.target.value)}
+              />
+            </div>
+            <div className="message-form">
+              <label className="form-label">Message</label>
+              <textarea
+                id="message"
+                className="form-text-area"
+                onChange={(e) => setMessage(e.target.value)}
+              />
+            </div>
+            <button
               className={
-                email === "" || validation ? "form-input" : "form-input-error"
+                name && email && object && message && validation
+                  ? "form-button"
+                  : "form-button-disabled"
               }
-              onChange={(e) => {
-                setEmail(e.target.value);
-                let emailTest = new RegExp(
-                  "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})"
-                );
-                email !== "" && setValidation(emailTest.test(email));
+              onClick={(e) => {
+                name &&
+                  email &&
+                  object &&
+                  message &&
+                  validation &&
+                  sendEmail(e);
+                setName("");
+                setEmail("");
+                setObject("");
+                setMessage("");
               }}
-            />
+            >
+              SEND
+            </button>
           </div>
         </div>
-        <div className="subject-form">
-          <label className="form-label">object</label>
-          <input
-            autoComplete="off"
-            id="subject"
-            className="form-input"
-            onChange={(e) => setObject(e.target.value)}
-          />
-        </div>
-        <div className="message-form">
-          <label className="form-label">message</label>
-          <textarea
-            id="message"
-            className="form-text-area"
-            onChange={(e) => setMessage(e.target.value)}
-          />
-        </div>
-        <button
-          className={
-            name && email && object && message && validation
-              ? "form-button"
-              : "form-button-disabled"
-          }
-          onClick={(e) => {
-            name && email && object && message && validation && sendEmail(e);
-            setName("");
-            setEmail("");
-            setObject("");
-            setMessage("");
-          }}
-        >
-          send
-        </button>
+        <SolarSystem />
       </div>
-      <SolarSystem />
-    </div>
+    </Container>
   );
 };

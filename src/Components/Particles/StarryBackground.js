@@ -27,7 +27,7 @@ function StarryBackground() {
     star.style.animation = `twinkle ${duration}s ${delay}s infinite`;
   };
 
-  const numberOfStars = 150; // Imposta il numero di stelle
+  const numberOfStars = 300; // Imposta il numero di stelle
 
   return (
     <div className="starry-background">

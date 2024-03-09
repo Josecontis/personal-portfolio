@@ -3,12 +3,12 @@
     margin: 15px;
     padding: 10px;
     opacity: 0.93;
-    border: 1.7px solid var(--text-color);
+    border: 2px solid var(--text-color);
     vertical-align: middle;
     text-align: center;
     border-radius: 5px;
     display: table;
-    box-shadow: 0px 0px 4px 3px var(--scrollbar-color);
+    box-shadow: 0px 0px 18px 2px var(--scrollbar-color);
     overflow: hidden;
     transition: all 0.4s ease 0s;
 }

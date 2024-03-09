@@ -1,9 +1,28 @@
+.contact-section {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.contact-title-container {
+  position: absolute;
+  top: 22vh;
+  left: 10vw;
+}
+
+.contact-title {
+  color: white;
+  font-size: 36px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
 .contact-container {
   display: flex;
   position: relative;
   height: 107vh;
   width: 100vw;
   overflow: hidden;
+  margin-bottom: 0.5rem;
 }
 
 .form-label {
@@ -14,12 +33,14 @@
   font-size: 14px;
 }
 
+
 .form-label-error {
+  font-size: 1em;
   color: red;
   width: 100%;
   text-align: left;
-  margin-left: 20px;
   font-size: 14px;
+  margin-bottom: 0.5rem;
 }
 
 .form-input {
@@ -27,23 +48,27 @@
   color: white;
   width: -webkit-fill-available;
   text-align: left;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid black;
+  background-color: black;
+  padding: 0.5rem 0;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
 }
 
 .form-input:focus, .form-text-area:focus {
   outline: none;
-  box-shadow: 0px 4px 12px black;
 }
 
 .form-input-error {
-  color: black;
+  font-size: 1em;
+  color: red;
   width: -webkit-fill-available;
   text-align: left;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid red;
+  background-color: black;
+  padding: 0.5rem 0;
+  border: none;
+  border-bottom: 1px solid red;
+  outline: none;
 }
 
 .form-input-error:focus {
@@ -52,13 +77,16 @@
 }
 
 .form-text-area {
-  color: black;
-  width: -webkit-fill-available;
   height: 100px;
+  font-size: 1em;
+  color: white;
+  width: -webkit-fill-available;
   text-align: left;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid black;
+  background-color: black;
+  padding: 0.5rem 0;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
 }
 
 .form-contacts-container {
@@ -66,12 +94,12 @@
   z-index: 1;
   width: 550px;
   position: absolute;
-  top: 30%;
-  left: 10%;
-}
-
-.form-contacts-container input, .form-contacts-container textarea {
-  background-color: #8d8d8d;
+  top: 100px;
+  padding: 40px;
+  border: 2px solid var(--text-color);
+  border-radius: 10px;
+  box-shadow: 0px 0px 18px 2px var(--scrollbar-color);
+  background: black;
 }
 
 .name-form {
@@ -108,17 +136,17 @@
   text-transform: uppercase;
   border: none;
   color: white;
-  background-color: #d8d8d8;
+  background-color: var(--background-top-bar);
   font-size: 16px;
   font-weight: 600;
   padding: 12px;
   border-radius: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   transition-duration: 1s;
 }
 
 .form-button:hover {
-  background-color: brown;
+  background-color: var(--text-color);
   cursor: pointer;
 }
 
@@ -127,12 +155,12 @@
   text-transform: uppercase;
   border: none;
   color: white;
-  background-color: #d8d8d8;
+  background-color: var(--background-top-bar);
   font-size: 16px;
   font-weight: 600;
   padding: 12px;
   border-radius: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   opacity: 0.5;
 }
 
