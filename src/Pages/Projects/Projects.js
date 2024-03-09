@@ -24,7 +24,7 @@ export const Projects = () => {
         <div className="project-heading-container">
           <div className="project-heading">
             <div className="project-heading-title">
-              My Recent <strong className="purple">Works </strong>
+              My Recent <b>Works </b>
             </div>
             <p style={{ color: "white" }}>
               Here are a few projects I&apos;ve worked on.

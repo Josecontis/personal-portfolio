@@ -2,6 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImMusic, ImPointRight } from "react-icons/im";
 import { IoLogoGameControllerB } from "react-icons/io";
+import "./AboutCard.css";
 
 function AboutCard() {
   return (
@@ -10,9 +11,9 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am
-            <span className="purple"> Conticchio Giuseppe </span>
-            from <span className="purple"> Gravina in Puglia, Italy.</span>
-            <br />I am a junior software developer.
+            <b> Conticchio Giuseppe </b>
+            from <b> Gravina in Puglia, Italy.</b>
+            <br />I am a Full-stack software developer.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!

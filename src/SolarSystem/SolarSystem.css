@@ -1,12 +1,12 @@
 .solar-system {
-    position: relative;
-    width: 1000px;
-    height: 1000px;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
-    margin-left: auto;
+    right: 0px;
+    bottom: 0px;
 }
 
-/* Some positioning rules that are common for all objects */
 .orbit {
     border: 1px dashed #666;
 }
@@ -258,21 +258,21 @@ and planet size. And colors :) */
 }
 
 .jupiter-spin {
-    animation: spin-right 140000s linear infinite;
+    animation: spin-right 30s linear infinite;
     /* Rallenta ulteriormente la rotazione di Giove */
 }
 
 .saturn-spin {
-    animation: spin-right 40000s linear infinite;
+    animation: spin-right 35s linear infinite;
     /* Rallenta ulteriormente la rotazione di Saturno */
 }
 
 .uranus-spin {
-    animation: spin-right 30000s linear infinite;
+    animation: spin-right 40s linear infinite;
     /* Rallenta ulteriormente la rotazione di Urano */
 }
 
 .neptune-spin {
-    animation: spin-right 35000s linear infinite;
+    animation: spin-right 45s linear infinite;
     /* Rallenta ulteriormente la rotazione di Nettuno */
 }

@@ -12,6 +12,7 @@ import {
   SiSublimetext,
   SiVisualstudiocode,
 } from "react-icons/si";
+import "./Stack.css";
 
 function Toolstack() {
   return (

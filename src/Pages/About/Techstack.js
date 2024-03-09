@@ -17,6 +17,7 @@ import {
   SiThreedotjs,
   SiTypescript,
 } from "react-icons/si";
+import "./Stack.css";
 
 function Techstack() {
   return (

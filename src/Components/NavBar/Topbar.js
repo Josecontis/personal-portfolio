@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../../Assets/header-logo.svg";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { CgCoffee, CgHeadset } from "react-icons/cg";
 import { useNavigate } from "react-router-dom";
-import { CgHeadset, CgCoffee } from "react-icons/cg";
+import logo from "../../Assets/header-logo.svg";
 
 import {
-  AiOutlineHome,
   AiOutlineFundProjectionScreen,
+  AiOutlineHome,
   AiOutlineUser,
 } from "react-icons/ai";
+import { CgFileDocument } from "react-icons/cg";
 import SONG from "./Songs/LudovicoEinaudi-Experience.mp3";
 import "./Topbar.css";
-import { CgFileDocument } from "react-icons/cg";
 
 export const Topbar = () => {
   const navigate = useNavigate();

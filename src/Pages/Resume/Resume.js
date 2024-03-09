@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
 import { useLocation } from "react-router-dom";
 import StarryBackground from "../../Components/Particles/StarryBackground";
+import "./Resume.css";
 import Resumecontent from "./ResumeContent";
 
 export const Resume = () => {

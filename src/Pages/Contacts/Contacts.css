@@ -1,6 +1,9 @@
 .contact-container {
   display: flex;
-  padding: 60px;
+  position: relative;
+  height: 107vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .form-label {

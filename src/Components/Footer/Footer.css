@@ -5,7 +5,8 @@
   background-color: var(--background-top-bar);
   height: 60px;
   z-index: 1;
-  position: absolute;
+  position: fixed;
+  bottom: 0;
 }
 
 .footer-copyright {
