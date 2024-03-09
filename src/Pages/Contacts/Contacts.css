@@ -1,3 +1,8 @@
+.contact-container {
+  display: flex;
+  padding: 60px;
+}
+
 .form-label {
   font-size: 1em;
   color: white;
@@ -55,10 +60,11 @@
 
 .form-contacts-container {
   display: grid;
-  margin: 50vh auto 20vh auto;
   z-index: 1;
-  width: 800px;
-  position: relative;
+  width: 550px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
 }
 
 .form-contacts-container input, .form-contacts-container textarea {
@@ -69,14 +75,14 @@
   margin-bottom: 12px;
   text-align: left;
   float: left;
-  width: 380px;
+  width: 48%;
 }
 
 .email-form {
   margin-bottom: 12px;
   text-align: left;
   float: right;
-  width: 380px;
+  width: 48%;
 }
 
 .subject-form {
@@ -91,6 +97,7 @@
 
 .message-form textarea {
   resize: none;
+  height: 200px;
 }
 
 .form-button {
@@ -155,11 +162,7 @@
 
 @media screen and (max-width: 860px) and (min-width: 500px) {
   .form-contacts-container {
-    width: 470px;
-  }
-
-  .email-form, .name-form {
-    width: 230px;
+    width: 270px;
   }
 
   .form-label {
@@ -171,18 +174,14 @@
   }
 
   .form-text-area {
-    height: 80px;
+    height: 120px;
   }
 }
 
 @media screen and (max-width: 500px) and (min-width: 300px) {
 
   .form-contacts-container {
-    width: 314px;
-  }
-
-  .email-form, .name-form {
-    width: 150px;
+    width: 200px;
   }
 
   .form-label {
@@ -194,6 +193,6 @@
   }
 
   .form-text-area {
-    height: 80px;
+    height: 120px;
   }
 }

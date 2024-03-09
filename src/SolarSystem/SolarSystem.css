@@ -1,0 +1,278 @@
+.solar-system {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    overflow: hidden;
+    margin-left: auto;
+}
+
+/* Some positioning rules that are common for all objects */
+.orbit {
+    border: 1px dashed #666;
+}
+
+#sun,
+.orbit,
+.orbit+div,
+.orbit+div>div {
+    position: absolute;
+}
+
+#sun,
+.orbit,
+.orbit+div {
+    top: 50%;
+    left: 50%;
+}
+
+.orbit+div>div {
+    top: 0;
+    left: 50%;
+}
+
+.orbit,
+.orbit+div div,
+#earth {
+    border-radius: 50%;
+}
+
+/* Individual objects rules. They are pretty much the same for 
+all objects and basically only vary in orbit size 
+and planet size. And colors :) */
+
+#sun {
+    height: 200px;
+    width: 200px;
+    background-color: #fae20a;
+    margin-top: -100px;
+    margin-left: -100px;
+    border-radius: 50%;
+    box-shadow: 0 0 84px orange;
+}
+
+#earth {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+    border-radius: 50%;
+    box-shadow: 0 0 34px #3a4385;
+}
+
+.earth-orbit,
+.earth-spin {
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    margin-top: -250px;
+}
+
+#moon {
+    margin-top: -6px;
+    margin-left: -6px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 14px #3a4385;
+}
+
+.moon-orbit,
+.moon-spin {
+    height: 90px;
+    width: 90px;
+    margin-top: -45px;
+    margin-left: -45px;
+    border-color: #447;
+}
+
+/* Add CSS for Mercury */
+#mercury {
+    margin-top: -13.5px;
+    margin-left: -13.5px;
+    height: 25px;
+    width: 25px;
+    background-color: #a65e22;
+}
+
+.mercury-orbit,
+.mercury-spin {
+    width: 280px;
+    height: 280px;
+    margin-left: -140px;
+    margin-top: -140px;
+}
+
+/* Add CSS for Venus */
+#venus {
+    margin-top: -20px;
+    margin-left: -20px;
+    height: 40px;
+    width: 40px;
+    background-color: #3498db;
+}
+
+.venus-orbit,
+.venus-spin {
+    margin-top: -185px;
+    margin-left: -185px;
+    width: 370px;
+    height: 370px;
+}
+
+/* Add CSS for Mars */
+#mars {
+    margin-top: -16px;
+    margin-left: -16px;
+    height: 32px;
+    width: 32px;
+    background-color: #863222;
+    box-shadow: 0 0 14px #a64232;
+}
+
+.mars-orbit,
+.mars-spin {
+    width: 700px;
+    height: 700px;
+    margin-left: -350px;
+    margin-top: -350px;
+}
+
+/* Add CSS for Jupiter */
+#jupiter {
+    margin-top: -45px;
+    margin-left: -45px;
+    height: 100px;
+    width: 100px;
+    background-color: #d9a345;
+}
+
+.jupiter-orbit,
+.jupiter-spin {
+    margin-top: -450px;
+    margin-left: -450px;
+    width: 900px;
+    height: 900px;
+}
+
+/* Add CSS for Saturn */
+#saturn {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: #e5d49a;
+    border-radius: 50%;
+    margin-top: -45px;
+    margin-left: -45px;
+}
+
+.saturn-ring {
+    position: absolute;
+    top: 16%;
+    left: -20%;
+    transform-origin: 0 50%;
+    height: 68px;
+    width: 140px;
+    border: 8px solid #d9a345;
+    border-radius: 50%;
+    border-top: none;
+    border-bottom: none;
+}
+
+.saturn-orbit,
+.saturn-spin {
+    margin-top: -600px;
+    margin-left: -600px;
+    width: 1200px;
+    height: 1200px;
+}
+
+/* Add CSS for Uranus */
+#uranus {
+    margin-top: -45px;
+    margin-left: -45px;
+    height: 90px;
+    width: 90px;
+    background-color: #76d6d6;
+}
+
+.uranus-orbit,
+.uranus-spin {
+    margin-top: -700px;
+    margin-left: -700px;
+    width: 1400px;
+    height: 1400px;
+}
+
+/* Add CSS for Neptune */
+#neptune {
+    margin-top: -35px;
+    margin-left: -35px;
+    height: 70px;
+    width: 70px;
+    background-color: #2860b3;
+}
+
+.neptune-orbit,
+.neptune-spin {
+    margin-top: -810px;
+    margin-left: -810px;
+    width: 1600px;
+    height: 1600px;
+}
+
+/* Spinning animations */
+
+@keyframes spin-right {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.earth-spin {
+    animation: spin-right 20s linear infinite;
+    /* Rallenta ulteriormente la rotazione della Terra */
+}
+
+.moon-spin {
+    animation: spin-right 2s linear infinite;
+    /* Rallenta ulteriormente la rotazione della Luna */
+}
+
+.mercury-spin {
+    animation: spin-right 10s linear infinite;
+    /* Rallenta ulteriormente la rotazione di Mercurio */
+}
+
+.venus-spin {
+    animation: spin-right 15s linear infinite;
+    /* Rallenta ulteriormente la rotazione di Venere */
+}
+
+.mars-spin {
+    animation: spin-right 25s linear infinite;
+    /* Rallenta ulteriormente la rotazione di Marte */
+}
+
+.jupiter-spin {
+    animation: spin-right 140000s linear infinite;
+    /* Rallenta ulteriormente la rotazione di Giove */
+}
+
+.saturn-spin {
+    animation: spin-right 40000s linear infinite;
+    /* Rallenta ulteriormente la rotazione di Saturno */
+}
+
+.uranus-spin {
+    animation: spin-right 30000s linear infinite;
+    /* Rallenta ulteriormente la rotazione di Urano */
+}
+
+.neptune-spin {
+    animation: spin-right 35000s linear infinite;
+    /* Rallenta ulteriormente la rotazione di Nettuno */
+}
