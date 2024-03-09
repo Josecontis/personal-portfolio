@@ -1,16 +1,15 @@
-import React, { useState, useEffect } from "react";
-import Preloader from "./Components/Preloader/Preloader";
-import { Home } from "./Pages/Home/Home";
-import { About } from "./Pages/About/About";
-import { Projects } from "./Pages/Projects/Projects";
-import { Footer } from "./Components/Footer/Footer";
-import { Resume } from "./Pages/Resume/Resume";
-import { Contacts } from "./Pages/Contacts/Contacts";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./style.css";
-
-import ScrollToTop from "./Components/ScrollToTop";
+import "./App.css";
+import { Footer } from "./Components/Footer/Footer";
 import { Topbar } from "./Components/NavBar/Topbar";
+import Preloader from "./Components/Preloader/Preloader";
+import ScrollToTop from "./Components/ScrollToTop";
+import { About } from "./Pages/About/About";
+import { Contacts } from "./Pages/Contacts/Contacts";
+import { Home } from "./Pages/Home/Home";
+import { Projects } from "./Pages/Projects/Projects";
+import { Resume } from "./Pages/Resume/Resume";
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -18,6 +17,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       updateLoad(false);
+      window.scrollTo(0, 0);
     }, 1200);
 
     return () => clearTimeout(timer);

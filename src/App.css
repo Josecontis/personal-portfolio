@@ -18,6 +18,10 @@ b {
 /* --------- */
 /* Scrollbar */
 /* --------- */
+#no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
 
 ::-webkit-scrollbar {
   width: 7px;
