@@ -5,7 +5,11 @@ import "./AlertNotification.css";
 function AlertNotification(props) {
   return (
     <div className={props.Success ? "alert-success" : "alert-error"}>
-      <span>{props.Success ? "success" : "error"} </span>
+      <span>
+        {props.Success
+          ? "Messaggio inviato con successo!"
+          : "Errore nell'invio del messaggio."}
+      </span>
     </div>
   );
 }

@@ -5,6 +5,8 @@
   --scrollbar-color: #3b8aaf;
   --background-color: rgb(15, 39, 58);
   --background-top-bar: #192850;
+  --global-alert-success: #0b8700;
+  --global-alert-fail: #900000;
   /* planets */
   --orbit-color: #585858;
   --sun-color: #fae20a;

@@ -1,4 +1,4 @@
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
@@ -14,6 +14,7 @@ export const Contacts = () => {
   const [message, setMessage] = useState("");
   const [testFlag, setTestFlag] = useState(0);
   const [validation, setValidation] = useState(false);
+  const [rocketAnimation, setRocketAnimation] = useState(false);
 
   const location = useLocation();
 
@@ -23,21 +24,21 @@ export const Contacts = () => {
   }, [location]);
 
   const sendEmail = () => {
-    let templateParams = {
-      from_name: name,
-      subject: object,
-      to_name: "peppeco98@gmail.com",
-      message_html: message,
-      from_email: email,
-      reply_to: email,
-    };
-
+    setRocketAnimation(true);
     emailjs
       .send(
-        "service_71tircc",
-        "template_7iyx15d",
-        templateParams,
-        "YRrKkrPNpgyEoqK3o"
+        "service_dx9tuej",
+        "template_yx44vvu",
+        {
+          from_name: name,
+          to_name: "peppeco98@gmail.com",
+          message: message,
+          reply_to: email,
+          object: object,
+        },
+        {
+          publicKey: "VuXoRd7oWTeHQg9Ns",
+        }
       )
       .then(
         function (response) {
@@ -54,13 +55,13 @@ export const Contacts = () => {
   };
 
   const renderAlert = () => {
-    if (testFlag === 1) {
+    if (!rocketAnimation && testFlag === 1) {
       return (
         <div className="alert-container">
           <AlertNotification Success={true} />
         </div>
       );
-    } else if (testFlag === -1) {
+    } else if (!rocketAnimation && testFlag === -1) {
       return (
         <div className="alert-container">
           <AlertNotification Success={false} />
@@ -73,12 +74,12 @@ export const Contacts = () => {
     <Container fluid className="contact-section">
       <div className="contact-container">
         <StarryBackground />
+        {renderAlert()}
         <div className="contact-title-container">
           <div className="contact-title">
             Keep in <b>contact</b> with me
           </div>
           <div className="form-contacts-container">
-            {renderAlert()}
             <div>
               <div className="name-form">
                 <label className="form-label">Name</label>
@@ -135,18 +136,9 @@ export const Contacts = () => {
               />
             </div>
             <button
-              className={
-                name && email && object && message && validation
-                  ? "form-button"
-                  : "form-button-disabled"
-              }
+              className="form-button"
               onClick={(e) => {
-                name &&
-                  email &&
-                  object &&
-                  message &&
-                  validation &&
-                  sendEmail(e);
+                sendEmail(e);
                 setName("");
                 setEmail("");
                 setObject("");
@@ -158,6 +150,20 @@ export const Contacts = () => {
           </div>
         </div>
         <SolarSystem />
+        {rocketAnimation && (
+          <div
+            className="rocket"
+            onAnimationEnd={() => setRocketAnimation(false)}
+          >
+            <div className="rocket-body">
+              <div className="body"></div>
+              <div className="fin fin-left"></div>
+              <div className="fin fin-right"></div>
+              <div className="window"></div>
+            </div>
+            <div className="exhaust-flame"></div>
+          </div>
+        )}
       </div>
     </Container>
   );

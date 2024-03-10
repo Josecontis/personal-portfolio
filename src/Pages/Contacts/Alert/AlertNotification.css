@@ -1,13 +1,13 @@
 .alert-success {
     padding: 20px;
     border-radius: 5px;
-    background-color: var(--global-light-green);
+    background-color: var(--global-alert-success);
     color: var(--white-color);
 }
 
 .alert-error {
     padding: 20px;
     border-radius: 5px;
-    background-color: var(--global-fail);
+    background-color: var(--global-alert-fail);
     color: var(--white-color);
 }
