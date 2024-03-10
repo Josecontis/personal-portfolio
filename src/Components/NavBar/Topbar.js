@@ -6,12 +6,14 @@ import { CgCoffee, CgHeadset } from "react-icons/cg";
 import { useNavigate } from "react-router-dom";
 import logo from "../../Assets/header-logo.svg";
 
+import i18next from "i18next";
 import {
   AiOutlineFundProjectionScreen,
   AiOutlineHome,
   AiOutlineUser,
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
+import i18n from "../../Translations/i18next.js";
 import SONG from "./Songs/LudovicoEinaudi-Experience.mp3";
 import "./Topbar.css";
 
@@ -21,6 +23,8 @@ export const Topbar = () => {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+
+  const [language, setLanguage] = useState("it");
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -37,6 +41,13 @@ export const Topbar = () => {
   useEffect(() => {
     isPlaying ? audio.play() : audio.pause();
   }, [isPlaying, audio]);
+
+  const toggleLanguage = () => {
+    const currentLanguage = i18n.language;
+    const newLanguage = currentLanguage === "it" ? "en" : "it";
+    i18n.changeLanguage(newLanguage);
+    setLanguage(newLanguage);
+  };
 
   return (
     <Navbar
@@ -124,7 +135,7 @@ export const Topbar = () => {
                   style={{ marginBottom: "2px" }}
                   className={`sound-${!isPlaying}`}
                 />
-                Music
+                {i18next.t("topBar.music")}
                 <button
                   className="music-btn"
                   onClick={() => {
@@ -132,6 +143,13 @@ export const Topbar = () => {
                   }}
                 >
                   {!isPlaying ? "ON" : "OFF"}
+                </button>
+              </div>
+            </Nav.Item>
+            <Nav.Item>
+              <div className="nav-link">
+                <button className="music-btn" onClick={toggleLanguage}>
+                  {language.toUpperCase()}
                 </button>
               </div>
             </Nav.Item>

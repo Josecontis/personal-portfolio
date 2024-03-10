@@ -10,6 +10,7 @@ import { Contacts } from "./Pages/Contacts/Contacts";
 import { Home } from "./Pages/Home/Home";
 import { Projects } from "./Pages/Projects/Projects";
 import { Resume } from "./Pages/Resume/Resume";
+import "./Translations/i18next";
 
 function App() {
   const [load, updateLoad] = useState(true);
