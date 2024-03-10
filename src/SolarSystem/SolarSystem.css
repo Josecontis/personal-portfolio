@@ -8,7 +8,7 @@
 }
 
 .orbit {
-    border: 1px dashed #666;
+    border: 1px dashed var(--orbit-color);
 }
 
 #sun,
@@ -36,14 +36,10 @@
     border-radius: 50%;
 }
 
-/* Individual objects rules. They are pretty much the same for 
-all objects and basically only vary in orbit size 
-and planet size. And colors :) */
-
 #sun {
     height: 200px;
     width: 200px;
-    background-color: #fae20a;
+    background-color: var(--sun-color);
     margin-top: -100px;
     margin-left: -100px;
     border-radius: 50%;
@@ -59,7 +55,7 @@ and planet size. And colors :) */
     margin-left: -25px;
     margin-top: -25px;
     border-radius: 50%;
-    box-shadow: 0 0 34px #3a4385;
+    box-shadow: 0 0 38px var(--earth-color);
 }
 
 .earth-orbit,
@@ -76,8 +72,8 @@ and planet size. And colors :) */
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    background: white;
-    box-shadow: 0 0 14px #3a4385;
+    background: var(--white-color);
+    box-shadow: 0 0 30px var(--white-color);
 }
 
 .moon-orbit,
@@ -86,7 +82,7 @@ and planet size. And colors :) */
     width: 90px;
     margin-top: -45px;
     margin-left: -45px;
-    border-color: #447;
+    border-color: var(--moon-border);
 }
 
 /* Add CSS for Mercury */
@@ -95,7 +91,8 @@ and planet size. And colors :) */
     margin-left: -13.5px;
     height: 25px;
     width: 25px;
-    background-color: #a65e22;
+    background-color: var(--mercury-color);
+    box-shadow: 0 0 26px 6px var(--mercury-color);
 }
 
 .mercury-orbit,
@@ -112,7 +109,8 @@ and planet size. And colors :) */
     margin-left: -20px;
     height: 40px;
     width: 40px;
-    background-color: #3498db;
+    background-color: var(--venus-color);
+    box-shadow: 0 0 30px var(--venus-color);
 }
 
 .venus-orbit,
@@ -129,8 +127,8 @@ and planet size. And colors :) */
     margin-left: -16px;
     height: 32px;
     width: 32px;
-    background-color: #863222;
-    box-shadow: 0 0 14px #a64232;
+    background-color: var(--mars-color);
+    box-shadow: 0 0 26px 6px var(--mars-color);
 }
 
 .mars-orbit,
@@ -147,7 +145,8 @@ and planet size. And colors :) */
     margin-left: -45px;
     height: 100px;
     width: 100px;
-    background-color: #d9a345;
+    background-color: var(--jupiter-color);
+    box-shadow: 0 0 46px var(--jupiter-color);
 }
 
 .jupiter-orbit,
@@ -163,10 +162,11 @@ and planet size. And colors :) */
     position: relative;
     height: 100px;
     width: 100px;
-    background-color: #e5d49a;
     border-radius: 50%;
     margin-top: -45px;
     margin-left: -45px;
+    background-color: var(--saturn-color);
+    box-shadow: 0 0 46px var(--saturn-color);
 }
 
 .saturn-ring {
@@ -176,7 +176,7 @@ and planet size. And colors :) */
     transform-origin: 0 50%;
     height: 68px;
     width: 140px;
-    border: 8px solid #d9a345;
+    border: 8px solid var(--saturn-ring-color);
     border-radius: 50%;
     border-top: none;
     border-bottom: none;
@@ -196,7 +196,8 @@ and planet size. And colors :) */
     margin-left: -45px;
     height: 90px;
     width: 90px;
-    background-color: #76d6d6;
+    background-color: var(--uranus-color);
+    box-shadow: 0 0 46px var(--uranus-color);
 }
 
 .uranus-orbit,
@@ -213,7 +214,8 @@ and planet size. And colors :) */
     margin-left: -35px;
     height: 70px;
     width: 70px;
-    background-color: #2860b3;
+    background-color: var(--neptune-color);
+    box-shadow: 0 0 30px var(--neptune-color);
 }
 
 .neptune-orbit,
@@ -234,45 +236,36 @@ and planet size. And colors :) */
 
 .earth-spin {
     animation: spin-right 20s linear infinite;
-    /* Rallenta ulteriormente la rotazione della Terra */
 }
 
 .moon-spin {
     animation: spin-right 2s linear infinite;
-    /* Rallenta ulteriormente la rotazione della Luna */
 }
 
 .mercury-spin {
     animation: spin-right 10s linear infinite;
-    /* Rallenta ulteriormente la rotazione di Mercurio */
 }
 
 .venus-spin {
     animation: spin-right 15s linear infinite;
-    /* Rallenta ulteriormente la rotazione di Venere */
 }
 
 .mars-spin {
     animation: spin-right 25s linear infinite;
-    /* Rallenta ulteriormente la rotazione di Marte */
 }
 
 .jupiter-spin {
     animation: spin-right 30s linear infinite;
-    /* Rallenta ulteriormente la rotazione di Giove */
 }
 
 .saturn-spin {
     animation: spin-right 35s linear infinite;
-    /* Rallenta ulteriormente la rotazione di Saturno */
 }
 
 .uranus-spin {
     animation: spin-right 40s linear infinite;
-    /* Rallenta ulteriormente la rotazione di Urano */
 }
 
 .neptune-spin {
     animation: spin-right 45s linear infinite;
-    /* Rallenta ulteriormente la rotazione di Nettuno */
 }

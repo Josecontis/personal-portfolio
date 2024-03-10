@@ -125,7 +125,7 @@
 /*music btn*/
 /* --------- */
 .music-label {
-  color: white;
+  color: var(--white-color);
   width: 150px;
   margin: 0;
   position: relative;

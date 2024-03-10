@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImMusic, ImPointRight } from "react-icons/im";
-import { IoLogoGameControllerB } from "react-icons/io";
+import { ImPointRight } from "react-icons/im";
 import "./AboutCard.css";
 
 function AboutCard() {
@@ -21,11 +20,10 @@ function AboutCard() {
           <ul>
             <li className="about-activity">
               <ImPointRight className="about-icon" /> &nbsp; Playing Games
-              <IoLogoGameControllerB className="about-icon" />
             </li>
             <li className="about-activity">
               <ImPointRight className="about-icon" /> &nbsp; Playing Guitar, and
-              other instrument <ImMusic className="about-icon" />
+              other instrument
             </li>
             <li className="about-activity">
               <ImPointRight className="about-icon" /> &nbsp; 3D Design and

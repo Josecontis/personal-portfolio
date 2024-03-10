@@ -6,12 +6,12 @@ function StarryBackground() {
     const stars = document.querySelectorAll(".star");
 
     stars.forEach((star) => {
-      moveStar(star);
+      buildStar(star);
       twinkleStar(star);
     });
   }, []);
 
-  const moveStar = (star) => {
+  const buildStar = (star) => {
     const starryBackground = document.querySelector(".starry-background");
     const offsetX = Math.random() * starryBackground.offsetWidth;
     const offsetY = Math.random() * starryBackground.offsetHeight;
@@ -21,13 +21,13 @@ function StarryBackground() {
   };
 
   const twinkleStar = (star) => {
-    const duration = Math.random() * 10 + 5; // Durata casuale tra 5 e 15 secondi per un lampeggio più lento
+    const duration = Math.random() * 8 + 5; // Durata casuale tra 5 e 15 secondi per un lampeggio più lento
     const delay = Math.random() * 3; // Ritardo casuale tra 0 e 3 secondi
 
     star.style.animation = `twinkle ${duration}s ${delay}s infinite`;
   };
 
-  const numberOfStars = 300; // Imposta il numero di stelle
+  const numberOfStars = 200; // Imposta il numero di stelle
 
   return (
     <div className="starry-background">

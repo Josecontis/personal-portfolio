@@ -1,8 +1,23 @@
 :root {
+  --white-color: #ffffff;
+  --black-color: #000000;
   --text-color: #53b8e7;
   --scrollbar-color: #3b8aaf;
   --background-color: rgb(15, 39, 58);
   --background-top-bar: #192850;
+  /* planets */
+  --orbit-color: #585858;
+  --sun-color: #fae20a;
+  --moon-border: #444477;
+  --earth-color: #3a4385;
+  --mercury-color: #a65e22;
+  --venus-color: #3498db;
+  --mars-color: #863222;
+  --jupiter-color: #d9a345;
+  --saturn-color: #e5d49a;
+  --saturn-ring-color: #d9a345;
+  --uranus-color: #76d6d6;
+  --neptune-color: #2860b3;
 }
 
 html {

@@ -95,7 +95,7 @@
 
 .Typewriter__cursor {
     font-size: 2.4em;
-    color: white;
+    color: var(--white-color);
 }
 
 @media (max-width: 767px) {
@@ -146,7 +146,7 @@
 }
 
 .home-about-description {
-    color: white;
+    color: var(--white-color);
     padding-bottom: 20px;
     text-align: center;
 }
@@ -160,7 +160,7 @@
 .home-about-social {
     text-align: center;
     padding-top: 25px;
-    color: white;
+    color: var(--white-color);
 }
 
 .home-about-social-links {

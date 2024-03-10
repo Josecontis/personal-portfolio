@@ -11,11 +11,11 @@
 
 .star {
   position: absolute;
-  background-color: #fff;
-  width: 2px;
-  height: 2px;
+  background-color: var(--white-color);
+  width: 3px;
+  height: 3px;
   border-radius: 50%;
-  animation: twinkle 2s infinite, moveStar 10s linear infinite;
+  animation: twinkle 1s infinite;
 }
 
 @keyframes twinkle {

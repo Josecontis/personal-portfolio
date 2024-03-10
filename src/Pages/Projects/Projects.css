@@ -15,13 +15,14 @@
 
 .project-card-view {
     box-shadow: 0 0 10px 3px var(--text-color);
-    color: white;
+    color: var(--white-color);
     background-color: transparent;
     opacity: 0.9;
     transition: all 0.7s ease 0s;
     height: 100%;
     align-items: center;
     padding: 20px;
+    background: black;
 }
 
 .project-card-view:hover {
@@ -50,13 +51,13 @@
 .btn-primary {
     z-index: 1;
     width: auto;
-    color: #fff;
+    color: var(--white-color);
     background-color: var(--text-color);
     border-color: var(--text-color);
 }
 
 .btn-primary:hover {
-    color: #fff;
+    color: var(--white-color);
     background-color: var(--scrollbar-color);
     border-color: var(--scrollbar-color);
 }
@@ -77,14 +78,14 @@
 }
 
 .project-heading-title {
-    color: white;
+    color: var(--white-color);
     font-size: 36px;
     font-weight: 500;
     padding-top: 10px;
 }
 
 .project-heading-view-all {
-    color: white;
+    color: var(--white-color);
     font-size: 24px;
     font-weight: 500;
     margin-right: 14px;
@@ -95,7 +96,7 @@
 
 .project-heading-view-all a {
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
 }
 
 .project-heading-view-all:hover {
