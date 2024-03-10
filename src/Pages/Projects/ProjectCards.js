@@ -21,6 +21,7 @@ function ProjectCards(props) {
     </Card>
   );
 }
+
 ProjectCards.propTypes = {
   title: PropTypes.string.isRequired,
   imgPath: PropTypes.string.isRequired,

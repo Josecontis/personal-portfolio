@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { BsLink } from "react-icons/bs";
@@ -23,5 +24,12 @@ function BlogsCards(props) {
     </a>
   );
 }
+
+BlogsCards.propTypes = {
+  title: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  imgPath: PropTypes.string.isRequired,
+  site: PropTypes.string.isRequired,
+};
 
 export default BlogsCards;

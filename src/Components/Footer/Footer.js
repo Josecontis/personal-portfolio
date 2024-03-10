@@ -10,13 +10,14 @@ export const Footer = () => {
       <Row>
         <Col md="4">
           <div className="footer-copyright">
-            Designed and Developed by
-            <div className="footer-signature">Giuseppe Conticchio</div>
+            Copyright © {year} <div className="footer-signature">GC</div>
           </div>
         </Col>
+        <Col md="4" />
         <Col md="4">
           <div className="footer-copyright">
-            Copyright © {year} <div className="footer-signature">GC</div>
+            Designed and Developed by
+            <div className="footer-signature">Giuseppe Conticchio</div>
           </div>
         </Col>
       </Row>

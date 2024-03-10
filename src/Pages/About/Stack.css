@@ -6,7 +6,7 @@
     border: 2px solid var(--text-color);
     vertical-align: middle;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
     display: table;
     box-shadow: 0px 0px 18px 2px var(--scrollbar-color);
     overflow: hidden;

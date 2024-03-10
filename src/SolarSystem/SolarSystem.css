@@ -235,37 +235,37 @@
 }
 
 .earth-spin {
-    animation: spin-right 20s linear infinite;
+    animation: spin-right 4s linear infinite;
 }
 
 .moon-spin {
-    animation: spin-right 2s linear infinite;
+    animation: spin-right 0.7s linear infinite;
 }
 
 .mercury-spin {
-    animation: spin-right 10s linear infinite;
+    animation: spin-right 2.264s linear infinite;
 }
 
 .venus-spin {
-    animation: spin-right 15s linear infinite;
+    animation: spin-right 2.672s linear infinite;
 }
 
 .mars-spin {
-    animation: spin-right 25s linear infinite;
+    animation: spin-right 6.052s linear infinite;
 }
 
 .jupiter-spin {
-    animation: spin-right 30s linear infinite;
+    animation: spin-right 12.954s linear infinite;
 }
 
 .saturn-spin {
-    animation: spin-right 35s linear infinite;
+    animation: spin-right 32.07s linear infinite;
 }
 
 .uranus-spin {
-    animation: spin-right 40s linear infinite;
+    animation: spin-right 91.62s linear infinite;
 }
 
 .neptune-spin {
-    animation: spin-right 45s linear infinite;
+    animation: spin-right 180s linear infinite;
 }
