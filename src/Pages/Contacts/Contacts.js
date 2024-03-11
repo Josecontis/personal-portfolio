@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
 import StarryBackground from "../../Components/Particles/StarryBackground";
-import SolarSystem from "../../SolarSystem/SolarSystem";
+import SolarSystem from "../../Components/SolarSystem/SolarSystem";
 import AlertNotification from "./Alert/AlertNotification";
 import "./Contacts.css";
 

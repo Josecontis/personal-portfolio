@@ -141,12 +141,19 @@
   font-weight: bold;
 }
 
-.music-btn:focus {
-  outline: none;
-}
-
 .sound-false {
   animation: pulse 1s infinite;
+}
+
+
+.translate-btn {
+  color: var(--scrollbar-color);
+  background: none;
+  border: none;
+  width: 30px;
+  padding: 0;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 @keyframes pulse {
@@ -168,6 +175,11 @@
   .navbar {
     padding: 1rem 2rem;
     font-size: 1.4rem;
+    background: black;
+  }
+
+  .sticky {
+    background-color: var(--background-top-bar);
   }
 
   .navbar-nav .nav-link::after {

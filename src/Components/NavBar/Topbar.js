@@ -147,8 +147,8 @@ export const Topbar = () => {
               </div>
             </Nav.Item>
             <Nav.Item>
-              <div className="nav-link">
-                <button className="music-btn" onClick={toggleLanguage}>
+              <div className="nav-link" onClick={toggleLanguage}>
+                <button className="translate-btn" >
                   {language.toUpperCase()}
                 </button>
               </div>
