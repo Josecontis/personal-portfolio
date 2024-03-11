@@ -1,72 +1,38 @@
 {
   "topBar": {
-    "music": "Musica",
-    "bath": "Bathroom with shower and hairdryer",
-    "towel": "Bed linen and towels",
-    "wifi": "Free WI-FI",
-    "tv": "Tv LCD",
-    "entry": "Independent entrance",
-    "view": "Panormic view",
-    "clean": "Daily cleaning",
-    "safe": "Security",
-    "bagage": "Bagage"
+    "home": "Home",
+    "about": "Info",
+    "projects": "Progetti",
+    "resume": "Curriculum",
+    "contacts": "Contatti",
+    "music": "Musica"
   },
-  "imgSlider": {
-    "welcome": "Welcome",
-    "label": "Spend your moments of relaxation in the center of gravina in puglia",
-    "subLabel": "The apartment is furnished with taste and elegance",
-    "reviewCoffe": "Everything perfect. The location in the immediate vicinity of the bridge and walking distance from the center was a dream. It was clean, the hostess was very helpful.",
-    "reviewBath": "We have never stayed in such a clean environment with attention to detail! all impeccable from A to Z. Absolute hospitality and availability we will definitely return"
+  "home": {
+    "hiThere": "Ciao!",
+    "iam": "Sono",
+    "introduceMyself": "LASCIA CHE MI PRESENTI",
+    "aboutMe": "SU DI ME",
+    "programmingLove": "Mi sono innamorato della programmazione e almeno credo di aver imparato qualcosa... 🤷‍♂️",
+    "fluentIn": "Sono fluente in classici come",
+    "fieldOfInterestsPart1": "I miei interessi sono la costruzione di nuove",
+    "fieldOfInterestsPart2": "e anche in settori correlati all' ",
+    "fieldOfInterestsPart3": ".",
+    "passionForDevelopingPart1": "Quando possibile, applico anche la mia passione nello sviluppo di prodotti con",
+    "passionForDevelopingPart2": "e",
+    "passionForDevelopingPart3": "come",
+    "findMe": "TROVAMI SU",
+    "connectWithMe": "Sentiti libero di",
+    "tags": {
+      "connectWithMe": " collegarti con me",
+      "fluentIn": " Typescript, Javascript e Java.",
+      "webTechnologiesAndProducts": "Tecnologie e Prodotti Web",
+      "deepLearningAndNLP": "Apprendimento Profondo e Elaborazione del Linguaggio Naturale.",
+      "nodeJs": "Node.js",
+      "modernJSFrameworks": "Librerie e Framework JavaScript Moderni",
+      "reactAndNextJs": "React.js e Next.js"
+    }
   },
-  "splitter": {
-    "servicesTitle": "Services",
-    "servicesSubTitle": "All our rooms are furnished with taste, elegance and equipped with",
-    "placesTitle": "Places to visit",
-    "placesSubTitle": "What to see in Gravina in Puglia",
-    "locationTitle": "Where we are",
-    "locationSubTitle": "Via Giudice Montea 3, 70024 Gravina in Puglia, Italy",
-    "contactsTitle": "Contacts",
-    "contactsSubTitle1": "Fill out the form below. Alternatively, contact us at ",
-    "contactsSubTitle2": "or write to ",
-    "button": "viewpoint nearby",
-    "vrButton": "Online tour"
-  },
-  "contacts": {
-    "name": "Name*",
-    "email": "E-Mail*",
-    "object": "Subject*",
-    "message": "Message*",
-    "send": "Send"
-  },
-
   "footer": {
-    "title": "Il Belvedere holiday home Via Giudice Montea, 70024 Gravina in Puglia BA",
-    "cpyr": "All rights reserved | Bed & Breakfast IL BELVEDERE"
-  },
-  "alert": {
-    "success": "E-MAIL SEND SUCCESSFULL",
-    "error": "ISSUE SENDING E-MAIL"
-  },
-  "informations": {
-    "rooms": "The apartment consists of 1 bedroom, 1 bathroom, with bed linen and towels, flat screen TV, dining area with fully equipped kitchen and balcony overlooking the deck. Guests at the apartment can enjoy an Italian breakfast.",
-    "place": "The Belvedere is located in the historic center of Gravina a stone's throw from the aqueduct bridge. Equipped with every comfort. The area is very nice and quiet. Its location is excellent for easily reaching the main points to visit in our area."
-  },
-  "modal": {
-    "air": "Each room has state-of-the-art air conditioning systems to ensure fresh and pleasant stays.",
-    "bath": "Equipped with two bathrooms with shower, towels, soaps and hair dryer.",
-    "towel": "Enjoy fresh sheets and towels.",
-    "wifi": "Hospitality, connection and sharing. For this reason the entire structure is equipped with Wi-Fi for all guests.",
-    "tv": "For a truly superior hospitality experience, each room is equipped with two televisions to offer entertainment, leisure and information.",
-    "entry": "For greater privacy and tranquility, guests will have guaranteed independent access to the structure.",
-    "view": "The main balcony and the window offer a panoramic view of the ravine and the aqueduct bridge.",
-    "clean": "Each room has daily cleaning services, with the possibility of using the laundry service.",
-    "safe": "For safety reasons, the property is equipped with Fire Extinguishers, CCTV cameras, 24-hour security, Safe.",
-    "bagage": "Space needed to store travel luggage."
-  },
-  "validation": {
-    "email": "Not valid format."
-  },
-  "whatsapp": {
-    "message": "Good morning! I need more info about Bed and Breakfast il Belvedere."
+    "drawnAndDeveloped": "Disegnato e Sviluppato da"
   }
 }

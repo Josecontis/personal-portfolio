@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
@@ -28,14 +29,14 @@ export const Home = () => {
             </Col>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!
+                {t("home.hiThere")}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
               <h1 className="heading-name">
-                I am
+                {t("home.iam")}
                 <strong className="main-name"> CONTICCHIO GIUSEPPE</strong>
               </h1>
 
@@ -51,34 +52,31 @@ export const Home = () => {
           <Row>
             <Col md={8} className="home-about-description">
               <h1 style={{ fontSize: "2.6em" }}>
-                LET ME <span> INTRODUCE </span> MYSELF
+                {t("home.introduceMyself")}
               </h1>
               <p className="home-about-body">
-                I fell in love with programming and I have at least learnt
-                something, I think… 🤷‍♂️
+                {t("home.programmingLove")}
                 <br />
-                <br />I am fluent in classics like
+                <br />{t("home.fluentIn")}
                 <i>
-                  <b> C++, Javascript and Python. </b>
+                  <b>{t("home.tags.fluentIn")}</b>
                 </i>
                 <br />
                 <br />
-                My field of Interest s are building new&nbsp;
+                {t("home.fieldOfInterestsPart1")}
                 <i>
-                  <b>Web Technologies and Products </b> and also in areas
-                  related to
-                  <b>&nbsp;Deep Learning and Natural Launguage Processing.</b>
+                  <b>{t("home.tags.webTechnologiesAndProducts")}</b>{t("home.fieldOfInterestsPart2")}
+                  <b>{t("home.tags.deepLearningAndNLP")}</b>
                 </i>
                 <br />
                 <br />
-                Whenever possible, I also apply my passion for developing
-                products with <b>Node.js</b> and&nbsp;
+                {t("home.passionForDevelopingPart1")}<b>{t("home.tags.nodeJs")}</b>  {t("home.passionForDevelopingPart2")}
                 <i>
-                  <b>Modern Javascript Library and Frameworks</b>
+                  <b>{t("home.tag.modernJSFrameworks")}</b>
                 </i>
-                &nbsp;like
+                {t("home.passionForDevelopingPart3")}
                 <i>
-                  <b> React.js and Next.js</b>
+                  <b>{t("home.tags.reactAndNextJs")}</b>
                 </i>
               </p>
             </Col>
@@ -92,9 +90,9 @@ export const Home = () => {
           </Row>
           <Row>
             <Col md={12} className="home-about-social">
-              <h1>FIND ME ON</h1>
+              <h1>{t("home.findMe")}</h1>
               <p>
-                Feel free to <b>connect </b>with me
+                {t("home.connectWithMe")} <b>{t("home.tags.connectWithMe")}</b>
               </p>
               <ul className="home-about-social-links">
                 <li className="social-icons">

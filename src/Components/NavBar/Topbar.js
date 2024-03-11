@@ -6,7 +6,7 @@ import { CgCoffee, CgHeadset } from "react-icons/cg";
 import { useNavigate } from "react-router-dom";
 import logo from "../../Assets/header-logo.svg";
 
-import i18next from "i18next";
+import i18next, { t } from "i18next";
 import {
   AiOutlineFundProjectionScreen,
   AiOutlineHome,
@@ -79,7 +79,7 @@ export const Topbar = () => {
               }}
             >
               <AiOutlineHome style={{ marginBottom: "2px" }} />
-              Home
+              {t("topBar.home")}
             </Nav.Item>
 
             <Nav.Item
@@ -90,7 +90,7 @@ export const Topbar = () => {
               }}
             >
               <AiOutlineUser style={{ marginBottom: "2px" }} />
-              About
+              {t("topBar.about")}
             </Nav.Item>
 
             <Nav.Item
@@ -101,7 +101,7 @@ export const Topbar = () => {
               }}
             >
               <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />
-              Projects
+              {t("topBar.projects")}
             </Nav.Item>
 
             <Nav.Item
@@ -112,7 +112,7 @@ export const Topbar = () => {
               }}
             >
               <CgFileDocument style={{ marginBottom: "2px" }} />
-              Resume
+              {t("topBar.resume")}
             </Nav.Item>
 
             <Nav.Item
@@ -123,7 +123,7 @@ export const Topbar = () => {
               }}
             >
               <CgCoffee style={{ marginBottom: "2px" }} />
-              Contacts
+              {t("topBar.contacts")}
             </Nav.Item>
 
             <Nav.Item>

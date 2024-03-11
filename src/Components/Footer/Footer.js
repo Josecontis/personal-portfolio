@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./Footer.css";
@@ -16,7 +17,7 @@ export const Footer = () => {
         <Col md="4" />
         <Col md="4">
           <div className="footer-copyright">
-            Designed and Developed by
+            {t("footer.drawnAndDeveloped")}
             <div className="footer-signature">Giuseppe Conticchio</div>
           </div>
         </Col>
