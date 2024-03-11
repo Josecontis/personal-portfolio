@@ -38,11 +38,11 @@ export const About = () => {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
-        <h1>
+        <h1 style={{ marginLeft: "12px" }}>
           Professional <b>Skillset </b>
         </h1>
         <Techstack />
-        <h1>
+        <h1 style={{ marginLeft: "12px" }}>
           <b>Tools</b> I use
         </h1>
         <Toolstack />

@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import PropTypes from "prop-types";
 import React from "react";
 import "./AlertNotification.css";
@@ -7,8 +8,8 @@ function AlertNotification(props) {
     <div className={props.Success ? "alert-success" : "alert-error"}>
       <span>
         {props.Success
-          ? "Messaggio inviato con successo!"
-          : "Errore nell'invio del messaggio."}
+          ? t("alert.success")
+          : t("alert.error")}
       </span>
     </div>
   );

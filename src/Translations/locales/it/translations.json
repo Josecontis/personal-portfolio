@@ -12,20 +12,20 @@
     "iam": "Sono",
     "introduceMyself": "LASCIA CHE MI PRESENTI",
     "aboutMe": "SU DI ME",
-    "programmingLove": "Mi sono innamorato della programmazione e almeno credo di aver imparato qualcosa... 🤷‍♂️",
+    "programmingLove": "Mi sono innamorato della programmazione e ho potuto sviluppare competenze nel campo dell'informatica 💻",
     "fluentIn": "Sono fluente in classici come",
     "fieldOfInterestsPart1": "I miei interessi sono la costruzione di nuove",
     "fieldOfInterestsPart2": "e anche in settori correlati all' ",
     "fieldOfInterestsPart3": ".",
-    "passionForDevelopingPart1": "Quando possibile, applico anche la mia passione nello sviluppo di prodotti con",
-    "passionForDevelopingPart2": "e",
-    "passionForDevelopingPart3": "come",
+    "passionForDevelopingPart1": "Quando possibile, applico anche la mia passione nello sviluppo di prodotti con ",
+    "passionForDevelopingPart2": " e ",
+    "passionForDevelopingPart3": " come ",
     "findMe": "TROVAMI SU",
     "connectWithMe": "Sentiti libero di",
     "tags": {
       "connectWithMe": " collegarti con me",
       "fluentIn": " Typescript, Javascript e Java.",
-      "webTechnologiesAndProducts": "Tecnologie e Prodotti Web",
+      "webTechnologiesAndProducts": "Tecnologie e Prodotti Web ",
       "deepLearningAndNLP": "Apprendimento Profondo e Elaborazione del Linguaggio Naturale.",
       "nodeJs": "Node.js",
       "modernJSFrameworks": "Librerie e Framework JavaScript Moderni",
@@ -34,5 +34,51 @@
   },
   "footer": {
     "drawnAndDeveloped": "Disegnato e Sviluppato da"
+  },
+  "contacts": {
+    "keepContact1": "Rimani in ",
+    "keepContact2": "contatto ",
+    "keepContact3": "con me",
+    "name": "Nome",
+    "email": "E-Mail",
+    "object": "Oggetto",
+    "message": "Messaggio",
+    "send": "INVIA"
+  },
+  "alert": {
+    "success": "Messaggio inviato con successo!",
+    "error": "Errore nell'invio del messaggio"
+  },
+  "projects": {
+    "heading": {
+      "title": "I miei recenti ",
+      "subtitle": "Ecco alcuni progetti su cui ho lavorato."
+    },
+    "viewAll": "Vedi tutti",
+    "projectCards": {
+      "fmdEr": {
+        "title": "FMD-ER",
+        "description1": "Applicazione sviluppata per l'emergenza COVID-19 all'università, divisa in due fasi:",
+        "description2": "Analisi del volto di qualsiasi individuo per verificare la presenza o l'assenza di una mascherina chirurgica.",
+        "description3": "Riconoscimento dell'emozione di un individuo, indipendentemente dalla presenza di una mascherina."
+      },
+      "thesis": {
+        "title": "TESI DI LAUREA IN RETI INFORMATICHE",
+        "description": "Tesi per valutare se l'approccio a doppia propagazione usando regole sia in grado di estrarre la direzione della rabbia nei commenti dei programmatori."
+      },
+      "bandb": {
+        "title": "SITO WEB BED AND BREAKFAST",
+        "description": "Sito web per il B&B Il Belvedere, un affascinante bed and breakfast situato nel pittoresco paese di Gravina in Puglia, Italia. Il sito web è stato realizzato con cura con moderne tecnologie web, tra cui codice React.js, HTML, CSS e JavaScript, garantendo un'esperienza elegante e user-friendly per i visitatori."
+      },
+      "housePricePred": {
+        "title": "PREVISIONE E CLASSIFICAZIONE DEI PREZZI DELLE CASE",
+        "description": "Il progetto ha analizzato un dataset di informazioni immobiliari da Daegu, Corea del Sud. Le operazioni includevano preprocessing dei dati, estrazione delle caratteristiche, implementazione di algoritmi per classificazione e regressione, testing, metriche di valutazione, ottimizzazione degli iperparametri e ulteriori test di classificatori e regressori."
+      }
+    },
+    "tags": {
+      "title": "lavori",
+      "description1": "DETEZIONE DELLA MASCHERINA:",
+      "description2": "RICONOSCIMENTO DELL'EMOZIONE:"
+    }
   }
 }

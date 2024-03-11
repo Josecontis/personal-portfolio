@@ -72,7 +72,7 @@ export const Home = () => {
                 <br />
                 {t("home.passionForDevelopingPart1")}<b>{t("home.tags.nodeJs")}</b>  {t("home.passionForDevelopingPart2")}
                 <i>
-                  <b>{t("home.tag.modernJSFrameworks")}</b>
+                  <b>{t("home.tags.modernJSFrameworks")}</b>
                 </i>
                 {t("home.passionForDevelopingPart3")}
                 <i>

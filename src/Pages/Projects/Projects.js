@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
@@ -24,10 +25,10 @@ export const Projects = () => {
         <div className="project-heading-container">
           <div className="project-heading">
             <div className="project-heading-title">
-              My Recent <b>Works </b>
+              {t("projects.heading.title")}<b>{t("projects.tags.title")}</b>
             </div>
             <p style={{ color: "white" }}>
-              Here are a few projects I&apos;ve worked on.
+              {t("projects.heading.subtitle")}
             </p>
           </div>
           <div className="project-heading-view-all">
@@ -36,7 +37,7 @@ export const Projects = () => {
               rel="noreferrer"
               href="https://github.com/Josecontis?tab=repositories"
             >
-              View all
+              {t("projects.viewAll")}
             </a>
           </div>
         </div>
@@ -45,18 +46,15 @@ export const Projects = () => {
             <ProjectCard
               imgPath={fmdEr}
               isBlog={false}
-              title="FMD-ER"
+              title={t("projects.projectCards.fmdEr.title")}
               description={
                 <>
-                  Application developed for COVID-19 emergency at university
-                  subdivided in two steps:
+                  {t("projects.projectCards.fmdEr.description1")}
                   <br />
                   <br />
-                  FACE MASK DETECTION: Analyzing the face of any individual to
-                  verify the presence or absence of a surgical mask. <br />
+                  <b>{t("projects.tags.description1")}</b> {t("projects.projectCards.fmdEr.description2")} <br />
                   <br />
-                  EMOTION RECOGNITION: Recognizing the emotion of an individual,
-                  regardless of the presence of a mask.
+                  <b>{t("projects.tags.description2")}</b> {t("projects.projectCards.fmdEr.description3")}
                 </>
               }
               link="https://github.com/Ocen5/FMD-ER"
@@ -67,8 +65,8 @@ export const Projects = () => {
             <ProjectCard
               imgPath={thesis}
               isBlog={false}
-              title="BACHELOR'S THESIS IN COMPUTER NETWORKS"
-              description="Thesis in order to evaluate whether the dual propagation approach using rules is able to extract the direction of anger in software developers' comments."
+              title={t("projects.projectCards.thesis.title")}
+              description={t("projects.projectCards.thesis.description")}
               link="https://github.com/Josecontis/opinion_target_extraction"
             />
           </Col>
@@ -77,8 +75,8 @@ export const Projects = () => {
             <ProjectCard
               imgPath={bandb}
               isBlog={false}
-              title="B&B WEBSITE"
-              description=" Website for B&B Il Belvedere, a charming bed and breakfast nestled in the picturesque town of Gravina in Puglia, Italy. The website is meticulously crafted with modern web technologies, including React.js, HTML, CSS, and JavaScript code, ensuring an elegant and user-friendly experience for visitors. "
+              title={t("projects.projectCards.bandb.title")}
+              description={t("projects.projectCards.bandb.description")}
               link="https://github.com/Josecontis/ilbelvedere"
             />
           </Col>
@@ -87,8 +85,8 @@ export const Projects = () => {
             <ProjectCard
               imgPath={housePricePred}
               isBlog={false}
-              title="HOUSE PRICE PREDICTION AND CLASSIFICATION"
-              description="The project analyzed a dataset of housing information from Daegu, South Korea. Operations included data preprocessing, feature extraction, algorithm implementation for classification and regression, testing, evaluation metrics, hyperparameter optimization, and further testing of classifiers and regressors."
+              title={t("projects.projectCards.housePricePred.title")}
+              description={t("projects.projectCards.housePricePred.description")}
               link="https://github.com/Josecontis/House-Price-Prediction"
             />
           </Col>

@@ -1,4 +1,5 @@
 import emailjs from "@emailjs/browser";
+import { t } from "i18next";
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
@@ -77,12 +78,12 @@ export const Contacts = () => {
         {renderAlert()}
         <div className="contact-title-container">
           <div className="contact-title">
-            Keep in <b>contact</b> with me
+            {t("contacts.keepContact1")}<b>{t("contacts.keepContact2")}</b> {t("contacts.keepContact3")}
           </div>
           <div className="form-contacts-container">
             <div>
               <div className="name-form">
-                <label className="form-label">Name</label>
+                <label className="form-label">{t("contacts.name")}</label>
                 <input
                   autoComplete="off"
                   id="name"
@@ -98,7 +99,7 @@ export const Contacts = () => {
                       : "form-label"
                   }
                 >
-                  E-Mail
+                  {t("contacts.email")}
                 </label>
                 <input
                   autoComplete="off"
@@ -119,7 +120,7 @@ export const Contacts = () => {
               </div>
             </div>
             <div className="subject-form">
-              <label className="form-label">Object</label>
+              <label className="form-label">{t("contacts.object")}</label>
               <input
                 autoComplete="off"
                 id="subject"
@@ -128,7 +129,7 @@ export const Contacts = () => {
               />
             </div>
             <div className="message-form">
-              <label className="form-label">Message</label>
+              <label className="form-label">{t("contacts.message")}</label>
               <textarea
                 id="message"
                 className="form-text-area"
@@ -145,7 +146,7 @@ export const Contacts = () => {
                 setMessage("");
               }}
             >
-              SEND
+              {t("contacts.send")}
             </button>
           </div>
         </div>
