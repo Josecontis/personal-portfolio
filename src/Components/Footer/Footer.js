@@ -1,11 +1,13 @@
-import { t } from "i18next";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import "./Footer.css";
 
 export const Footer = () => {
   let date = new Date();
   let year = date.getFullYear();
+  const { t } = useTranslation();
+
   return (
     <Container fluid className="footer">
       <Row>

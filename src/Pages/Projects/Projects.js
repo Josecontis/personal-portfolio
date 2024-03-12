@@ -1,6 +1,6 @@
-import { t } from "i18next";
 import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 import bandb from "../../Assets/Projects/B&B.png";
 import fmdEr from "../../Assets/Projects/FMDER.png";
@@ -12,6 +12,7 @@ import "./Projects.css";
 
 export const Projects = () => {
   const location = useLocation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (location && location.pathname === "/projects")
@@ -25,11 +26,10 @@ export const Projects = () => {
         <div className="project-heading-container">
           <div className="project-heading">
             <div className="project-heading-title">
-              {t("projects.heading.title")}<b>{t("projects.tags.title")}</b>
+              {t("projects.heading.title")}
+              <b>{t("projects.tags.title")}</b>
             </div>
-            <p style={{ color: "white" }}>
-              {t("projects.heading.subtitle")}
-            </p>
+            <p style={{ color: "white" }}>{t("projects.heading.subtitle")}</p>
           </div>
           <div className="project-heading-view-all">
             <a
@@ -52,9 +52,11 @@ export const Projects = () => {
                   {t("projects.projectCards.fmdEr.description1")}
                   <br />
                   <br />
-                  <b>{t("projects.tags.description1")}</b> {t("projects.projectCards.fmdEr.description2")} <br />
+                  <b>{t("projects.tags.description1")}</b>{" "}
+                  {t("projects.projectCards.fmdEr.description2")} <br />
                   <br />
-                  <b>{t("projects.tags.description2")}</b> {t("projects.projectCards.fmdEr.description3")}
+                  <b>{t("projects.tags.description2")}</b>{" "}
+                  {t("projects.projectCards.fmdEr.description3")}
                 </>
               }
               link="https://github.com/Ocen5/FMD-ER"
@@ -86,7 +88,9 @@ export const Projects = () => {
               imgPath={housePricePred}
               isBlog={false}
               title={t("projects.projectCards.housePricePred.title")}
-              description={t("projects.projectCards.housePricePred.description")}
+              description={t(
+                "projects.projectCards.housePricePred.description"
+              )}
               link="https://github.com/Josecontis/House-Price-Prediction"
             />
           </Col>

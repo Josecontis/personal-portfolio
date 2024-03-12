@@ -1,7 +1,7 @@
 import emailjs from "@emailjs/browser";
-import { t } from "i18next";
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 import StarryBackground from "../../Components/Particles/StarryBackground";
 import SolarSystem from "../../Components/SolarSystem/SolarSystem";
@@ -18,6 +18,7 @@ export const Contacts = () => {
   const [rocketAnimation, setRocketAnimation] = useState(false);
 
   const location = useLocation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (location && location.pathname === "/contacts")

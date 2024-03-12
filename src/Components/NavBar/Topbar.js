@@ -6,7 +6,7 @@ import { CgCoffee, CgHeadset } from "react-icons/cg";
 import { useNavigate } from "react-router-dom";
 import logo from "../../Assets/header-logo.svg";
 
-import i18next, { t } from "i18next";
+import { useTranslation } from "react-i18next";
 import {
   AiOutlineFundProjectionScreen,
   AiOutlineHome,
@@ -19,6 +19,7 @@ import "./Topbar.css";
 
 export const Topbar = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
@@ -135,7 +136,7 @@ export const Topbar = () => {
                   style={{ marginBottom: "2px" }}
                   className={`sound-${!isPlaying}`}
                 />
-                {i18next.t("topBar.music")}
+                {t("topBar.music")}
                 <button
                   className="music-btn"
                   onClick={() => {
@@ -148,7 +149,7 @@ export const Topbar = () => {
             </Nav.Item>
             <Nav.Item>
               <div className="nav-link" onClick={toggleLanguage}>
-                <button className="translate-btn" >
+                <button className="translate-btn">
                   {language.toUpperCase()}
                 </button>
               </div>

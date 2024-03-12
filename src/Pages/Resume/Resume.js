@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
+import { useTranslation } from "react-i18next";
 import { AiOutlineDownload } from "react-icons/ai";
 import { useLocation } from "react-router-dom";
 import StarryBackground from "../../Components/Particles/StarryBackground";
@@ -9,6 +10,7 @@ import Resumecontent from "./ResumeContent";
 
 export const Resume = () => {
   const location = useLocation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (location && location.pathname === "/resume")

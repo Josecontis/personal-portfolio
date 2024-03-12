@@ -59,7 +59,7 @@
     "projectCards": {
       "fmdEr": {
         "title": "FMD-ER",
-        "description": "Application developed for the COVID-19 emergency at the university, divided into two phases:",
+        "description1": "Application developed for the COVID-19 emergency at the university, divided into two phases:",
         "description2": "Analysis of the face of any individual to verify the presence or absence of a surgical mask.",
         "description3": "Recognition of an individual's emotion, regardless of the presence of a mask."
       },

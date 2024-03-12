@@ -1,6 +1,6 @@
-import { t } from "i18next";
 import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
@@ -12,7 +12,7 @@ import Type from "./Tools/Type";
 
 export const Home = () => {
   const location = useLocation();
-
+  const { t } = useTranslation();
   useEffect(() => {
     if (location && location.pathname === "/")
       document.title = "Home | Giuseppe Conticchio";
@@ -51,13 +51,12 @@ export const Home = () => {
         <Container>
           <Row>
             <Col md={8} className="home-about-description">
-              <h1 style={{ fontSize: "2.6em" }}>
-                {t("home.introduceMyself")}
-              </h1>
+              <h1 style={{ fontSize: "2.6em" }}>{t("home.introduceMyself")}</h1>
               <p className="home-about-body">
                 {t("home.programmingLove")}
                 <br />
-                <br />{t("home.fluentIn")}
+                <br />
+                {t("home.fluentIn")}
                 <i>
                   <b>{t("home.tags.fluentIn")}</b>
                 </i>
@@ -65,12 +64,15 @@ export const Home = () => {
                 <br />
                 {t("home.fieldOfInterestsPart1")}
                 <i>
-                  <b>{t("home.tags.webTechnologiesAndProducts")}</b>{t("home.fieldOfInterestsPart2")}
+                  <b>{t("home.tags.webTechnologiesAndProducts")}</b>
+                  {t("home.fieldOfInterestsPart2")}
                   <b>{t("home.tags.deepLearningAndNLP")}</b>
                 </i>
                 <br />
                 <br />
-                {t("home.passionForDevelopingPart1")}<b>{t("home.tags.nodeJs")}</b>  {t("home.passionForDevelopingPart2")}
+                {t("home.passionForDevelopingPart1")}
+                <b>{t("home.tags.nodeJs")}</b>{" "}
+                {t("home.passionForDevelopingPart2")}
                 <i>
                   <b>{t("home.tags.modernJSFrameworks")}</b>
                 </i>
