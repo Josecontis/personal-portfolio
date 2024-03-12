@@ -26,46 +26,56 @@ export const Contacts = () => {
 
   const sendEmail = () => {
     setRocketAnimation(true);
-    emailjs
-      .send(
-        "service_dx9tuej",
-        "template_yx44vvu",
-        {
-          from_name: name,
-          to_name: "peppeco98@gmail.com",
-          message: message,
-          reply_to: email,
-          object: object,
-        },
-        {
-          publicKey: "VuXoRd7oWTeHQg9Ns",
-        }
-      )
-      .then(
-        function (response) {
-          setTestFlag(1);
-          renderAlert();
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        function (error) {
-          setTestFlag(-1);
-          renderAlert();
-          console.log("FAILED...", error);
-        }
-      );
+    if (name === "" || message === "" || email === "" || object === "") {
+      setTestFlag(2);
+    } else {
+      emailjs
+        .send(
+          "service_dx9tuej",
+          "template_yx44vvu",
+          {
+            from_name: name,
+            to_name: "peppeco98@gmail.com",
+            message: message,
+            reply_to: email,
+            object: object,
+          },
+          {
+            publicKey: "VuXoRd7oWTeHQg9Ns",
+          }
+        )
+        .then(
+          function (response) {
+            setTestFlag(1);
+            renderAlert();
+            console.log("SUCCESS!", response.status, response.text);
+          },
+          function (error) {
+            setTestFlag(-1);
+            renderAlert();
+            console.log("FAILED...", error);
+          }
+        );
+    }
   };
 
   const renderAlert = () => {
     if (!rocketAnimation && testFlag === 1) {
       return (
         <div className="alert-container">
-          <AlertNotification Success={true} />
+          <AlertNotification type={"success"} />
         </div>
       );
     } else if (!rocketAnimation && testFlag === -1) {
       return (
         <div className="alert-container">
-          <AlertNotification Success={false} />
+          <AlertNotification type={"error"} />
+        </div>
+      );
+    } else if (!rocketAnimation && testFlag === 2) {
+      return (
+        <div className="alert-container">
+          <AlertNotification type={"info"} />
         </div>
       );
     }
@@ -78,7 +88,8 @@ export const Contacts = () => {
         {renderAlert()}
         <div className="contact-title-container">
           <div className="contact-title">
-            {t("contacts.keepContact1")}<b>{t("contacts.keepContact2")}</b> {t("contacts.keepContact3")}
+            {t("contacts.keepContact1")}
+            <b>{t("contacts.keepContact2")}</b> {t("contacts.keepContact3")}
           </div>
           <div className="form-contacts-container">
             <div>
@@ -137,6 +148,7 @@ export const Contacts = () => {
               />
             </div>
             <button
+              disabled={!validation && email !== ""}
               className="form-button"
               onClick={(e) => {
                 sendEmail(e);

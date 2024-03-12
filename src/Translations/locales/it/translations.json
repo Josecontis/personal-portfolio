@@ -47,7 +47,8 @@
   },
   "alert": {
     "success": "Messaggio inviato con successo!",
-    "error": "Errore nell'invio del messaggio"
+    "error": "Errore nell'invio del messaggio",
+    "info": "Inserisci tutti i campi"
   },
   "projects": {
     "heading": {

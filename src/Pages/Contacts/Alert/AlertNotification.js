@@ -5,17 +5,13 @@ import "./AlertNotification.css";
 
 function AlertNotification(props) {
   return (
-    <div className={props.Success ? "alert-success" : "alert-error"}>
-      <span>
-        {props.Success
-          ? t("alert.success")
-          : t("alert.error")}
-      </span>
+    <div className={`alert-${props.type}`}>
+      <span>{t(`alert.${props.type}`)}</span>
     </div>
   );
 }
 AlertNotification.propTypes = {
-  Success: PropTypes.bool.isRequired,
+  type: PropTypes.string.isRequired,
 };
 
 export default AlertNotification;
