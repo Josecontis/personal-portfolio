@@ -32,7 +32,7 @@ export const About = () => {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <b>I am</b>
+              {t("about.pre")} <b> {t("about.tags.pre1")}</b>
             </h1>
             <Aboutcard />
           </Col>
@@ -41,11 +41,11 @@ export const About = () => {
           </Col>
         </Row>
         <h1 style={{ marginLeft: "12px" }}>
-          Professional <b>Skillset </b>
+          {t("about.section")} <b>{t("about.tags.skillset")} </b>
         </h1>
         <Techstack />
         <h1 style={{ marginLeft: "12px" }}>
-          <b>Tools</b> I use
+          <b> {t("about.section1")}</b> {t("about.tags.use")}
         </h1>
         <Toolstack />
       </Container>

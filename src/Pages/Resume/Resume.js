@@ -70,7 +70,7 @@ export const Resume = () => {
           <Col md={6} className="resume-right">
             <h3 className="resume-title">Education</h3>
             <Resumecontent
-              title="IHigh School Diploma in Computer Science - Galieo Galilei, Altamura "
+              title="High School Diploma in Computer Science - Galieo Galilei, Altamura "
               date="September 2012 - June 2018"
               content={[`Vote 80/100`]}
             />

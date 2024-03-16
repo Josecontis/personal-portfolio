@@ -81,5 +81,93 @@
       "description1": "DETEZIONE DELLA MASCHERINA:",
       "description2": "RICONOSCIMENTO DELL'EMOZIONE:"
     }
+  },
+  "about": {
+    "pre": "Conosci chi",
+    "section": "Competenze",
+    "section1": "Strumenti che",
+    "title": "Ciao a tutti, sono",
+    "place": "da Gravina in Puglia, Italia.",
+    "description": "Sono un",
+    "description1": " Abile nel lavoro di squadra multidisciplinare, collaborando con designer, analisti e stakeholder per creare soluzioni software efficaci che soddisfino le esigenze dei clienti. Attivamente alla ricerca di opportunità per migliorare le competenze e rimanere aggiornato sulle tendenze e le tecnologie del settore.",
+    "description2": "Oltre alla codifica, alcune altre attività che amo fare!",
+    "hobby": "Dipinti Artistici",
+    "hobby1": "Suonare la chitarra e altri strumenti",
+    "hobby2": "Progettazione 3D e scultura digitale in Blender e creazione",
+    "phrase": "Mi impegno per costruire cose che fanno la differenza!",
+    "tags": {
+      "pre1": "Sono",
+      "skillset": "professionali",
+      "use": "utilizzo"
+    }
+  },
+  "resume": {
+    "experience": {
+      "title": "Esperienza",
+      "entries": [
+        {
+          "title": "E-commerce - BIOLAND",
+          "date": "Giugno 2016 - Settembre 2018",
+          "content": [
+            "Creazione di inserzioni su siti di e-commerce",
+            "Gestione del sito di e-commerce www.puladifarro.com",
+            "Sviluppo del database per il sito di bucce di farro",
+            "Newsletter per i prodotti di bucce di farro, utilizzando Mozilla Thunderbird e i suoi plug-in"
+          ]
+        },
+        {
+          "title": "Full-stack developer - MACNIL",
+          "date": "Marzo 2021 - Oggi",
+          "content": [
+            "Team di sviluppo software che adotta la metodologia AGILE per la progettazione e lo sviluppo di applicazioni web e mobili nell'IoT (Internet of Things), Automotive, Fleet Management."
+          ]
+        }
+      ]
+    },
+    "extracurricular": {
+      "title": "Attività Extracurriculari",
+      "entries": [
+        {
+          "title": "Corso di Inglese - Cambridge B2",
+          "content": [
+            "Questo corso offre un approccio completo e strutturato per migliorare la competenza in lingua inglese a livello upper-intermediate."
+          ]
+        },
+        {
+          "title": "Riparazioni di telefoni e PC",
+          "content": [
+            "Riparazione software e sostituzione di componenti hardware su telefoni cellulari e computer."
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "Educazione",
+      "entries": [
+        {
+          "title": "Diploma di Scuola Superiore in Informatica - Galileo Galilei, Altamura",
+          "date": "Settembre 2012 - Giugno 2018",
+          "content": ["Voto 80/100"]
+        },
+        {
+          "title": "Laurea triennale in Informatica - Università di Bari Aldo Moro",
+          "date": "Ottobre 2018 - Marzo 2021",
+          "content": ["Voto 105/110"]
+        }
+      ]
+    },
+    "achievements": {
+      "title": "Riconoscimenti e Premi",
+      "entries": [
+        {
+          "content": [
+            "Certificato di inglese B2",
+            "Certificato di partecipazione al corso per la sicurezza e la protezione della salute dei lavoratori",
+            "Corso di formazione specifica - basso rischio",
+            "Certificato di partecipazione al corso di alternanza scuola-lavoro"
+          ]
+        }
+      ]
+    }
   }
 }

@@ -81,5 +81,93 @@
       "description1": "FACE MASK DETECTION:",
       "description2": "EMOTION RECOGNITION:"
     }
+  },
+  "about": {
+    "pre": "Know Who",
+    "section": "Professional",
+    "section1": "I am",
+    "title": "Hi Everyone, I'm",
+    "place": "from Gravina in Puglia, Italy.",
+    "description": "I'm a",
+    "description1": " Proficient in multidisciplinary teamwork, collaborating with designers, analysts, and stakeholders to craft effective software solutions that meet client needs. Actively seeking opportunities to enhance skills and stay updated on industry trends and technologies.",
+    "description2": "Apart from coding, some other activities that I love to do!",
+    "hobby": "Artistic Paintings",
+    "hobby1": "Playing Guitar, and other instruments",
+    "hobby2": "3D Design and digital sculpting in Blender and creation",
+    "phrase": "Strive to build things that make a difference!",
+    "tags": {
+      "pre1": "I am",
+      "skillset": "skillset",
+      "use": "I use"
+    }
+  },
+  "resume": {
+    "experience": {
+      "title": "Experience",
+      "entries": [
+        {
+          "title": "E-commerce - BIOLAND",
+          "date": "June 2016 - September 2018",
+          "content": [
+            "Creation of listings on e-commerce sites",
+            "Management of the e-commerce website www.puladifarro.com",
+            "Development of the database for the spelt husks website",
+            "Newsletter for spelt husk products, using Mozilla Thunderbird and its plug-ins"
+          ]
+        },
+        {
+          "title": "Full-stack developer - MACNIL",
+          "date": "March 2021 - Present",
+          "content": [
+            "Software development team adopting the AGILE methodology for the design and development of web and mobile applications in IoT (Internet of Things), Automotive, Fleet Management."
+          ]
+        }
+      ]
+    },
+    "extracurricular": {
+      "title": "Extracurricular Activities",
+      "entries": [
+        {
+          "title": "English Course - Cambridge B2",
+          "content": [
+            "This course offers a comprehensive and structured approach to improving English proficiency at the upper-intermediate level."
+          ]
+        },
+        {
+          "title": "Phone and PC repairs",
+          "content": [
+            "Software repair and replacement of hardware components on mobile phones and computers."
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "entries": [
+        {
+          "title": "High School Diploma in Computer Science - Galileo Galilei, Altamura",
+          "date": "September 2012 - June 2018",
+          "content": ["Score 80/100"]
+        },
+        {
+          "title": "Bachelor's degree in Computer Science - University of Bari Aldo Moro",
+          "date": "October 2018 - March 2021",
+          "content": ["Score 105/110"]
+        }
+      ]
+    },
+    "achievements": {
+      "title": "Achievements and Awards",
+      "entries": [
+        {
+          "content": [
+            "English B2 Certificate",
+            "Certificate of participation in the course for safety and protection of workers' health",
+            "Specific training course - low risk",
+            "Certificate of attendance of the school-work alternation course"
+          ]
+        }
+      ]
+    }
   }
 }

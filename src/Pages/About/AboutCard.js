@@ -1,38 +1,40 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import { useTranslation } from "react-i18next";
 import { ImPointRight } from "react-icons/im";
 import "./AboutCard.css";
 
 function AboutCard() {
+  const { t } = useTranslation();
   return (
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am
+            {t("about.title")}
             <b> Conticchio Giuseppe </b>
-            from <b> Gravina in Puglia, Italy.</b>
-            <br />I am a Full-stack software developer.
+            {t("about.place")}
+            <br />
+            {t("about.description")} <b>Full-stack software developer</b>.
+            {t("about.description1")}
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            {t("about.description2")}
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight className="about-icon" /> &nbsp; Playing Games
+              <ImPointRight className="about-icon" /> &nbsp; {t("about.hobby")}
             </li>
             <li className="about-activity">
-              <ImPointRight className="about-icon" /> &nbsp; Playing Guitar, and
-              other instrument
+              <ImPointRight className="about-icon" /> &nbsp; {t("about.hobby1")}
             </li>
             <li className="about-activity">
-              <ImPointRight className="about-icon" /> &nbsp; 3D Design and
-              digital sculpting in Blender and creation
+              <ImPointRight className="about-icon" /> &nbsp; {t("about.hobby2")}
             </li>
           </ul>
 
           <p className="about-phrase">
-            &quot;Strive to build things that make a difference!&quot;
+            <b>&quot;{t("about.phrase")}&quot;</b>
           </p>
           <footer className="blockquote-footer">Giuseppe</footer>
         </blockquote>

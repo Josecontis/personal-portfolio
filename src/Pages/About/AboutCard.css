@@ -72,10 +72,6 @@
   }
 }
 
-.about-phrase {
-  color: var(--text-color);
-}
-
 .quote-card-view {
   border: none;
   color: var(--white-color);
