@@ -14,8 +14,8 @@ export const Resume = () => {
 
   useEffect(() => {
     if (location && location.pathname === "/resume")
-      document.title = "Resume | Giuseppe Conticchio";
-  }, [location]);
+      document.title = `${t("topBar.resume")} | Giuseppe Conticchio`;
+  }, [location, t]);
 
   return (
     <Container fluid className="resume-section">
@@ -30,63 +30,58 @@ export const Resume = () => {
             target="_blank"
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;{t("resume.download")}
           </Button>
         </Row>
         <Row className="resume">
           <Col md={6} className="resume-left">
-            <h3 className="resume-title">Experience</h3>
+            <h3 className="resume-title">{t("resume.experience.title")}</h3>
             <Resumecontent
-              title="E-commerce - BIOLAND"
-              date="June 2016 - September 2018"
+              title={t("resume.experience.entries.title")}
+              date={t("resume.experience.entries.date")}
               content={[
-                "Creating Listings on E-Commerce Sites",
-                "E-commerce website management ww.puladifarro.com",
-                "Database development for spelt husks site",
-                "Newsletter for spelt husk products, using mozilla thunderbird and its plug-ins",
+                t("resume.experience.entries.content.list"),
+                t("resume.experience.entries.content.list1"),
+                t("resume.experience.entries.content.list2"),
+                t("resume.experience.entries.content.list3"),
               ]}
             />
             <Resumecontent
-              title="Full-stack developer - MACNIL"
-              date="March 2021 - Today"
-              content={[
-                "Software development team that adopts the AGILE methodology for the design and development of web and mobile applications in the IoT (Internet of Things), Automotive, Fleet Management.",
-              ]}
+              title={t("resume.experience.entries.title1")}
+              date={t("resume.experience.entries.date1")}
+              content={[t("resume.experience.entries.content1")]}
             />
-            <h3 className="resume-title">Extracurricular Activities</h3>
+            <h3 className="resume-title">
+              {t("resume.extracurricular.title")}
+            </h3>
             <Resumecontent
-              title="English Course - Cambridge B2"
-              content={[
-                "This course offers a comprehensive and structured approach to improving English proficiency at the upper-intermediate level.",
-              ]}
+              title={t("resume.extracurricular.entries.title")}
+              content={[t("resume.extracurricular.entries.content")]}
             />
             <Resumecontent
-              title="Phone and PC repairs"
-              content={[
-                "Software repair and replacement of hardware components on mobile phones and computers.",
-              ]}
+              title={t("resume.extracurricular.entries.title1")}
+              content={[t("resume.extracurricular.entries.content1")]}
             />
           </Col>
           <Col md={6} className="resume-right">
-            <h3 className="resume-title">Education</h3>
+            <h3 className="resume-title">{t("resume.education.title")}</h3>
             <Resumecontent
-              title="High School Diploma in Computer Science - Galieo Galilei, Altamura "
-              date="September 2012 - June 2018"
-              content={[`Vote 80/100`]}
+              title={t("resume.education.entries.title")}
+              date={t("resume.education.entries.date")}
+              content={[t("resume.education.entries.content")]}
             />
             <Resumecontent
-              title="Bachelor's degree in computer science - University of Bari Aldo Moro"
-              date="October 2018 - March 2021"
-              content={["Vote 105/110"]}
+              title={t("resume.education.entries.title1")}
+              date={t("resume.education.entries.date1")}
+              content={[t("resume.education.entries.content1")]}
             />
-            <h3 className="resume-title">Ranks and Achivements</h3>
+            <h3 className="resume-title">{t("resume.achievements.title")}</h3>
             <Resumecontent
-              title=""
               content={[
-                "B2 English Certificate",
-                "Certificate of participation in the course for safety and protection of workers' health",
-                "Specific training course - low risk",
-                "Certificate of attendance of the school-work alternation course",
+                t("resume.achievements.entries.content.list"),
+                t("resume.achievements.entries.content.list1"),
+                t("resume.achievements.entries.content.list2"),
+                t("resume.achievements.entries.content.list3"),
               ]}
             />
           </Col>
@@ -100,7 +95,7 @@ export const Resume = () => {
             target="_blank"
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;{t("resume.download")}
           </Button>
         </Row>
       </Container>

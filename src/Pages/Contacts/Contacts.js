@@ -22,8 +22,8 @@ export const Contacts = () => {
 
   useEffect(() => {
     if (location && location.pathname === "/contacts")
-      document.title = "Contacts | Giuseppe Conticchio";
-  }, [location]);
+      document.title = `${t("topBar.contacts")} | Giuseppe Conticchio`;
+  }, [location, t]);
 
   const sendEmail = () => {
     setRocketAnimation(true);

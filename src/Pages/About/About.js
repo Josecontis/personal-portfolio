@@ -15,8 +15,8 @@ export const About = () => {
 
   useEffect(() => {
     if (location && location.pathname === "/about")
-      document.title = "About | Giuseppe Conticchio";
-  }, [location]);
+      document.title = `${t("topBar.about")} | Giuseppe Conticchio`;
+  }, [location, t]);
 
   return (
     <Container fluid className="about-section">

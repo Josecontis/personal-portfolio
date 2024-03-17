@@ -1,3 +1,4 @@
+import i18next from "i18next";
 import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
@@ -16,8 +17,8 @@ export const Projects = () => {
 
   useEffect(() => {
     if (location && location.pathname === "/projects")
-      document.title = "Projects | Giuseppe Conticchio";
-  }, [location]);
+      document.title = `${t("topBar.projects")} | Giuseppe Conticchio`;
+  }, [location, t]);
 
   return (
     <Container fluid className="project-section">
@@ -25,10 +26,17 @@ export const Projects = () => {
       <Container>
         <div className="project-heading-container">
           <div className="project-heading">
-            <div className="project-heading-title">
-              {t("projects.heading.title")}
-              <b>{t("projects.tags.title")}</b>
-            </div>
+            {i18next.language === "it" ? (
+              <div className="project-heading-title">
+                <b>{t("projects.tags.title")}</b>
+                {t("projects.heading.title")}
+              </div>
+            ) : (
+              <div className="project-heading-title">
+                {t("projects.heading.title")}
+                <b>{t("projects.tags.title")}</b>
+              </div>
+            )}
             <p style={{ color: "white" }}>{t("projects.heading.subtitle")}</p>
           </div>
           <div className="project-heading-view-all">

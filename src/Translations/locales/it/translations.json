@@ -36,9 +36,9 @@
     "drawnAndDeveloped": "Disegnato e Sviluppato da"
   },
   "contacts": {
-    "keepContact1": "Rimani in ",
+    "keepContact1": "Mettiti in ",
     "keepContact2": "contatto ",
-    "keepContact3": "con me",
+    "keepContact3": "con me!",
     "name": "Nome",
     "email": "E-Mail",
     "object": "Oggetto",
@@ -52,7 +52,7 @@
   },
   "projects": {
     "heading": {
-      "title": "I miei recenti ",
+      "title": " più recenti",
       "subtitle": "Ecco alcuni progetti su cui ho lavorato."
     },
     "viewAll": "Vedi tutti",
@@ -77,7 +77,7 @@
       }
     },
     "tags": {
-      "title": "lavori",
+      "title": "Lavori",
       "description1": "DETEZIONE DELLA MASCHERINA:",
       "description2": "RICONOSCIMENTO DELL'EMOZIONE:"
     }
@@ -102,72 +102,53 @@
     }
   },
   "resume": {
+    "download": "Scarica CV",
     "experience": {
       "title": "Esperienza",
-      "entries": [
-        {
-          "title": "E-commerce - BIOLAND",
-          "date": "Giugno 2016 - Settembre 2018",
-          "content": [
-            "Creazione di inserzioni su siti di e-commerce",
-            "Gestione del sito di e-commerce www.puladifarro.com",
-            "Sviluppo del database per il sito di bucce di farro",
-            "Newsletter per i prodotti di bucce di farro, utilizzando Mozilla Thunderbird e i suoi plug-in"
-          ]
+      "entries": {
+        "title": "E-commerce - BIOLAND",
+        "date": "Giugno 2016 - Settembre 2018",
+        "content": {
+          "list": "Creazione di inserzioni su siti di e-commerce",
+          "list1": "Gestione del sito di e-commerce www.puladifarro.com",
+          "list2": "Sviluppo del database per il sito pula di farro",
+          "list3": "Newsletter per i prodotti pula di farro, utilizzando Mozilla Thunderbird e i suoi plug-in"
         },
-        {
-          "title": "Full-stack developer - MACNIL",
-          "date": "Marzo 2021 - Oggi",
-          "content": [
-            "Team di sviluppo software che adotta la metodologia AGILE per la progettazione e lo sviluppo di applicazioni web e mobili nell'IoT (Internet of Things), Automotive, Fleet Management."
-          ]
-        }
-      ]
+        "title1": "Sviluppatore full-stack - MACNIL",
+        "date1": "Marzo 2021 - Presente",
+        "content1": "Team di sviluppo software che adotta la metodologia AGILE per la progettazione e lo sviluppo di applicazioni web e mobili nell'IoT (Internet of Things), Automotive, Fleet Management."
+      }
     },
     "extracurricular": {
       "title": "Attività Extracurriculari",
-      "entries": [
-        {
-          "title": "Corso di Inglese - Cambridge B2",
-          "content": [
-            "Questo corso offre un approccio completo e strutturato per migliorare la competenza in lingua inglese a livello upper-intermediate."
-          ]
-        },
-        {
-          "title": "Riparazioni di telefoni e PC",
-          "content": [
-            "Riparazione software e sostituzione di componenti hardware su telefoni cellulari e computer."
-          ]
-        }
-      ]
+      "entries": {
+        "title": "Corso di Inglese - Cambridge B2",
+        "content": "Questo corso offre un approccio completo e strutturato per migliorare la competenza in lingua inglese a livello upper-intermediate.",
+        "title1": "Riparazioni di telefoni e PC",
+        "content1": "Riparazione software e sostituzione di componenti hardware su telefoni cellulari e computer."
+      }
     },
     "education": {
       "title": "Educazione",
-      "entries": [
-        {
-          "title": "Diploma di Scuola Superiore in Informatica - Galileo Galilei, Altamura",
-          "date": "Settembre 2012 - Giugno 2018",
-          "content": ["Voto 80/100"]
-        },
-        {
-          "title": "Laurea triennale in Informatica - Università di Bari Aldo Moro",
-          "date": "Ottobre 2018 - Marzo 2021",
-          "content": ["Voto 105/110"]
-        }
-      ]
+      "entries": {
+        "title": "Diploma di Scuola Superiore in Informatica - Galileo Galilei, Altamura",
+        "date": "Settembre 2012 - Giugno 2018",
+        "content": "Voto 80/100",
+        "title1": "Laurea triennale in Informatica - Università di Bari Aldo Moro",
+        "date1": "Ottobre 2018 - Marzo 2021",
+        "content1": "Voto 105/110"
+      }
     },
     "achievements": {
       "title": "Riconoscimenti e Premi",
-      "entries": [
-        {
-          "content": [
-            "Certificato di inglese B2",
-            "Certificato di partecipazione al corso per la sicurezza e la protezione della salute dei lavoratori",
-            "Corso di formazione specifica - basso rischio",
-            "Certificato di partecipazione al corso di alternanza scuola-lavoro"
-          ]
+      "entries": {
+        "content": {
+          "list": "Certificato di inglese B2",
+          "list1": "Certificato di partecipazione al corso per la sicurezza e la protezione della salute dei lavoratori",
+          "list2": "Corso di formazione specifica - basso rischio",
+          "list3": "Certificato di partecipazione al corso di alternanza scuola-lavoro"
         }
-      ]
+      }
     }
   }
 }

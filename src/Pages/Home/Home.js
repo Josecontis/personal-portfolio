@@ -15,8 +15,8 @@ export const Home = () => {
   const { t } = useTranslation();
   useEffect(() => {
     if (location && location.pathname === "/")
-      document.title = "Home | Giuseppe Conticchio";
-  }, [location]);
+      document.title = `${t("topBar.home")} | Giuseppe Conticchio`;
+  }, [location, t]);
 
   return (
     <section>
