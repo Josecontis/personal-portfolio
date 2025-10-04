@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "emailjs": "^4.0.1",
+    "eslint-plugin-react": "^7.37.5",
     "i18next": "^23.10.1",
     "i18next-browser-languagedetector": "^7.2.0",
     "react": "^18.2.0",

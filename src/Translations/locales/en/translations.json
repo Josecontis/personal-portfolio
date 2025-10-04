@@ -106,6 +106,12 @@
     "experience": {
       "title": "Experience",
       "entries": {
+        "title2": "Mobile Developer Flutter - MACNIL",
+        "date2": "April 2024 - Present",
+        "content2": "Mobile Flutter Developer for apps connected to Bluetooth devices and integrated with Fleet Management platforms, contributing to architecture design and the development of new cross-platform features.",
+        "title1": "Junior Developer - MACNIL",
+        "date1": "March 2021 - March 2024",
+        "content1": "Junior Developer in an AGILE team for the development and maintenance of the Fleet Manager web platform in the IoT, Automotive, and Fleet Management sectors, with activities on both front-end and back-end.",
         "title": "E-commerce - BIOLAND",
         "date": "June 2016 - September 2018",
         "content": {
@@ -113,40 +119,35 @@
           "list1": "Management of the e-commerce website www.puladifarro.com",
           "list2": "Development of the database for the spelt husks website",
           "list3": "Newsletter for spelt husk products, using Mozilla Thunderbird and its plug-ins"
-        },
-        "title1": "Full-stack developer - MACNIL",
-        "date1": "March 2021 - Present",
-        "content1": "Software development team adopting the AGILE methodology for the design and development of web and mobile applications in IoT (Internet of Things), Automotive, Fleet Management."
+        }
       }
     },
     "extracurricular": {
       "title": "Extracurricular Activities",
       "entries": {
-        "title": "English Course - Cambridge B2",
-        "content": "This course offers a comprehensive and structured approach to improving English proficiency at the upper-intermediate level.",
-        "title1": "Phone and PC repairs",
-        "content1": "Software repair and replacement of hardware components on mobile phones and computers."
+        "title": "Phone and PC Repairs",
+        "content": "Software repair and replacement of hardware components on mobile phones and computers."
       }
     },
     "education": {
       "title": "Education",
       "entries": {
+        "title1": "Bachelor's Degree in Computer Science - University of Bari Aldo Moro",
+        "date1": "October 2018 - March 2021",
+        "content1": "Score 105/110",
         "title": "High School Diploma in Computer Science - Galileo Galilei, Altamura",
         "date": "September 2012 - June 2018",
-        "content": "Score 80/100",
-        "title1": "Bachelor's degree in Computer Science - University of Bari Aldo Moro",
-        "date1": "October 2018 - March 2021",
-        "content1": "Score 105/110"
+        "content": "Score 80/100"
       }
     },
     "achievements": {
-      "title": "Achievements and Awards",
+      "title": "Certifications",
       "entries": {
         "content": {
           "list": "English B2 Certificate",
-          "list1": "Certificate of participation in the course for safety and protection of workers' health",
+          "list1": "Course for safety and protection of workers’ health",
           "list2": "Specific training course - low risk",
-          "list3": "Certificate of attendance of the school-work alternation course"
+          "list3": "Certificate of school-work alternation"
         }
       }
     }

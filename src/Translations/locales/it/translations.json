@@ -106,47 +106,49 @@
     "experience": {
       "title": "Esperienza",
       "entries": {
-        "title": "E-commerce - BIOLAND",
+        "title": "E-commerce - Bioland",
         "date": "Giugno 2016 - Settembre 2018",
         "content": {
           "list": "Creazione di inserzioni su siti di e-commerce",
-          "list1": "Gestione del sito di e-commerce www.puladifarro.com",
-          "list2": "Sviluppo del database per il sito pula di farro",
-          "list3": "Newsletter per i prodotti pula di farro, utilizzando Mozilla Thunderbird e i suoi plug-in"
+          "list1": "Gestione del sito e-commerce www.puladifarro.com",
+          "list2": "Sviluppo del database per il sito Pula di Farro",
+          "list3": "Newsletter per i prodotti Pula di Farro con Mozilla Thunderbird"
         },
-        "title1": "Sviluppatore full-stack - MACNIL",
-        "date1": "Marzo 2021 - Presente",
-        "content1": "Team di sviluppo software che adotta la metodologia AGILE per la progettazione e lo sviluppo di applicazioni web e mobili nell'IoT (Internet of Things), Automotive, Fleet Management."
+        "title1": "Junior Developer - Macnil",
+        "date1": "Marzo 2021 - Marzo 2024",
+        "content1": "Sviluppo e manutenzione della piattaforma WEB Fleet Manager nel settore IoT, Automotive e Fleet Management, con attività su front-end e back-end in un team AGILE.",
+        "title2": "Mobile Developer Flutter - Macnil",
+        "date2": "Aprile 2024 - Presente",
+        "content2": "Sviluppatore mobile Flutter per app connesse a dispositivi Bluetooth e integrate con piattaforme di Fleet Management, con contributo all’architettura e allo sviluppo di nuove feature cross-platform."
       }
     },
     "extracurricular": {
       "title": "Attività Extracurriculari",
       "entries": {
-        "title": "Corso di Inglese - Cambridge B2",
-        "content": "Questo corso offre un approccio completo e strutturato per migliorare la competenza in lingua inglese a livello upper-intermediate.",
-        "title1": "Riparazioni di telefoni e PC",
-        "content1": "Riparazione software e sostituzione di componenti hardware su telefoni cellulari e computer."
+        "title": "Riparazioni di telefoni e PC",
+        "content": "Riparazione software e sostituzione di componenti hardware su telefoni cellulari e computer."
+     
       }
     },
     "education": {
-      "title": "Educazione",
+      "title": "Formazione",
       "entries": {
         "title": "Diploma di Scuola Superiore in Informatica - Galileo Galilei, Altamura",
         "date": "Settembre 2012 - Giugno 2018",
         "content": "Voto 80/100",
-        "title1": "Laurea triennale in Informatica - Università di Bari Aldo Moro",
+        "title1": "Laurea Triennale in Informatica - Università di Bari Aldo Moro",
         "date1": "Ottobre 2018 - Marzo 2021",
         "content1": "Voto 105/110"
       }
     },
     "achievements": {
-      "title": "Riconoscimenti e Premi",
+      "title": "Certificazioni",
       "entries": {
         "content": {
-          "list": "Certificato di inglese B2",
-          "list1": "Certificato di partecipazione al corso per la sicurezza e la protezione della salute dei lavoratori",
-          "list2": "Corso di formazione specifica - basso rischio",
-          "list3": "Certificato di partecipazione al corso di alternanza scuola-lavoro"
+          "list": "Certificato di Inglese B2",
+          "list1": "Corso sicurezza e tutela della salute dei lavoratori",
+          "list2": "Corso di formazione specifica - rischio basso",
+          "list3": "Certificato di alternanza scuola-lavoro"
         }
       }
     }
