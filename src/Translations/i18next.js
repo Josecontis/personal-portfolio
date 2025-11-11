@@ -3,7 +3,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 
 const fallbackLng = ["en"];
-const availableLanguages = ["en", "it"];
+const availableLanguages = ["en", "it", "fr", "es"];
 
 const resources = {
   en: {
@@ -11,6 +11,12 @@ const resources = {
   },
   it: {
     translation: require("./locales/it/translations.json"),
+  },
+  fr: {
+    translation: require("./locales/fr/translations.json"),
+  },
+  es: {
+    translation: require("./locales/es/translations.json"),
   },
 };
 
