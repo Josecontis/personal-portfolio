@@ -1,0 +1,155 @@
+{
+  "topBar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "resume": "CV",
+    "contacts": "Contacts",
+    "music": "Musique"
+  },
+  "home": {
+    "hiThere": "Salut!",
+    "iam": "Je suis",
+    "introduceMyself": "PERMETTEZ-MOI DE ME PRÉSENTER",
+    "aboutMe": "À PROPOS DE MOI",
+    "programmingLove": "Je suis tombé amoureux de la programmation et j'ai pu développer des compétences dans le domaine de l'informatique 💻",
+    "fluentIn": "Je maîtrise les classiques comme",
+    "fieldOfInterestsPart1": "Mon domaine d'intérêt est la création de nouvelles",
+    "fieldOfInterestsPart2": "et aussi dans les domaines liés à l'",
+    "fieldOfInterestsPart3": ".",
+    "passionForDevelopingPart1": "Chaque fois que possible, j'applique également ma passion pour le développement de produits avec ",
+    "passionForDevelopingPart2": " et ",
+    "passionForDevelopingPart3": " comme ",
+    "findMe": "TROUVEZ-MOI SUR",
+    "connectWithMe": "N'hésitez pas à",
+    "tags": {
+      "connectWithMe": " vous connecter avec moi",
+      "fluentIn": " Typescript, Javascript et Java.",
+      "webTechnologiesAndProducts": "Technologies et Produits Web ",
+      "deepLearningAndNLP": "Apprentissage Profond et Traitement du Langage Naturel.",
+      "nodeJs": "Node.js",
+      "modernJSFrameworks": "Bibliothèques et Frameworks JavaScript Modernes",
+      "reactAndNextJs": "React.js et Next.js"
+    }
+  },
+  "footer": {
+    "drawnAndDeveloped": "Conçu et Développé par "
+  },
+  "contacts": {
+    "keepContact1": "Restez en ",
+    "keepContact2": "contact ",
+    "keepContact3": "avec moi!",
+    "name": "Nom",
+    "email": "E-Mail",
+    "object": "Objet",
+    "message": "Message",
+    "send": "ENVOYER"
+  },
+  "alert": {
+    "success": "Message envoyé avec succès!",
+    "error": "Erreur lors de l'envoi du message",
+    "info": "Aucun champ vide, s'il vous plaît"
+  },
+  "projects": {
+    "heading": {
+      "title": "Mes ",
+      "subtitle": "Voici quelques projets sur lesquels j'ai travaillé."
+    },
+    "viewAll": "Voir tout",
+    "projectCards": {
+      "fmdEr": {
+        "title": "FMD-ER",
+        "description1": "Application développée pour l'urgence COVID-19 à l'université, divisée en deux phases:",
+        "description2": "Analyse du visage de tout individu pour vérifier la présence ou l'absence d'un masque chirurgical.",
+        "description3": "Reconnaissance de l'émotion d'un individu, indépendamment de la présence d'un masque."
+      },
+      "thesis": {
+        "title": "THÈSE DE LICENCE EN RÉSEAUX INFORMATIQUES",
+        "description": "Thèse pour évaluer si l'approche de double propagation utilisant des règles est capable d'extraire la direction de la colère dans les commentaires des programmeurs."
+      },
+      "bandb": {
+        "title": "SITE WEB BED AND BREAKFAST",
+        "description": "Site web pour le B&B Il Belvedere, un charmant bed and breakfast niché dans la pittoresque ville de Gravina in Puglia, Italie. Le site web est méticuleusement conçu avec des technologies web modernes, incluant React.js, HTML, CSS et JavaScript, garantissant une expérience élégante et conviviale pour les visiteurs."
+      },
+      "housePricePred": {
+        "title": "PRÉDICTION ET CLASSIFICATION DES PRIX DES MAISONS",
+        "description": "Le projet a analysé un ensemble de données d'informations sur le logement de Daegu, Corée du Sud. Les opérations comprenaient le prétraitement des données, l'extraction de caractéristiques, la mise en œuvre d'algorithmes pour la classification et la régression, les tests, les métriques d'évaluation, l'optimisation des hyperparamètres et des tests supplémentaires de classificateurs et de régresseurs."
+      }
+    },
+    "tags": {
+      "title": "travaux récents",
+      "description1": "DÉTECTION DE MASQUE FACIAL:",
+      "description2": "RECONNAISSANCE D'ÉMOTION:"
+    }
+  },
+  "about": {
+    "pre": "Savoir qui",
+    "section": "Compétences",
+    "section1": "Outils que",
+    "title": "Bonjour à tous, je suis",
+    "place": "de Gravina in Puglia, Italie.",
+    "description": "Je suis un",
+    "description1": " Compétent dans le travail d'équipe multidisciplinaire, collaborant avec des designers, des analystes et des parties prenantes pour créer des solutions logicielles efficaces qui répondent aux besoins des clients. À la recherche active d'opportunités pour améliorer les compétences et rester à jour sur les tendances et les technologies de l'industrie.",
+    "description2": "En dehors du codage, voici d'autres activités que j'aime faire!",
+    "hobby": "Peintures Artistiques",
+    "hobby1": "Jouer de la Guitare et d'autres instruments",
+    "hobby2": "Conception 3D et sculpture numérique dans Blender et création",
+    "phrase": "Efforcez-vous de construire des choses qui font la différence!",
+    "tags": {
+      "pre1": "Je suis",
+      "skillset": "professionnelles",
+      "use": "j'utilise"
+    }
+  },
+  "resume": {
+    "download": "Télécharger CV",
+    "experience": {
+      "title": "Expérience",
+      "entries": {
+        "title2": "Développeur Mobile Flutter - MACNIL",
+        "date2": "Avril 2024 - Présent",
+        "content2": "Développeur mobile Flutter pour des applications connectées à des dispositifs Bluetooth et intégrées aux plateformes de Fleet Management, contribuant à la conception de l'architecture et au développement de nouvelles fonctionnalités multiplateformes.",
+        "title1": "Développeur Junior - MACNIL",
+        "date1": "Mars 2021 - Mars 2024",
+        "content1": "Développeur Junior dans une équipe AGILE pour le développement et la maintenance de la plateforme web Fleet Manager dans les secteurs IoT, Automobile et Fleet Management, avec des activités sur le front-end et le back-end.",
+        "title": "E-commerce - BIOLAND",
+        "date": "Juin 2016 - Septembre 2018",
+        "content": {
+          "list": "Création d'annonces sur des sites e-commerce",
+          "list1": "Gestion du site e-commerce www.puladifarro.com",
+          "list2": "Développement de la base de données pour le site de coques d'épeautre",
+          "list3": "Newsletter pour les produits de coques d'épeautre, en utilisant Mozilla Thunderbird et ses plugins"
+        }
+      }
+    },
+    "extracurricular": {
+      "title": "Activités Extrascolaires",
+      "entries": {
+        "title": "Réparations de Téléphones et PC",
+        "content": "Réparation logicielle et remplacement de composants matériels sur les téléphones mobiles et les ordinateurs."
+      }
+    },
+    "education": {
+      "title": "Formation",
+      "entries": {
+        "title1": "Licence en Informatique - Université de Bari Aldo Moro",
+        "date1": "Octobre 2018 - Mars 2021",
+        "content1": "Note 105/110",
+        "title": "Diplôme d'Études Secondaires en Informatique - Galileo Galilei, Altamura",
+        "date": "Septembre 2012 - Juin 2018",
+        "content": "Note 80/100"
+      }
+    },
+    "achievements": {
+      "title": "Certifications",
+      "entries": {
+        "content": {
+          "list": "Certificat d'Anglais B2",
+          "list1": "Cours de sécurité et de protection de la santé des travailleurs",
+          "list2": "Cours de formation spécifique - faible risque",
+          "list3": "Certificat d'alternance école-travail"
+        }
+      }
+    }
+  }
+}
