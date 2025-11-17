@@ -1,5 +1,5 @@
 import emailjs from "@emailjs/browser";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
@@ -126,7 +126,7 @@ export const Contacts = () => {
                     let emailTest = new RegExp(
                       "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})"
                     );
-                    email !== "" && setValidation(emailTest.test(email));
+                    e.target.value !== "" && setValidation(emailTest.test(e.target.value));
                   }}
                 />
               </div>
