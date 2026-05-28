@@ -14,7 +14,7 @@
     "aboutMe": "SOBRE MÍ",
     "programmingLove": "Me enamoré de la programación y he podido desarrollar habilidades en el campo de la informática 💻",
     "fluentIn": "Domino los clásicos como",
-    "fieldOfInterestsPart1": "Mis campos de interés son la construcción de nuevas",
+    "fieldOfInterestsPart1": "Mi campo de interés es la construcción de nuevas",
     "fieldOfInterestsPart2": "y también en áreas relacionadas con el",
     "fieldOfInterestsPart3": ".",
     "passionForDevelopingPart1": "Siempre que es posible, también aplico mi pasión por desarrollar productos con ",
@@ -38,7 +38,7 @@
   "contacts": {
     "keepContact1": "Mantente en ",
     "keepContact2": "contacto ",
-    "keepContact3": "¡conmigo!",
+    "keepContact3": "conmigo!",
     "name": "Nombre",
     "email": "E-Mail",
     "object": "Asunto",
@@ -56,8 +56,6 @@
       "subtitle": "Aquí están algunos proyectos en los que he trabajado."
     },
     "viewAll": "Ver todo",
-    "viewProject": "Ver Proyecto",
-    "viewBlog": "Ver Blog",
     "projectCards": {
       "fmdEr": {
         "title": "FMD-ER",
@@ -71,7 +69,7 @@
       },
       "bandb": {
         "title": "SITIO WEB BED AND BREAKFAST",
-        "description": "Sitio web para el B&B Il Belvedere, un encantador bed and breakfast ubicado en el pintoresco pueblo de Gravina in Puglia, Italia. El sitio web está meticulosamente diseñado con tecnologías web modernas, incluyendo React.js, HTML, CSS y JavaScript, garantizando una experiencia elegante y fácil de usar para los visitantes."
+        "description": "Sitio web para el B&B Il Belvedere, un encantador bed and breakfast ubicado en el pintoresco pueblo de Gravina in Puglia, Italia. El sitio web está meticulosamente diseñado con tecnologías web modernas, incluyendo React.js, HTML, CSS y código JavaScript, garantizando una experiencia elegante y fácil de usar para los visitantes."
       },
       "housePricePred": {
         "title": "PREDICCIÓN Y CLASIFICACIÓN DE PRECIOS DE VIVIENDAS",
@@ -91,12 +89,11 @@
     "title": "Hola a todos, soy",
     "place": "de Gravina in Puglia, Italia.",
     "description": "Soy un",
-    "role": "Full Stack Developer",
-    "description1": " Con cuatro años de experiencia en el sector Automotriz. Stack principal: Flutter, React y Java SpringBoot. La comunicación asertiva me permite abordar los problemas de forma colaborativa, creando un entorno de trabajo sereno y proactivo. Objetivo: crecer de forma estable asumiendo responsabilidades progresivas.",
-    "description2": "Aparte de programar, otras actividades que me encanta hacer:",
-    "hobby": "Pintura",
-    "hobby1": "Música",
-    "hobby2": "Modelado e impresión 3D (escultura digital en Blender y creación de planos)",
+    "description1": " Competente en trabajo en equipo multidisciplinario, colaborando con diseñadores, analistas y stakeholders para crear soluciones de software efectivas que satisfagan las necesidades de los clientes. Buscando activamente oportunidades para mejorar habilidades y mantenerse actualizado sobre tendencias y tecnologías de la industria.",
+    "description2": "Aparte de codificar, ¡otras actividades que me encanta hacer!",
+    "hobby": "Pinturas Artísticas",
+    "hobby1": "Tocar la Guitarra y otros instrumentos",
+    "hobby2": "Diseño 3D y escultura digital en Blender y creación",
     "phrase": "¡Esfuérzate por construir cosas que marquen la diferencia!",
     "tags": {
       "pre1": "Soy",
@@ -109,33 +106,37 @@
     "experience": {
       "title": "Experiencia",
       "entries": {
-        "title2": "Full Stack Developer - Macnil",
-        "date2": "2024 - Presente",
-        "content2": "Desarrollador Full Stack para aplicaciones móviles conectadas a dispositivos Bluetooth e integradas con plataformas de Fleet Management, contribuyendo a la arquitectura y al desarrollo de funcionalidades multiplataforma. Stack: Flutter, Java Spring Boot.",
-        "title1": "Desarrollador Web - Macnil",
-        "date1": "2021 - 2024",
-        "content1": "Desarrollo y mantenimiento de la plataforma web GTFleet 365 en los sectores IoT, Automotriz y Fleet Management, con actividades en Frontend y Backend en equipo AGILE. Stack: React, Node.js, Java Spring Boot, SQL, MongoDB, Cassandra.",
-        "title3": "Reparaciones de Teléfonos y PC",
-        "date3": "2018 - 2021",
-        "content3": "Reparación de software y reemplazo de componentes de hardware en teléfonos móviles y computadoras.",
-        "title": "E-commerce - Bioland",
-        "date": "2016 - 2018",
+        "title2": "Desarrollador Móvil Flutter - MACNIL",
+        "date2": "Abril 2024 - Presente",
+        "content2": "Desarrollador móvil Flutter para aplicaciones conectadas a dispositivos Bluetooth e integradas con plataformas de Fleet Management, contribuyendo al diseño de arquitectura y desarrollo de nuevas funcionalidades multiplataforma.",
+        "title1": "Desarrollador Junior - MACNIL",
+        "date1": "Marzo 2021 - Marzo 2024",
+        "content1": "Desarrollador Junior en un equipo AGILE para el desarrollo y mantenimiento de la plataforma web Fleet Manager en los sectores IoT, Automotriz y Fleet Management, con actividades en front-end y back-end.",
+        "title": "E-commerce - BIOLAND",
+        "date": "Junio 2016 - Septiembre 2018",
         "content": {
-          "list": "Gestión y desarrollo de funcionalidades para el sitio e-commerce",
-          "list1": "Gestión de la base de datos de productos y contenido",
-          "list2": "Automatización de newsletter",
-          "list3": "Soporte técnico para el mantenimiento de la plataforma web"
+          "list": "Creación de anuncios en sitios de comercio electrónico",
+          "list1": "Gestión del sitio de comercio electrónico www.puladifarro.com",
+          "list2": "Desarrollo de la base de datos para el sitio web de cáscaras de espelta",
+          "list3": "Newsletter para productos de cáscaras de espelta, usando Mozilla Thunderbird y sus complementos"
         }
+      }
+    },
+    "extracurricular": {
+      "title": "Actividades Extracurriculares",
+      "entries": {
+        "title": "Reparaciones de Teléfonos y PC",
+        "content": "Reparación de software y reemplazo de componentes de hardware en teléfonos móviles y computadoras."
       }
     },
     "education": {
       "title": "Formación",
       "entries": {
         "title1": "Licenciatura en Informática - Universidad de Bari Aldo Moro",
-        "date1": "2018 - 2021",
+        "date1": "Octubre 2018 - Marzo 2021",
         "content1": "Puntuación 105/110",
-        "title": "Diploma Técnico en Informática - ITIS Galileo Galilei, Altamura",
-        "date": "2012 - 2018",
+        "title": "Diploma de Bachillerato en Informática - Galileo Galilei, Altamura",
+        "date": "Septiembre 2012 - Junio 2018",
         "content": "Puntuación 80/100"
       }
     },
@@ -143,7 +144,10 @@
       "title": "Certificaciones",
       "entries": {
         "content": {
-          "list": "Certificado de Inglés B2 — 2024"
+          "list": "Certificado de Inglés B2",
+          "list1": "Curso de seguridad y protección de la salud de los trabajadores",
+          "list2": "Curso de formación específica - bajo riesgo",
+          "list3": "Certificado de alternancia escuela-trabajo"
         }
       }
     }

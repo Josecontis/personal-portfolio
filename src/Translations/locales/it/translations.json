@@ -109,41 +109,48 @@
     "experience": {
       "title": "Esperienza",
       "entries": {
-        "title2": "Full Stack Developer - Macnil",
-        "date2": "2024 - Presente",
-        "content2": "Sviluppatore Full Stack per applicazioni mobile connesse a dispositivi Bluetooth e integrate con piattaforme di Fleet Management, con contributo all'architettura e allo sviluppo di feature cross-platform. Stack: Flutter, Java Spring Boot.",
-        "title1": "WEB Developer - Macnil",
-        "date1": "2021 - 2024",
-        "content1": "Sviluppo e manutenzione della piattaforma WEB GTFleet 365 nel settore IoT, Automotive e Fleet Management, con attività su Frontend e Backend in team AGILE. Stack: React, Node.js, Java Spring Boot, SQL, MongoDB, Cassandra.",
-        "title3": "Riparazioni Telefoni e PC",
-        "date3": "2018 - 2021",
-        "content3": "Riparazione software e sostituzione di componenti hardware su telefoni cellulari e computer.",
         "title": "E-commerce - Bioland",
-        "date": "2016 - 2018",
+        "date": "Giugno 2016 - Settembre 2018",
         "content": {
-          "list": "Gestione e sviluppo di funzionalità per il sito e-commerce",
-          "list1": "Gestione del database prodotti e dei contenuti",
-          "list2": "Newsletter automation",
-          "list3": "Supporto tecnico al mantenimento della piattaforma web"
-        }
+          "list": "Creazione di inserzioni su siti di e-commerce",
+          "list1": "Gestione del sito e-commerce www.puladifarro.com",
+          "list2": "Sviluppo del database per il sito Pula di Farro",
+          "list3": "Newsletter per i prodotti Pula di Farro con Mozilla Thunderbird"
+        },
+        "title1": "Junior Developer - Macnil",
+        "date1": "Marzo 2021 - Marzo 2024",
+        "content1": "Sviluppo e manutenzione della piattaforma WEB Fleet Manager nel settore IoT, Automotive e Fleet Management, con attività su front-end e back-end in un team AGILE.",
+        "title2": "Mobile Developer Flutter - Macnil",
+        "date2": "Aprile 2024 - Presente",
+        "content2": "Sviluppatore mobile Flutter per app connesse a dispositivi Bluetooth e integrate con piattaforme di Fleet Management, con contributo all’architettura e allo sviluppo di nuove feature cross-platform."
+      }
+    },
+    "extracurricular": {
+      "title": "Attività Extracurriculari",
+      "entries": {
+        "title": "Riparazioni di telefoni e PC",
+        "content": "Riparazione software e sostituzione di componenti hardware su telefoni cellulari e computer."
       }
     },
     "education": {
       "title": "Formazione",
       "entries": {
-        "title1": "Laurea in Informatica - Università degli Studi di Bari Aldo Moro",
-        "date1": "2018 - 2021",
-        "content1": "Voto 105/110",
-        "title": "Diploma Tecnico Industriale in Informatica - ITIS Galileo Galilei, Altamura",
-        "date": "2012 - 2018",
-        "content": "Voto 80/100"
+        "title": "Diploma di Scuola Superiore in Informatica - Galileo Galilei, Altamura",
+        "date": "Settembre 2012 - Giugno 2018",
+        "content": "Voto 80/100",
+        "title1": "Laurea Triennale in Informatica - Università di Bari Aldo Moro",
+        "date1": "Ottobre 2018 - Marzo 2021",
+        "content1": "Voto 105/110"
       }
     },
     "achievements": {
       "title": "Certificazioni",
       "entries": {
         "content": {
-          "list": "Inglese B2 — 2024"
+          "list": "Certificato di Inglese B2",
+          "list1": "Corso sicurezza e tutela della salute dei lavoratori",
+          "list2": "Corso di formazione specifica - rischio basso",
+          "list3": "Certificato di alternanza scuola-lavoro"
         }
       }
     }

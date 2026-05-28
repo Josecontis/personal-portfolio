@@ -1,19 +1,23 @@
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
-import en from "./locales/en/translations.json";
-import es from "./locales/es/translations.json";
-import fr from "./locales/fr/translations.json";
-import it from "./locales/it/translations.json";
 
 const fallbackLng = ["en"];
 const availableLanguages = ["en", "it", "fr", "es"];
 
 const resources = {
-  en: { translation: en },
-  it: { translation: it },
-  fr: { translation: fr },
-  es: { translation: es },
+  en: {
+    translation: require("./locales/en/translations.json"),
+  },
+  it: {
+    translation: require("./locales/it/translations.json"),
+  },
+  fr: {
+    translation: require("./locales/fr/translations.json"),
+  },
+  es: {
+    translation: require("./locales/es/translations.json"),
+  },
 };
 
 i18n

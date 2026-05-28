@@ -4,8 +4,8 @@ import { Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import StarryBackground from "../../Components/Particles/StarryBackground";
 import SolarSystem from "../../Components/SolarSystem/SolarSystem";
-import AlertNotification from "./Alert/AlertNotification";
 import { usePageTitle } from "../../hooks/usePageTitle";
+import AlertNotification from "./Alert/AlertNotification";
 import "./Contacts.css";
 
 export const Contacts = () => {
@@ -38,7 +38,7 @@ export const Contacts = () => {
         },
         {
           publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-        }
+        },
       )
       .then(
         function (response) {
@@ -46,13 +46,14 @@ export const Contacts = () => {
         },
         function (error) {
           setTestFlag(-1);
-        }
+        },
       );
   };
 
   const renderAlert = () => {
     if (testFlag === 0 || rocketAnimation) return null;
-    const type = testFlag === 1 ? "success" : testFlag === -1 ? "error" : "info";
+    const type =
+      testFlag === 1 ? "success" : testFlag === -1 ? "error" : "info";
     return (
       <div className="alert-container">
         <AlertNotification type={type} />
@@ -102,9 +103,10 @@ export const Contacts = () => {
                   onChange={(e) => {
                     setEmail(e.target.value);
                     let emailTest = new RegExp(
-                      "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})"
+                      "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})",
                     );
-                    e.target.value !== "" && setValidation(emailTest.test(e.target.value));
+                    e.target.value !== "" &&
+                      setValidation(emailTest.test(e.target.value));
                   }}
                 />
               </div>

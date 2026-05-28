@@ -1,22 +1,28 @@
+import { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { useTranslation } from "react-i18next";
 import { AiOutlineDownload } from "react-icons/ai";
 import StarryBackground from "../../Components/Particles/StarryBackground";
-import { usePageTitle } from "../../hooks/usePageTitle";
 import "./Resume.css";
 import Resumecontent from "./ResumeContent";
 
 export const Resume = () => {
+  const location = useLocation();
   const { t, i18n } = useTranslation();
-  usePageTitle("topBar.resume");
 
   const resumeLinks = {
-    it: "https://drive.google.com/file/d/11APJUHOhYrlkzV8y7ruZU1eJarsM6V2j/view?usp=sharing",
-    en: "https://drive.google.com/file/d/1lqyWowOpRn-TKHkrHK-em-x2MhJRQaHz/view?usp=sharing"
+    it: "https://drive.google.com/file/d/1Ii2HQtEBchAlnXpgOVG4iiPS4pk_oAcv/view?usp=sharing",
+    en: "https://drive.google.com/file/d/1lqyWowOpRn-TKHkrHK-em-x2MhJRQaHz/view?usp=sharing",
   };
 
   const currentLang = i18n.language;
+
+  useEffect(() => {
+    if (location && location.pathname === "/resume") {
+      document.title = `${t("topBar.resume")} | Giuseppe Conticchio`;
+    }
+  }, [location, t]);
 
   return (
     <Container fluid className="resume-section">
@@ -49,19 +55,18 @@ export const Resume = () => {
               content={[t("resume.experience.entries.content1")]}
             />
             <Resumecontent
+              title={t("resume.experience.entries.title2")}
+              date={t("resume.experience.entries.date2")}
+              content={[t("resume.experience.entries.content2")]}
+            />
+
+            <h3 className="resume-title">
+              {t("resume.extracurricular.title")}
+            </h3>
+            <Resumecontent
               title={t("resume.experience.entries.title3")}
               date={t("resume.experience.entries.date3")}
               content={[t("resume.experience.entries.content3")]}
-            />
-            <Resumecontent
-              title={t("resume.experience.entries.title")}
-              date={t("resume.experience.entries.date")}
-              content={[
-                t("resume.experience.entries.content.list"),
-                t("resume.experience.entries.content.list1"),
-                t("resume.experience.entries.content.list2"),
-                t("resume.experience.entries.content.list3"),
-              ]}
             />
           </Col>
 
@@ -80,9 +85,7 @@ export const Resume = () => {
 
             <h3 className="resume-title">{t("resume.achievements.title")}</h3>
             <Resumecontent
-              content={[
-                t("resume.achievements.entries.content.list"),
-              ]}
+              content={[t("resume.achievements.entries.content.list")]}
             />
           </Col>
         </Row>

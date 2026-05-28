@@ -158,8 +158,12 @@ To personalize this portfolio:
 
 - **Email**: peppeco98@gmail.com
 - **GitHub**: [@Josecontis](https://github.com/Josecontis)
-- **LinkedIn**: [giuseppe-conticchio](https://www.linkedin.com/in/giuseppe-conticchio/)
+- **LinkedIn**: [giuseppe-conticchio](https://www.linkedin.com/in/giuseppe-conticchio-01a414159/)
 - **Instagram**: [@giuseppe.conticchio](https://www.instagram.com/giuseppe.conticchio/)
+
+## Credits
+
+This portfolio was originally inspired by a template from [Soumyajit Behera](https://github.com/soumyajit4419), extensively customized and enhanced with additional features.
 
 ## License
 
