@@ -1,0 +1,151 @@
+{
+  "topBar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "resume": "CV",
+    "contacts": "Contacts",
+    "music": "Musique"
+  },
+  "home": {
+    "hiThere": "Salut!",
+    "iam": "Je suis",
+    "introduceMyself": "PERMETTEZ-MOI DE ME PRÉSENTER",
+    "aboutMe": "À PROPOS DE MOI",
+    "programmingLove": "Je suis tombé amoureux de la programmation et j'ai pu développer des compétences dans le domaine de l'informatique 💻",
+    "fluentIn": "Je maîtrise les classiques comme",
+    "fieldOfInterestsPart1": "Mes domaines d'intérêt sont la création de nouvelles",
+    "fieldOfInterestsPart2": "et aussi dans les domaines liés à l'",
+    "fieldOfInterestsPart3": ".",
+    "passionForDevelopingPart1": "Chaque fois que possible, j'applique également ma passion pour le développement de produits avec ",
+    "passionForDevelopingPart2": " et ",
+    "passionForDevelopingPart3": " comme ",
+    "findMe": "TROUVEZ-MOI SUR",
+    "connectWithMe": "N'hésitez pas à",
+    "tags": {
+      "connectWithMe": " vous connecter avec moi",
+      "fluentIn": " Typescript, Javascript et Java.",
+      "webTechnologiesAndProducts": "Technologies et Produits Web ",
+      "deepLearningAndNLP": "Apprentissage Profond et Traitement du Langage Naturel.",
+      "nodeJs": "Node.js",
+      "modernJSFrameworks": "Bibliothèques et Frameworks JavaScript Modernes",
+      "reactAndNextJs": "React.js et Next.js"
+    }
+  },
+  "footer": {
+    "drawnAndDeveloped": "Conçu et Développé par "
+  },
+  "contacts": {
+    "keepContact1": "Restez en ",
+    "keepContact2": "contact ",
+    "keepContact3": "avec moi!",
+    "name": "Nom",
+    "email": "E-Mail",
+    "object": "Objet",
+    "message": "Message",
+    "send": "ENVOYER"
+  },
+  "alert": {
+    "success": "Message envoyé avec succès!",
+    "error": "Erreur lors de l'envoi du message",
+    "info": "Aucun champ vide, s'il vous plaît"
+  },
+  "projects": {
+    "heading": {
+      "title": "Mes ",
+      "subtitle": "Voici quelques projets sur lesquels j'ai travaillé."
+    },
+    "viewAll": "Voir tout",
+    "viewProject": "Voir le Projet",
+    "viewBlog": "Voir le Blog",
+    "projectCards": {
+      "fmdEr": {
+        "title": "FMD-ER",
+        "description1": "Application développée pour l'urgence COVID-19 à l'université, divisée en deux phases:",
+        "description2": "Analyse du visage de tout individu pour vérifier la présence ou l'absence d'un masque chirurgical.",
+        "description3": "Reconnaissance de l'émotion d'un individu, indépendamment de la présence d'un masque."
+      },
+      "thesis": {
+        "title": "THÈSE DE LICENCE EN RÉSEAUX INFORMATIQUES",
+        "description": "Thèse pour évaluer si l'approche de double propagation utilisant des règles est capable d'extraire la direction de la colère dans les commentaires des programmeurs."
+      },
+      "bandb": {
+        "title": "SITE WEB BED AND BREAKFAST",
+        "description": "Site web pour le B&B Il Belvedere, un charmant bed and breakfast niché dans la pittoresque ville de Gravina in Puglia, Italie. Le site web est méticuleusement conçu avec des technologies web modernes, incluant React.js, HTML, CSS et JavaScript, garantissant une expérience élégante et conviviale pour les visiteurs."
+      },
+      "housePricePred": {
+        "title": "PRÉDICTION ET CLASSIFICATION DES PRIX DES MAISONS",
+        "description": "Le projet a analysé un ensemble de données d'informations sur le logement de Daegu, Corée du Sud. Les opérations comprenaient le prétraitement des données, l'extraction de caractéristiques, la mise en œuvre d'algorithmes pour la classification et la régression, les tests, les métriques d'évaluation, l'optimisation des hyperparamètres et des tests supplémentaires de classificateurs et de régresseurs."
+      }
+    },
+    "tags": {
+      "title": "travaux récents",
+      "description1": "DÉTECTION DE MASQUE FACIAL:",
+      "description2": "RECONNAISSANCE D'ÉMOTION:"
+    }
+  },
+  "about": {
+    "pre": "Savoir qui",
+    "section": "Compétences",
+    "section1": "Outils que",
+    "title": "Bonjour à tous, je suis",
+    "place": "de Gravina in Puglia, Italie.",
+    "description": "Je suis un",
+    "role": "Full Stack Developer",
+    "description1": " Avec quatre ans d'expérience dans le secteur Automobile. Stack principal : Flutter, React et Java SpringBoot. La communication assertive me permet d'aborder les problèmes de manière collaborative, créant un environnement de travail serein et proactif. Objectif : évoluer de façon stable en assumant des responsabilités progressives.",
+    "description2": "En dehors du codage, voici d'autres activités que j'aime:",
+    "hobby": "Peinture",
+    "hobby1": "Musique",
+    "hobby2": "Modélisation et impression 3D (sculpture numérique dans Blender et création de plans)",
+    "phrase": "Efforcez-vous de construire des choses qui font la différence!",
+    "tags": {
+      "pre1": "Je suis",
+      "skillset": "professionnelles",
+      "use": "j'utilise"
+    }
+  },
+  "resume": {
+    "download": "Télécharger CV",
+    "experience": {
+      "title": "Expérience",
+      "entries": {
+        "title2": "Full Stack Developer - Macnil",
+        "date2": "2024 - Présent",
+        "content2": "Développeur Full Stack pour des applications mobiles connectées à des dispositifs Bluetooth et intégrées aux plateformes de Fleet Management, contribuant à l'architecture et au développement de fonctionnalités multiplateformes. Stack : Flutter, Java Spring Boot.",
+        "title1": "Développeur Web - Macnil",
+        "date1": "2021 - 2024",
+        "content1": "Développement et maintenance de la plateforme web GTFleet 365 dans les secteurs IoT, Automobile et Fleet Management, avec des activités Frontend et Backend en équipe AGILE. Stack : React, Node.js, Java Spring Boot, SQL, MongoDB, Cassandra.",
+        "title3": "Réparations Téléphones et PC",
+        "date3": "2018 - 2021",
+        "content3": "Réparation logicielle et remplacement de composants matériels sur téléphones mobiles et ordinateurs.",
+        "title": "E-commerce - Bioland",
+        "date": "2016 - 2018",
+        "content": {
+          "list": "Gestion et développement des fonctionnalités du site e-commerce",
+          "list1": "Gestion de la base de données produits et du contenu",
+          "list2": "Automatisation de la newsletter",
+          "list3": "Support technique pour la maintenance de la plateforme web"
+        }
+      }
+    },
+    "education": {
+      "title": "Formation",
+      "entries": {
+        "title1": "Licence en Informatique - Université de Bari Aldo Moro",
+        "date1": "2018 - 2021",
+        "content1": "Note 105/110",
+        "title": "Diplôme Technique en Informatique - ITIS Galileo Galilei, Altamura",
+        "date": "2012 - 2018",
+        "content": "Note 80/100"
+      }
+    },
+    "achievements": {
+      "title": "Certifications",
+      "entries": {
+        "content": {
+          "list": "Certificat d'Anglais B2 — 2024"
+        }
+      }
+    }
+  }
+}

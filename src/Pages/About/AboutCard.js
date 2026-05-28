@@ -15,7 +15,7 @@ function AboutCard() {
             <b> Conticchio Giuseppe </b>
             {t("about.place")}
             <br />
-            {t("about.description")} <b>Full-stack software developer</b>.
+            {t("about.description")} <b>{t("about.role")}</b>.
             {t("about.description1")}
             <br />
             <br />

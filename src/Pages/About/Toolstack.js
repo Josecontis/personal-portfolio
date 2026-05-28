@@ -1,7 +1,7 @@
-import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
   SiBlender,
+  SiClaude,
   SiDocker,
   SiGit,
   SiMarkdown,
@@ -10,8 +10,8 @@ import {
   SiPostman,
   SiPycharm,
   SiSublimetext,
-  SiVisualstudiocode,
 } from "react-icons/si";
+import { TbBrandVscode } from "react-icons/tb";
 import "./Stack.css";
 
 function Toolstack() {
@@ -19,7 +19,7 @@ function Toolstack() {
     <>
       <Row style={{ justifyContent: "center" }}>
         <Col xs={4} md={2} className="tech-icons">
-          <SiVisualstudiocode />
+          <TbBrandVscode />
         </Col>
         <Col xs={4} md={2} className="tech-icons">
           <SiDocker />
@@ -49,6 +49,9 @@ function Toolstack() {
         </Col>
         <Col xs={4} md={2} className="tech-icons">
           <SiMiro />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiClaude />
         </Col>
       </Row>
     </>

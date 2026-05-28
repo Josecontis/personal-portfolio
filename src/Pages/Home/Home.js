@@ -1,22 +1,17 @@
-import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { useLocation } from "react-router-dom";
 import homeLogo from "../../Assets/Programming-amico.svg";
 import myImg from "../../Assets/avatar.svg";
 import StarryBackground from "../../Components/Particles/StarryBackground";
+import { usePageTitle } from "../../hooks/usePageTitle";
 import "./Home.css";
 import Type from "./Tools/Type";
 
 export const Home = () => {
-  const location = useLocation();
   const { t } = useTranslation();
-  useEffect(() => {
-    if (location && location.pathname === "/")
-      document.title = `${t("topBar.home")} | Giuseppe Conticchio`;
-  }, [location, t]);
+  usePageTitle("topBar.home");
 
   return (
     <section>
@@ -109,7 +104,7 @@ export const Home = () => {
                 </li>
                 <li className="social-icons">
                   <a
-                    href="https://www.linkedin.com/in/giuseppe-conticchio-01a414159/"
+                    href="https://www.linkedin.com/in/giuseppe-conticchio/"
                     target="_blank"
                     rel="noreferrer"
                     className="icon-colour  home-social-icons"

@@ -56,6 +56,8 @@
       "subtitle": "Ecco alcuni progetti su cui ho lavorato."
     },
     "viewAll": "Vedi tutti",
+    "viewProject": "Vedi Progetto",
+    "viewBlog": "Vedi Blog",
     "projectCards": {
       "fmdEr": {
         "title": "FMD-ER",
@@ -89,11 +91,12 @@
     "title": "Ciao a tutti, sono",
     "place": "da Gravina in Puglia, Italia.",
     "description": "Sono un",
-    "description1": " Abile nel lavoro di squadra multidisciplinare, collaborando con designer, analisti e stakeholder per creare soluzioni software efficaci che soddisfino le esigenze dei clienti. Attivamente alla ricerca di opportunità per migliorare le competenze e rimanere aggiornato sulle tendenze e le tecnologie del settore.",
-    "description2": "Oltre alla codifica, alcune altre attività che amo fare!",
-    "hobby": "Dipinti Artistici",
-    "hobby1": "Suonare la chitarra e altri strumenti",
-    "hobby2": "Progettazione 3D e scultura digitale in Blender e creazione",
+    "role": "Full Stack Developer",
+    "description1": " Con quattro anni di esperienza nel settore Automotive, stack principale Flutter, React e Java SpringBoot. La comunicazione assertiva mi permette di affrontare i problemi con un approccio collaborativo, creando un ambiente di lavoro sereno e proattivo. Obiettivo: crescere stabilmente in una realtà, assumendo responsabilità progressive e contribuendo allo sviluppo dell'azienda nel lungo periodo.",
+    "description2": "Oltre alla programmazione, alcune attività che amo:",
+    "hobby": "Pittura",
+    "hobby1": "Musica",
+    "hobby2": "Modellazione e stampa 3D (scultura digitale in Blender e creazione di piante grafiche)",
     "phrase": "Mi impegno per costruire cose che fanno la differenza!",
     "tags": {
       "pre1": "Sono",
@@ -106,47 +109,41 @@
     "experience": {
       "title": "Esperienza",
       "entries": {
-        "title": "E-commerce - BIOLAND",
-        "date": "Giugno 2016 - Settembre 2018",
+        "title2": "Full Stack Developer - Macnil",
+        "date2": "2024 - Presente",
+        "content2": "Sviluppatore Full Stack per applicazioni mobile connesse a dispositivi Bluetooth e integrate con piattaforme di Fleet Management, con contributo all'architettura e allo sviluppo di feature cross-platform. Stack: Flutter, Java Spring Boot.",
+        "title1": "WEB Developer - Macnil",
+        "date1": "2021 - 2024",
+        "content1": "Sviluppo e manutenzione della piattaforma WEB GTFleet 365 nel settore IoT, Automotive e Fleet Management, con attività su Frontend e Backend in team AGILE. Stack: React, Node.js, Java Spring Boot, SQL, MongoDB, Cassandra.",
+        "title3": "Riparazioni Telefoni e PC",
+        "date3": "2018 - 2021",
+        "content3": "Riparazione software e sostituzione di componenti hardware su telefoni cellulari e computer.",
+        "title": "E-commerce - Bioland",
+        "date": "2016 - 2018",
         "content": {
-          "list": "Creazione di inserzioni su siti di e-commerce",
-          "list1": "Gestione del sito di e-commerce www.puladifarro.com",
-          "list2": "Sviluppo del database per il sito pula di farro",
-          "list3": "Newsletter per i prodotti pula di farro, utilizzando Mozilla Thunderbird e i suoi plug-in"
-        },
-        "title1": "Sviluppatore full-stack - MACNIL",
-        "date1": "Marzo 2021 - Presente",
-        "content1": "Team di sviluppo software che adotta la metodologia AGILE per la progettazione e lo sviluppo di applicazioni web e mobili nell'IoT (Internet of Things), Automotive, Fleet Management."
-      }
-    },
-    "extracurricular": {
-      "title": "Attività Extracurriculari",
-      "entries": {
-        "title": "Corso di Inglese - Cambridge B2",
-        "content": "Questo corso offre un approccio completo e strutturato per migliorare la competenza in lingua inglese a livello upper-intermediate.",
-        "title1": "Riparazioni di telefoni e PC",
-        "content1": "Riparazione software e sostituzione di componenti hardware su telefoni cellulari e computer."
+          "list": "Gestione e sviluppo di funzionalità per il sito e-commerce",
+          "list1": "Gestione del database prodotti e dei contenuti",
+          "list2": "Newsletter automation",
+          "list3": "Supporto tecnico al mantenimento della piattaforma web"
+        }
       }
     },
     "education": {
-      "title": "Educazione",
+      "title": "Formazione",
       "entries": {
-        "title": "Diploma di Scuola Superiore in Informatica - Galileo Galilei, Altamura",
-        "date": "Settembre 2012 - Giugno 2018",
-        "content": "Voto 80/100",
-        "title1": "Laurea triennale in Informatica - Università di Bari Aldo Moro",
-        "date1": "Ottobre 2018 - Marzo 2021",
-        "content1": "Voto 105/110"
+        "title1": "Laurea in Informatica - Università degli Studi di Bari Aldo Moro",
+        "date1": "2018 - 2021",
+        "content1": "Voto 105/110",
+        "title": "Diploma Tecnico Industriale in Informatica - ITIS Galileo Galilei, Altamura",
+        "date": "2012 - 2018",
+        "content": "Voto 80/100"
       }
     },
     "achievements": {
-      "title": "Riconoscimenti e Premi",
+      "title": "Certificazioni",
       "entries": {
         "content": {
-          "list": "Certificato di inglese B2",
-          "list1": "Certificato di partecipazione al corso per la sicurezza e la protezione della salute dei lavoratori",
-          "list2": "Corso di formazione specifica - basso rischio",
-          "list3": "Certificato di partecipazione al corso di alternanza scuola-lavoro"
+          "list": "Inglese B2 — 2024"
         }
       }
     }

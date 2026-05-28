@@ -1,24 +1,18 @@
 import i18next from "i18next";
-import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import { useLocation } from "react-router-dom";
 import bandb from "../../Assets/Projects/B&B.png";
 import fmdEr from "../../Assets/Projects/FMDER.png";
 import housePricePred from "../../Assets/Projects/housePricePred.png";
 import thesis from "../../Assets/Projects/thesis.png";
 import StarryBackground from "../../Components/Particles/StarryBackground";
+import { usePageTitle } from "../../hooks/usePageTitle";
 import ProjectCard from "./ProjectCards";
 import "./Projects.css";
 
 export const Projects = () => {
-  const location = useLocation();
   const { t } = useTranslation();
-
-  useEffect(() => {
-    if (location && location.pathname === "/projects")
-      document.title = `${t("topBar.projects")} | Giuseppe Conticchio`;
-  }, [location, t]);
+  usePageTitle("topBar.projects");
 
   return (
     <Container fluid className="project-section">

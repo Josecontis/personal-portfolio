@@ -27,15 +27,13 @@ export const Topbar = () => {
 
   const [language, setLanguage] = useState("it");
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
+  useEffect(() => {
+    function scrollHandler() {
+      updateNavbar(window.scrollY >= 20);
     }
-  }
-
-  window.addEventListener("scroll", scrollHandler);
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, []);
 
   const [audio] = useState(typeof Audio !== "undefined" && new Audio(SONG));
 
@@ -131,6 +129,7 @@ export const Topbar = () => {
               <div
                 className="nav-link"
                 onClick={() => setIsPlaying(!isPlaying)}
+                aria-label={isPlaying ? "Pause music" : "Play music"}
               >
                 <CgHeadset
                   style={{ marginBottom: "2px" }}
@@ -139,17 +138,21 @@ export const Topbar = () => {
                 {t("topBar.music")}
                 <button
                   className="music-btn"
-                  onClick={() => {
-                    setIsPlaying(true);
-                  }}
+                  onClick={(e) => e.stopPropagation()}
+                  aria-hidden="true"
+                  tabIndex={-1}
                 >
                   {!isPlaying ? "ON" : "OFF"}
                 </button>
               </div>
             </Nav.Item>
             <Nav.Item>
-              <div className="nav-link" onClick={toggleLanguage}>
-                <button className="translate-btn">
+              <div
+                className="nav-link"
+                onClick={toggleLanguage}
+                aria-label={`Switch language to ${language === "it" ? "English" : "Italiano"}`}
+              >
+                <button className="translate-btn" aria-hidden="true" tabIndex={-1}>
                   {language.toUpperCase()}
                 </button>
               </div>

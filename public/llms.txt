@@ -1,0 +1,50 @@
+# Giuseppe Conticchio — Full Stack Developer
+
+> Personal portfolio of Giuseppe Conticchio, Full Stack Developer with 4 years of experience in the Automotive sector.
+
+## Identity
+
+- **Name**: Giuseppe Conticchio
+- **Role**: Full Stack Developer
+- **Location**: Gravina in Puglia, Italy
+- **Email**: peppeco98@gmail.com
+- **Available**: Full remote / Hybrid
+
+## Professional Summary
+
+Full Stack Developer working at Macnil since 2021 in the IoT, Automotive and Fleet Management sector.
+Main tech stack: Flutter, React, Java SpringBoot.
+Strong communicator with a collaborative and proactive approach.
+Goal: grow steadily in a stable company, taking on progressive responsibilities.
+
+## Experience
+
+- **2024 – Present** | Full Stack Developer @ Macnil — Flutter, Java Spring Boot. Mobile apps connected to Bluetooth devices integrated with Fleet Management platforms.
+- **2021 – 2024** | WEB Developer @ Macnil — React, Node.js, Java Spring Boot, SQL, MongoDB, Cassandra. Development of GTFleet 365 web platform (IoT/Automotive/Fleet Management).
+- **2018 – 2021** | Phone and PC Repairs — Software repair and hardware component replacement.
+- **2016 – 2018** | E-commerce @ Bioland — Website management, product database, newsletter automation.
+
+## Education
+
+- **2018 – 2021** | Bachelor's Degree in Computer Science — University of Bari Aldo Moro (105/110)
+- **2012 – 2018** | Technical High School Diploma in Computer Science — ITIS Galileo Galilei, Altamura (80/100)
+
+## Technical Skills
+
+**Languages**: TypeScript, JavaScript, Java, Dart, Python, HTML, CSS/SCSS, C
+**Frameworks**: Flutter, React, Spring Boot, Node.js, Redux
+**Databases**: MySQL, MongoDB, Cassandra, DynamoDB
+**Tools**: Git, Docker, VS Code, Claude Code, Postman, Blender, Netlify
+
+## Projects
+
+- **Charging Stations Map** — Flutter, Google Maps API
+- **Il Belvedere (B&B Website)** — HTML, CSS, React.js
+- **House Price Prediction** — Python, Machine Learning (Daegu, South Korea dataset)
+- **Opinion Target Extraction** — Python, NLP, Double Propagation
+
+## Links
+
+- GitHub: https://github.com/Josecontis
+- LinkedIn: https://www.linkedin.com/in/giuseppe-conticchio-01a414159/
+- Portfolio: https://personalwebsite5.netlify.app

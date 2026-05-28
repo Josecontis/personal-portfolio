@@ -234,6 +234,18 @@
     }
 }
 
+.earth-spin,
+.moon-spin,
+.mercury-spin,
+.venus-spin,
+.mars-spin,
+.jupiter-spin,
+.saturn-spin,
+.uranus-spin,
+.neptune-spin {
+    will-change: transform;
+}
+
 .earth-spin {
     animation: spin-right 4s linear infinite;
 }

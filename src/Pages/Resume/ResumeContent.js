@@ -19,7 +19,7 @@ function ResumeContent(props) {
 }
 
 ResumeContent.propTypes = {
-  title: PropTypes.bool.isRequired,
+  title: PropTypes.string,
   date: PropTypes.string.isRequired,
   content: PropTypes.arrayOf.isRequired,
 };

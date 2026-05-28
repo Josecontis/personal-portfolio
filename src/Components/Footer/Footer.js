@@ -10,14 +10,14 @@ export const Footer = () => {
 
   return (
     <Container fluid className="footer">
-      <Row>
-        <Col md="4">
+      <Row className="align-items-center h-100">
+        <Col xs="6" md="4">
           <div className="footer-copyright">
             Copyright © {year} <div className="footer-signature">GC</div>
           </div>
         </Col>
-        <Col md="4" />
-        <Col md="4">
+        <Col className="d-none d-md-block" md="4" />
+        <Col xs="6" md="4">
           <div className="footer-copyright">
             {t("footer.drawnAndDeveloped")}
             <div className="footer-signature">Giuseppe Conticchio</div>

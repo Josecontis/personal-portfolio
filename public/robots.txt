@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: replace with your actual deployed URL
+Sitemap: https://personalwebsite5.netlify.app/sitemap.xml

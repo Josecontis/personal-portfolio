@@ -1,10 +1,9 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { FaAws, FaJava } from "react-icons/fa";
 import {
-  SiAmazonaws,
   SiCplusplus,
-  SiCss3,
-  SiJava,
+  SiCss,
   SiJavascript,
   SiMongodb,
   SiNodedotjs,
@@ -32,7 +31,7 @@ function Techstack() {
         <SiJavascript />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiCss3 />
+        <SiCss />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiReact />
@@ -50,7 +49,7 @@ function Techstack() {
         <SiCplusplus />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiJava />
+        <FaJava />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPython />
@@ -65,7 +64,7 @@ function Techstack() {
         <SiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiAmazonaws />
+        <FaAws />
       </Col>
     </Row>
   );

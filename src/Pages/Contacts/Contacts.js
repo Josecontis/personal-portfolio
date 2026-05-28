@@ -1,11 +1,11 @@
 import emailjs from "@emailjs/browser";
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import { useLocation } from "react-router-dom";
 import StarryBackground from "../../Components/Particles/StarryBackground";
 import SolarSystem from "../../Components/SolarSystem/SolarSystem";
 import AlertNotification from "./Alert/AlertNotification";
+import { usePageTitle } from "../../hooks/usePageTitle";
 import "./Contacts.css";
 
 export const Contacts = () => {
@@ -17,69 +17,47 @@ export const Contacts = () => {
   const [validation, setValidation] = useState(false);
   const [rocketAnimation, setRocketAnimation] = useState(false);
 
-  const location = useLocation();
   const { t } = useTranslation();
-
-  useEffect(() => {
-    if (location && location.pathname === "/contacts")
-      document.title = `${t("topBar.contacts")} | Giuseppe Conticchio`;
-  }, [location, t]);
+  usePageTitle("topBar.contacts");
 
   const sendEmail = () => {
-    setRocketAnimation(true);
     if (name === "" || message === "" || email === "" || object === "") {
       setTestFlag(2);
-    } else {
-      emailjs
-        .send(
-          "service_dx9tuej",
-          "template_yx44vvu",
-          {
-            from_name: name,
-            to_name: "peppeco98@gmail.com",
-            message: message,
-            reply_to: email,
-            object: object,
-          },
-          {
-            publicKey: "VuXoRd7oWTeHQg9Ns",
-          }
-        )
-        .then(
-          function (response) {
-            setTestFlag(1);
-            renderAlert();
-            console.log("SUCCESS!", response.status, response.text);
-          },
-          function (error) {
-            setTestFlag(-1);
-            renderAlert();
-            console.log("FAILED...", error);
-          }
-        );
+      return;
     }
+    setRocketAnimation(true);
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: name,
+          message: message,
+          reply_to: email,
+          object: object,
+        },
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        }
+      )
+      .then(
+        function (response) {
+          setTestFlag(1);
+        },
+        function (error) {
+          setTestFlag(-1);
+        }
+      );
   };
 
   const renderAlert = () => {
-    if (!rocketAnimation && testFlag === 1) {
-      return (
-        <div className="alert-container">
-          <AlertNotification type={"success"} />
-        </div>
-      );
-    } else if (!rocketAnimation && testFlag === -1) {
-      return (
-        <div className="alert-container">
-          <AlertNotification type={"error"} />
-        </div>
-      );
-    } else if (!rocketAnimation && testFlag === 2) {
-      return (
-        <div className="alert-container">
-          <AlertNotification type={"info"} />
-        </div>
-      );
-    }
+    if (testFlag === 0 || rocketAnimation) return null;
+    const type = testFlag === 1 ? "success" : testFlag === -1 ? "error" : "info";
+    return (
+      <div className="alert-container">
+        <AlertNotification type={type} />
+      </div>
+    );
   };
 
   return (
@@ -93,7 +71,7 @@ export const Contacts = () => {
             <b>{t("contacts.keepContact2")}</b> {t("contacts.keepContact3")}
           </div>
           <div className="form-contacts-container">
-            <div>
+            <div className="name-email-row">
               <div className="name-form">
                 <label className="form-label">{t("contacts.name")}</label>
                 <input
@@ -126,7 +104,7 @@ export const Contacts = () => {
                     let emailTest = new RegExp(
                       "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})"
                     );
-                    email !== "" && setValidation(emailTest.test(email));
+                    e.target.value !== "" && setValidation(emailTest.test(e.target.value));
                   }}
                 />
               </div>
@@ -157,6 +135,7 @@ export const Contacts = () => {
                 setEmail("");
                 setObject("");
                 setMessage("");
+                setValidation(false);
               }}
             >
               {t("contacts.send")}

@@ -41,6 +41,10 @@ b {
   height: 100vh;
 }
 
+#scroll {
+  padding-bottom: 70px;
+}
+
 ::-webkit-scrollbar {
   width: 7px;
 }

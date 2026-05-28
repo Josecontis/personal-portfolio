@@ -1,22 +1,16 @@
-import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import { useLocation } from "react-router-dom";
 import laptopImg from "../../Assets/Programmer-amico.svg";
 import StarryBackground from "../../Components/Particles/StarryBackground";
+import { usePageTitle } from "../../hooks/usePageTitle";
 import "./About.css";
 import Aboutcard from "./AboutCard";
 import Techstack from "./Techstack";
 import Toolstack from "./Toolstack";
 
 export const About = () => {
-  const location = useLocation();
   const { t } = useTranslation();
-
-  useEffect(() => {
-    if (location && location.pathname === "/about")
-      document.title = `${t("topBar.about")} | Giuseppe Conticchio`;
-  }, [location, t]);
+  usePageTitle("topBar.about");
 
   return (
     <Container fluid className="about-section">

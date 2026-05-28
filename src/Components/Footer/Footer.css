@@ -4,32 +4,35 @@
 .footer {
   background-color: var(--background-top-bar);
   height: 60px;
-  z-index: 1;
+  z-index: 999;
   position: fixed;
   bottom: 0;
+  width: 100%;
 }
 
 .footer-copyright {
   font-size: 1em;
-  height: 20px;
   color: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 30px;
-  min-width: 375px;
+  height: 60px;
+  padding-top: 0;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .footer-signature {
   margin-left: 4px;
   color: var(--text-color);
+  white-space: nowrap;
 }
 
 @media (max-width: 767px) {
-
-  .footer-copyright,
-  .footer-contact {
-    text-align: center;
+  .footer-copyright {
+    font-size: 0.72em;
+    justify-content: center;
   }
-
 }
