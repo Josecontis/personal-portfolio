@@ -92,14 +92,16 @@ export const Resume = () => {
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={resumeLinks[currentLang] || resumeLinks.it}
-            target="_blank"
-          >
-            <AiOutlineDownload />
-            &nbsp;{t("resume.download")}
-          </Button>
+          <Col md={2} style={{ textAlign: "center" }}>
+            <Button
+              variant="primary"
+              href={resumeLinks[currentLang] || resumeLinks.it}
+              target="_blank"
+            >
+              <AiOutlineDownload />
+              &nbsp;{t("resume.download")}
+            </Button>
+          </Col>
         </Row>
       </Container>
     </Container>
