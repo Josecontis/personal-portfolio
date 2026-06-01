@@ -88,9 +88,9 @@
     width: 200px;
     min-width: 50px;
     text-transform: uppercase;
-    border: none;
     color: var(--white-color);
     background-color: var(--background-top-bar);
+    border-color: var(--text-color);
     font-size: 16px;
     font-weight: 600;
     padding: 12px;
@@ -99,7 +99,7 @@
 }
 
 .resume-download-btn:hover {
-    background-color: var(--text-color);
+    background-color: var(--scrollbar-color);
     cursor: pointer;
 }
 

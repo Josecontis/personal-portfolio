@@ -47,7 +47,7 @@
     z-index: 1;
     width: auto;
     color: var(--white-color);
-    background-color: var(--text-color);
+    background-color: var(--background-top-bar);
     border-color: var(--text-color);
 }
 
