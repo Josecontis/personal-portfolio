@@ -31,9 +31,11 @@ export const Resume = () => {
       <Container>
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
+            className="resume-download-btn"
             variant="primary"
             href={resumeLinks[currentLang] || resumeLinks.it}
             target="_blank"
+            aria-label={t("resume.download")}
           >
             <AiOutlineDownload />
             &nbsp;{t("resume.download")}
@@ -92,16 +94,16 @@ export const Resume = () => {
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Col md={2} style={{ textAlign: "center" }}>
-            <Button
-              variant="primary"
-              href={resumeLinks[currentLang] || resumeLinks.it}
-              target="_blank"
-            >
-              <AiOutlineDownload />
-              &nbsp;{t("resume.download")}
-            </Button>
-          </Col>
+          <Button
+            className="resume-download-btn"
+            variant="primary"
+            href={resumeLinks[currentLang] || resumeLinks.it}
+            target="_blank"
+            aria-label={t("resume.download")}
+          >
+            <AiOutlineDownload />
+            &nbsp;{t("resume.download")}
+          </Button>
         </Row>
       </Container>
     </Container>
