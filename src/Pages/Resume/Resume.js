@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { useTranslation } from "react-i18next";
 import { AiOutlineDownload } from "react-icons/ai";
+import { useLocation } from "react-router-dom";
 import StarryBackground from "../../Components/Particles/StarryBackground";
 import "./Resume.css";
 import Resumecontent from "./ResumeContent";
