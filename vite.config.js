@@ -9,10 +9,19 @@ export default defineConfig({
     exclude: [],
   },
   optimizeDeps: {
+    include: ["react-router-dom", "@remix-run/router"],
     esbuildOptions: {
       loader: {
         ".js": "jsx",
       },
     },
+  },
+  resolve: {
+    alias: {
+      crypto: "crypto-browserify",
+    },
+  },
+  define: {
+    "global.crypto": "crypto",
   },
 });
