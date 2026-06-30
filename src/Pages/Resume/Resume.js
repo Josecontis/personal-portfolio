@@ -58,18 +58,22 @@ export const Resume = () => {
               content={[t("resume.experience.entries.content1")]}
             />
             <Resumecontent
-              title={t("resume.experience.entries.title2")}
-              date={t("resume.experience.entries.date2")}
-              content={[t("resume.experience.entries.content2")]}
+              title={t("resume.experience.entries.title")}
+              date={t("resume.experience.entries.date")}
+              content={[
+                t("resume.experience.entries.content.list"),
+                t("resume.experience.entries.content.list1"),
+                t("resume.experience.entries.content.list2"),
+                t("resume.experience.entries.content.list3"),
+              ]}
             />
 
             <h3 className="resume-title">
               {t("resume.extracurricular.title")}
             </h3>
             <Resumecontent
-              title={t("resume.experience.entries.title3")}
-              date={t("resume.experience.entries.date3")}
-              content={[t("resume.experience.entries.content3")]}
+              title={t("resume.extracurricular.entries.title")}
+              content={[t("resume.extracurricular.entries.content")]}
             />
           </Col>
 

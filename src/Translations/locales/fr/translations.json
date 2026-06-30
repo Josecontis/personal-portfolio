@@ -56,6 +56,8 @@
       "subtitle": "Voici quelques projets sur lesquels j'ai travaillé."
     },
     "viewAll": "Voir tout",
+    "viewProject": "Voir le projet",
+    "viewBlog": "Voir le blog",
     "projectCards": {
       "fmdEr": {
         "title": "FMD-ER",
@@ -89,6 +91,7 @@
     "title": "Bonjour à tous, je suis",
     "place": "de Gravina in Puglia, Italie.",
     "description": "Je suis un",
+    "role": "Développeur Full Stack",
     "description1": " Compétent dans le travail d'équipe multidisciplinaire, collaborant avec des designers, des analystes et des parties prenantes pour créer des solutions logicielles efficaces qui répondent aux besoins des clients. À la recherche active d'opportunités pour améliorer les compétences et rester à jour sur les tendances et les technologies de l'industrie.",
     "description2": "En dehors du codage, voici d'autres activités que j'aime faire!",
     "hobby": "Peintures Artistiques",

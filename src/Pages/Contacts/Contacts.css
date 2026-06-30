@@ -260,6 +260,15 @@
   .solar-system {
     display: none;
   }
+
+  /* Razzo visibile anche su schermi stretti: l'offset desktop left:200px,
+     sommato a translateX(25vw), lo spingeva oltre il bordo destro dove
+     overflow-x:hidden lo tagliava. Azzerandolo il razzo resta nel viewport.
+     Selettore .contact-container .rocket per vincere sulla regola base
+     .rocket{left:200px} che nel file viene dopo (stessa specificità). */
+  .contact-container .rocket {
+    left: 0;
+  }
 }
 
 /* Contacts.css */
