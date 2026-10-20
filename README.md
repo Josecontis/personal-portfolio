@@ -2,6 +2,10 @@
 
 Modern, interactive personal portfolio website showcasing professional experience, projects, skills, and contact information. Built with React and Vite, with multilingual support (Italian, English, French, Spanish).
 
+**Live site:** [personalwebsite5.netlify.app](https://personalwebsite5.netlify.app/)
+
+![Home page of the portfolio](docs/home_screenshot.png)
+
 ## Overview
 
 This is a single-page application (SPA) portfolio website designed to present a comprehensive digital presence for Giuseppe Conticchio, Full Stack Developer from Gravina in Puglia, Italy. The website combines elegant design with interactive animations and multilingual capabilities.
@@ -60,7 +64,7 @@ Featured projects including:
 
 ### Resume/CV
 
-- Downloadable CV in both English and Italian
+- Downloadable CV in Italian and English (French and Spanish visitors get the English one)
 - Professional experience timeline
 - Educational background
 - Certifications and achievements
@@ -118,11 +122,12 @@ Visual representation of technical skills including:
 
 ## Deployment
 
-The application is configured for deployment on **Netlify** with:
+The site is deployed on **Netlify** from the `main` branch:
 
-- SPA routing configuration (`_redirects` file)
-- Progressive Web App (PWA) manifest
-- Optimized production build
+- Build command `npm run build`, published folder `dist` (see `netlify.toml`)
+- SPA routing configuration (`_redirects` file and redirect rule in `netlify.toml`)
+- Web app manifest with name, theme color and icon (no offline support)
+- The EmailJS keys must be set in the Netlify site environment variables
 
 ## External Services
 
@@ -137,11 +142,6 @@ Contact form submissions are handled through EmailJS. The keys are read from env
 ### CV Hosting
 
 Resume PDFs are hosted on Google Drive with separate links for English and Italian versions.
-
-## Browser Support
-
-- **Production**: Modern browsers (>0.2% market share, excluding Opera Mini)
-- **Development**: Latest versions of Chrome, Firefox, and Safari
 
 ## Customization
 
@@ -167,4 +167,4 @@ This portfolio was originally inspired by a template from [Soumyajit Behera](htt
 
 ## License
 
-Open source under the MIT License.
+Open source under the [MIT License](LICENSE).
