@@ -59,6 +59,29 @@
   outline: none;
 }
 
+/* Browser autofill (e.g. Chrome suggestions) must not turn the fields white:
+   the inset shadow covers the autofill background and the text keeps the form colors */
+.form-input:-webkit-autofill,
+.form-input:-webkit-autofill:hover,
+.form-input:-webkit-autofill:focus,
+.form-text-area:-webkit-autofill,
+.form-text-area:-webkit-autofill:hover,
+.form-text-area:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--white-color);
+  -webkit-box-shadow: 0 0 0 1000px var(--black-color) inset;
+  caret-color: var(--white-color);
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+.form-input-error:-webkit-autofill,
+.form-input-error:-webkit-autofill:hover,
+.form-input-error:-webkit-autofill:focus {
+  -webkit-text-fill-color: red;
+  -webkit-box-shadow: 0 0 0 1000px var(--black-color) inset;
+  caret-color: red;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
 .form-input-error {
   font-size: 1em;
   color: red;
@@ -206,6 +229,28 @@
 
   100% {
     opacity: 0;
+  }
+}
+
+/* Desktop: the orbits continue down to the end of the page, behind the fixed footer.
+   The container takes over the 128px of space that was left below it (50px section padding,
+   8px margin, 70px kept for the footer), so the page keeps the same height and the form
+   can still be scrolled above the footer. The solar system keeps its original position
+   (7vh from the top) and is no longer clipped at its own bottom edge: the container clips it */
+@media (min-width: 769px) {
+  .contact-section {
+    padding-bottom: 0;
+  }
+
+  .contact-container {
+    height: calc(107vh + 128px);
+    margin-bottom: -70px;
+  }
+
+  .contact-container .solar-system {
+    top: 7vh;
+    bottom: auto;
+    overflow: visible;
   }
 }
 
