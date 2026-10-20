@@ -145,15 +145,24 @@
   animation: pulse 1s infinite;
 }
 
+.music-toggle {
+  background: none;
+  border: none;
+  text-align: left;
+}
+
 
 .translate-btn {
   color: var(--scrollbar-color);
   background: none;
   border: none;
-  width: 30px;
   padding: 0;
   cursor: pointer;
   font-weight: bold;
+}
+
+.translate-btn option {
+  background-color: var(--background-top-bar);
 }
 
 @keyframes pulse {

@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { CgCoffee, CgHeadset } from "react-icons/cg";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../Assets/header-logo.svg";
 
 import { useTranslation } from "react-i18next";
@@ -13,19 +13,18 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
-import i18n from "../../Translations/i18next.js";
+import { availableLanguages } from "../../Translations/i18next.js";
 import SONG from "./Songs/LudovicoEinaudi-Experience.mp3";
 import "./Topbar.css";
 
 export const Topbar = () => {
-  const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const [language, setLanguage] = useState("it");
+  const currentLanguage = i18n.resolvedLanguage || "en";
 
   useEffect(() => {
     function scrollHandler() {
@@ -41,11 +40,9 @@ export const Topbar = () => {
     isPlaying ? audio.play() : audio.pause();
   }, [isPlaying, audio]);
 
-  const toggleLanguage = () => {
-    const currentLanguage = i18n.language;
-    const newLanguage = currentLanguage === "it" ? "en" : "it";
-    i18n.changeLanguage(newLanguage);
-    setLanguage(newLanguage);
+  const changeLanguage = (e) => {
+    i18n.changeLanguage(e.target.value);
+    updateExpanded(false);
   };
 
   return (
@@ -56,7 +53,7 @@ export const Topbar = () => {
       className={navColour ? "sticky" : "topbar"}
     >
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand as={Link} to="/" onClick={() => updateExpanded(false)}>
           <img src={logo} className="logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -70,64 +67,55 @@ export const Topbar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-topbar-nav">
           <Nav className="ml-auto" defaultActiveKey="#home">
-            <Nav.Item
-              className="nav-link"
-              onClick={() => {
-                updateExpanded(false);
-                navigate("/");
-              }}
+            <Nav.Link
+              as={Link}
+              to="/"
+              onClick={() => updateExpanded(false)}
             >
               <AiOutlineHome style={{ marginBottom: "2px" }} />
               {t("topBar.home")}
-            </Nav.Item>
+            </Nav.Link>
 
-            <Nav.Item
-              className="nav-link"
-              onClick={() => {
-                updateExpanded(false);
-                navigate("/about");
-              }}
+            <Nav.Link
+              as={Link}
+              to="/about"
+              onClick={() => updateExpanded(false)}
             >
               <AiOutlineUser style={{ marginBottom: "2px" }} />
               {t("topBar.about")}
-            </Nav.Item>
+            </Nav.Link>
 
-            <Nav.Item
-              className="nav-link"
-              onClick={() => {
-                updateExpanded(false);
-                navigate("/projects");
-              }}
+            <Nav.Link
+              as={Link}
+              to="/projects"
+              onClick={() => updateExpanded(false)}
             >
               <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />
               {t("topBar.projects")}
-            </Nav.Item>
+            </Nav.Link>
 
-            <Nav.Item
-              className="nav-link"
-              onClick={() => {
-                updateExpanded(false);
-                navigate("/resume");
-              }}
+            <Nav.Link
+              as={Link}
+              to="/resume"
+              onClick={() => updateExpanded(false)}
             >
               <CgFileDocument style={{ marginBottom: "2px" }} />
               {t("topBar.resume")}
-            </Nav.Item>
+            </Nav.Link>
 
-            <Nav.Item
-              className="nav-link"
-              onClick={() => {
-                updateExpanded(false);
-                navigate("/contacts");
-              }}
+            <Nav.Link
+              as={Link}
+              to="/contacts"
+              onClick={() => updateExpanded(false)}
             >
               <CgCoffee style={{ marginBottom: "2px" }} />
               {t("topBar.contacts")}
-            </Nav.Item>
+            </Nav.Link>
 
             <Nav.Item>
-              <div
-                className="nav-link"
+              <button
+                type="button"
+                className="nav-link music-toggle"
                 onClick={() => setIsPlaying(!isPlaying)}
                 aria-label={isPlaying ? "Pause music" : "Play music"}
               >
@@ -136,25 +124,25 @@ export const Topbar = () => {
                   className={`sound-${!isPlaying}`}
                 />
                 {t("topBar.music")}
-                <button
-                  className="music-btn"
-                  onClick={(e) => e.stopPropagation()}
-                  aria-hidden="true"
-                  tabIndex={-1}
-                >
+                <span className="music-btn" aria-hidden="true">
                   {!isPlaying ? "ON" : "OFF"}
-                </button>
-              </div>
+                </span>
+              </button>
             </Nav.Item>
             <Nav.Item>
-              <div
-                className="nav-link"
-                onClick={toggleLanguage}
-                aria-label={`Switch language to ${language === "it" ? "English" : "Italiano"}`}
-              >
-                <button className="translate-btn" aria-hidden="true" tabIndex={-1}>
-                  {language.toUpperCase()}
-                </button>
+              <div className="nav-link">
+                <select
+                  className="translate-btn"
+                  value={currentLanguage}
+                  onChange={changeLanguage}
+                  aria-label="Language"
+                >
+                  {availableLanguages.map((lng) => (
+                    <option key={lng} value={lng}>
+                      {lng.toUpperCase()}
+                    </option>
+                  ))}
+                </select>
               </div>
             </Nav.Item>
           </Nav>
