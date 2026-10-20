@@ -88,6 +88,7 @@
     "pre": "Conoce quién",
     "section": "Habilidades",
     "section1": "Herramientas que",
+    "section2": "Inteligencia",
     "title": "Hola a todos, soy",
     "place": "de Gravina in Puglia, Italia.",
     "description": "Soy un",
@@ -101,7 +102,8 @@
     "tags": {
       "pre1": "Soy",
       "skillset": "profesionales",
-      "use": "utilizo"
+      "use": "utilizo",
+      "ai": "artificial"
     }
   },
   "resume": {

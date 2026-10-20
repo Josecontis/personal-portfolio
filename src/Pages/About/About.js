@@ -4,6 +4,7 @@ import laptopImg from "../../Assets/Programmer-amico.svg";
 import StarryBackground from "../../Components/Particles/StarryBackground";
 import { usePageTitle } from "../../hooks/usePageTitle";
 import "./About.css";
+import AIstack from "./AIstack";
 import Aboutcard from "./AboutCard";
 import Techstack from "./Techstack";
 import Toolstack from "./Toolstack";
@@ -42,6 +43,10 @@ export const About = () => {
           <b> {t("about.section1")}</b> {t("about.tags.use")}
         </h1>
         <Toolstack />
+        <h1 style={{ marginLeft: "12px" }}>
+          {t("about.section2")} <b>{t("about.tags.ai")}</b>
+        </h1>
+        <AIstack />
       </Container>
     </Container>
   );

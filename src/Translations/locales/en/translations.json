@@ -88,6 +88,7 @@
     "pre": "Know who",
     "section": "Professional",
     "section1": "I am",
+    "section2": "Artificial",
     "title": "Hi Everyone, I'm",
     "place": "from Gravina in Puglia, Italy.",
     "description": "I'm a",
@@ -101,7 +102,8 @@
     "tags": {
       "pre1": "I am",
       "skillset": "skillset",
-      "use": "I use"
+      "use": "I use",
+      "ai": "intelligence"
     }
   },
   "resume": {

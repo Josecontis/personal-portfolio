@@ -1,58 +1,56 @@
-import { Col, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import {
   SiBlender,
   SiClaude,
+  SiCpanel,
   SiDocker,
   SiGit,
+  SiGithub,
   SiMarkdown,
   SiMiro,
   SiNetlify,
   SiPostman,
   SiPycharm,
   SiSublimetext,
+  SiVercel,
 } from "react-icons/si";
-import { TbBrandVscode } from "react-icons/tb";
+import { TbBrandVscode, TbServer } from "react-icons/tb";
 import "./Stack.css";
+import TechIcon from "./TechIcon";
+
+const firstRow = [
+  { icon: <TbBrandVscode />, name: "VS Code" },
+  { icon: <SiDocker />, name: "Docker" },
+  { icon: <SiNetlify />, name: "Netlify" },
+  { icon: <SiVercel />, name: "Vercel" },
+  { icon: <SiCpanel />, name: "cPanel" },
+  { icon: <TbServer />, name: "ServerPlan" },
+  { icon: <SiPostman />, name: "Postman" },
+  { icon: <SiBlender />, name: "Blender" },
+];
+
+const secondRow = [
+  { icon: <SiSublimetext />, name: "Sublime Text" },
+  { icon: <SiMarkdown />, name: "Markdown" },
+  { icon: <SiGit />, name: "Git" },
+  { icon: <SiGithub />, name: "GitHub" },
+  { icon: <SiPycharm />, name: "PyCharm" },
+  { icon: <SiMiro />, name: "Miro" },
+  { icon: <SiClaude />, name: "Claude" },
+];
 
 function Toolstack() {
   return (
     <>
       <Row style={{ justifyContent: "center" }}>
-        <Col xs={4} md={2} className="tech-icons">
-          <TbBrandVscode />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiDocker />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiNetlify />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiPostman />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiBlender />
-        </Col>
+        {firstRow.map(({ icon, name }) => (
+          <TechIcon key={name} icon={icon} name={name} />
+        ))}
       </Row>
       <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiSublimetext />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiMarkdown />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiGit />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiPycharm />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiMiro />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiClaude />
-        </Col>
+        {secondRow.map(({ icon, name }) => (
+          <TechIcon key={name} icon={icon} name={name} />
+        ))}
       </Row>
     </>
   );
