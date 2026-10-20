@@ -92,7 +92,12 @@ export const Resume = () => {
 
             <h3 className="resume-title">{t("resume.achievements.title")}</h3>
             <Resumecontent
-              content={[t("resume.achievements.entries.content.list")]}
+              content={[
+                t("resume.achievements.entries.content.list"),
+                t("resume.achievements.entries.content.list1"),
+                t("resume.achievements.entries.content.list2"),
+                t("resume.achievements.entries.content.list3"),
+              ]}
             />
           </Col>
         </Row>
