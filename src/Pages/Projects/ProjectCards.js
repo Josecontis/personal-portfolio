@@ -27,7 +27,7 @@ function ProjectCards(props) {
 ProjectCards.propTypes = {
   title: PropTypes.string.isRequired,
   imgPath: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.node.isRequired,
   link: PropTypes.string.isRequired,
   isBlog: PropTypes.bool.isRequired,
 };

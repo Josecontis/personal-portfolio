@@ -1,14 +1,12 @@
 import i18next from "i18next";
+import { Fragment } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import bandb from "../../Assets/Projects/B&B.png";
-import fmdEr from "../../Assets/Projects/FMDER.png";
-import housePricePred from "../../Assets/Projects/housePricePred.png";
-import thesis from "../../Assets/Projects/thesis.png";
 import StarryBackground from "../../Components/Particles/StarryBackground";
 import { usePageTitle } from "../../hooks/usePageTitle";
 import ProjectCard from "./ProjectCards";
 import "./Projects.css";
+import { projects } from "./projectsData";
 
 export const Projects = () => {
   const { t } = useTranslation();
@@ -44,58 +42,32 @@ export const Projects = () => {
           </div>
         </div>
         <Row style={{ justifyContent: "center", paddingBottom: "80px" }}>
-          <Col md={6} className="project-card">
-            <ProjectCard
-              imgPath={fmdEr}
-              isBlog={false}
-              title={t("projects.projectCards.fmdEr.title")}
-              description={
-                <>
-                  {t("projects.projectCards.fmdEr.description1")}
-                  <br />
-                  <br />
-                  <b>{t("projects.tags.description1")}</b>{" "}
-                  {t("projects.projectCards.fmdEr.description2")} <br />
-                  <br />
-                  <b>{t("projects.tags.description2")}</b>{" "}
-                  {t("projects.projectCards.fmdEr.description3")}
-                </>
-              }
-              link="https://github.com/Ocen5/FMD-ER"
-            />
-          </Col>
-
-          <Col md={6} className="project-card">
-            <ProjectCard
-              imgPath={thesis}
-              isBlog={false}
-              title={t("projects.projectCards.thesis.title")}
-              description={t("projects.projectCards.thesis.description")}
-              link="https://github.com/Josecontis/opinion_target_extraction"
-            />
-          </Col>
-
-          <Col md={6} className="project-card">
-            <ProjectCard
-              imgPath={bandb}
-              isBlog={false}
-              title={t("projects.projectCards.bandb.title")}
-              description={t("projects.projectCards.bandb.description")}
-              link="https://github.com/Josecontis/ilbelvedere"
-            />
-          </Col>
-
-          <Col md={6} className="project-card">
-            <ProjectCard
-              imgPath={housePricePred}
-              isBlog={false}
-              title={t("projects.projectCards.housePricePred.title")}
-              description={t(
-                "projects.projectCards.housePricePred.description"
-              )}
-              link="https://github.com/Josecontis/House-Price-Prediction"
-            />
-          </Col>
+          {projects.map(({ id, imgPath, link, description }) => (
+            <Col md={6} className="project-card" key={id}>
+              <ProjectCard
+                imgPath={imgPath}
+                isBlog={false}
+                title={t(`projects.projectCards.${id}.title`)}
+                description={description.map(({ tag, text }, index) => (
+                  <Fragment key={text}>
+                    {index > 0 && (
+                      <>
+                        <br />
+                        <br />
+                      </>
+                    )}
+                    {tag && (
+                      <>
+                        <b>{t(tag)}</b>{" "}
+                      </>
+                    )}
+                    {t(`projects.projectCards.${id}.${text}`)}
+                  </Fragment>
+                ))}
+                link={link}
+              />
+            </Col>
+          ))}
         </Row>
       </Container>
     </Container>
