@@ -78,8 +78,8 @@
 
 .chatbot-form {
   display: flex;
-  gap: 8px;
-  padding: 10px;
+  gap: 12px;
+  padding: 14px 16px 16px;
   border-top: 1px solid var(--background-top-bar);
 }
 
@@ -91,7 +91,7 @@
   border: none;
   border-bottom: 1px solid var(--white-color);
   outline: none;
-  padding: 6px 0;
+  padding: 8px 4px;
 }
 
 .chatbot-send {
@@ -102,6 +102,12 @@
   padding: 6px 12px;
   font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+/* Same hover as the chat button */
+.chatbot-send:hover:not(:disabled) {
+  background-color: var(--scrollbar-color);
 }
 
 .chatbot-send:disabled {

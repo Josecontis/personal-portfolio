@@ -11,10 +11,21 @@ function ChatBot() {
   const [input, setInput] = useState("");
   const [answering, setAnswering] = useState(false);
   const listRef = useRef(null);
+  const wrapperRef = useRef(null);
 
   useEffect(() => {
     if (listRef.current) listRef.current.scrollTop = listRef.current.scrollHeight;
   }, [messages, open]);
+
+  // A click or tap outside the chat closes it; the conversation stays for the next opening
+  useEffect(() => {
+    if (!open) return undefined;
+    const handlePointerDown = (e) => {
+      if (wrapperRef.current && !wrapperRef.current.contains(e.target)) setOpen(false);
+    };
+    document.addEventListener("pointerdown", handlePointerDown);
+    return () => document.removeEventListener("pointerdown", handlePointerDown);
+  }, [open]);
 
   const sendMessage = async (e) => {
     e.preventDefault();
@@ -50,7 +61,7 @@ function ChatBot() {
   };
 
   return (
-    <>
+    <div ref={wrapperRef}>
       <button
         type="button"
         className="chatbot-toggle"
@@ -93,7 +104,7 @@ function ChatBot() {
           </form>
         </div>
       )}
-    </>
+    </div>
   );
 }
 
