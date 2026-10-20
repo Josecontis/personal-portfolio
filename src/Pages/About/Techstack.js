@@ -4,6 +4,8 @@ import { FaAws, FaJava } from "react-icons/fa";
 import {
   SiCplusplus,
   SiCss,
+  SiDart,
+  SiFlutter,
   SiJavascript,
   SiMongodb,
   SiNodedotjs,
@@ -21,6 +23,12 @@ import "./Stack.css";
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFlutter />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDart />
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiThreedotjs />
       </Col>

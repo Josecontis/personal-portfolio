@@ -24,12 +24,12 @@
     "connectWithMe": "Siéntete libre de",
     "tags": {
       "connectWithMe": " conectar conmigo",
-      "fluentIn": " Typescript, Javascript y Java.",
+      "fluentIn": " Java, Dart, TypeScript y JavaScript.",
       "webTechnologiesAndProducts": "Tecnologías y Productos Web ",
       "deepLearningAndNLP": "Aprendizaje Profundo y Procesamiento del Lenguaje Natural.",
       "nodeJs": "Node.js",
       "modernJSFrameworks": "Bibliotecas y Frameworks JavaScript Modernos",
-      "reactAndNextJs": "React.js y Next.js"
+      "reactAndNextJs": "React.js"
     }
   },
   "footer": {
