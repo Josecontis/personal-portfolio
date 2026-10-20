@@ -84,6 +84,7 @@ export const Contacts = () => {
                   autoComplete="off"
                   id="name"
                   className="form-input"
+                  placeholder={t("contacts.placeholders.name")}
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
@@ -101,6 +102,7 @@ export const Contacts = () => {
                 <input
                   autoComplete="off"
                   id="email"
+                  placeholder={t("contacts.placeholders.email")}
                   value={email}
                   className={
                     email === "" || validation
@@ -124,6 +126,7 @@ export const Contacts = () => {
                 autoComplete="off"
                 id="subject"
                 className="form-input"
+                placeholder={t("contacts.placeholders.object")}
                 value={object}
                 onChange={(e) => setObject(e.target.value)}
               />
@@ -133,6 +136,7 @@ export const Contacts = () => {
               <textarea
                 id="message"
                 className="form-text-area"
+                placeholder={t("contacts.placeholders.message")}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               />

@@ -41,9 +41,15 @@
     "keepContact3": "with me!",
     "name": "Name",
     "email": "E-Mail",
-    "object": "Object",
+    "object": "Subject",
     "message": "Message",
-    "send": "SEND"
+    "send": "SEND",
+    "placeholders": {
+      "name": "Your name",
+      "email": "name@example.com",
+      "object": "What would you like to talk about?",
+      "message": "Write your message here..."
+    }
   },
   "alert": {
     "success": "Message sent successfully!",

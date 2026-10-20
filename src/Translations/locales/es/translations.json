@@ -43,7 +43,13 @@
     "email": "E-Mail",
     "object": "Asunto",
     "message": "Mensaje",
-    "send": "ENVIAR"
+    "send": "ENVIAR",
+    "placeholders": {
+      "name": "Tu nombre",
+      "email": "nombre@ejemplo.es",
+      "object": "¿De qué quieres hablar?",
+      "message": "Escribe tu mensaje aquí..."
+    }
   },
   "alert": {
     "success": "¡Mensaje enviado con éxito!",
