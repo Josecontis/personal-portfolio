@@ -1,6 +1,6 @@
 # Personal Portfolio - Giuseppe Conticchio
 
-Modern, interactive personal portfolio website showcasing professional experience, projects, skills, and contact information. Built with React and featuring bilingual support (English/Italian).
+Modern, interactive personal portfolio website showcasing professional experience, projects, skills, and contact information. Built with React and Vite, with multilingual support (Italian, English, French, Spanish).
 
 ## Overview
 
@@ -10,18 +10,17 @@ This is a single-page application (SPA) portfolio website designed to present a 
 
 ### Core Technologies
 
-- **React 18.2.0** - Modern React with Create React App
-- **React Router DOM 6.6.1** - Client-side routing
-- **React Bootstrap 2.7.0** - Responsive UI components
-- **Styled Components 5.3.6** - CSS-in-JS styling
+- **React 18** - UI library
+- **Vite 6** - Dev server and production build
+- **React Router DOM 7** - Client-side routing
+- **React Bootstrap 2** - Responsive UI components
 
 ### Key Features & Libraries
 
-- **Internationalization**: i18next for English/Italian language support
+- **Internationalization**: i18next for Italian, English, French and Spanish
 - **Email Integration**: EmailJS for contact form functionality
 - **Animations**: Typewriter effects, starry background, solar system visualization
 - **Icons**: React Icons library
-- **Performance**: Web Vitals monitoring
 
 ## Project Structure
 
@@ -29,14 +28,14 @@ The application is organized into clear, maintainable sections:
 
 - **Pages**: Home, About, Projects, Resume, Contacts
 - **Components**: Reusable UI elements (NavBar, Footer, Preloader, etc.)
-- **Translations**: Locale files for bilingual support (EN/IT)
+- **Translations**: Locale files for IT, EN, FR and ES
 - **Assets**: Images, SVGs, and project screenshots
 
 ## Main Features
 
 ### Multilingual Support
 
-Toggle between English and Italian languages with complete translation coverage across all pages.
+Pick Italian, English, French or Spanish from the language menu in the top bar. The browser language is detected on the first visit.
 
 ### Interactive Elements
 
@@ -70,8 +69,8 @@ Featured projects including:
 
 Visual representation of technical skills including:
 
-- Programming languages (TypeScript, JavaScript, Python, Java, C++)
-- Frameworks (React, Node.js, Spring, Three.js)
+- Programming languages (Dart, TypeScript, JavaScript, Python, Java, C++)
+- Frameworks (Flutter, React, Node.js, Spring, Three.js)
 - Tools (Docker, Git, AWS, VS Code)
 - ML/AI technologies (PyTorch, TensorFlow)
 
@@ -79,7 +78,7 @@ Visual representation of technical skills including:
 
 ### Prerequisites
 
-- Node.js (version 14 or higher)
+- Node.js (version 20 or higher)
 - npm or yarn package manager
 
 ### Getting Started
@@ -97,24 +96,25 @@ Visual representation of technical skills including:
    npm install
    ```
 
-3. **Run development server**
+3. **Configure EmailJS**
+
+   Copy `.env.example` to `.env` and fill in your EmailJS keys (see below).
+
+4. **Run development server**
 
    ```bash
-   npm start
+   npm run dev
    ```
 
-   Opens at [http://localhost:3000](http://localhost:3000)
+   Opens at [http://localhost:5173](http://localhost:5173)
 
-4. **Build for production**
+5. **Build for production**
 
    ```bash
-   npm build
+   npm run build
    ```
 
-5. **Run tests**
-   ```bash
-   npm test
-   ```
+   The output goes to `dist/`. Use `npm run preview` to check it locally.
 
 ## Deployment
 
@@ -128,11 +128,11 @@ The application is configured for deployment on **Netlify** with:
 
 ### EmailJS Configuration
 
-Contact form submissions are handled through EmailJS. To configure:
+Contact form submissions are handled through EmailJS. The keys are read from environment variables (locally from `.env`, on Netlify from the site environment settings):
 
-- Service ID: `service_dx9tuej`
-- Template ID: `template_yx44vvu`
-- Public Key: `VuXoRd7oWTeHQg9Ns`
+- `VITE_EMAILJS_SERVICE_ID`
+- `VITE_EMAILJS_TEMPLATE_ID`
+- `VITE_EMAILJS_PUBLIC_KEY`
 
 ### CV Hosting
 
@@ -151,14 +151,14 @@ To personalize this portfolio:
 2. Replace images in `/src/Assets/`
 3. Modify component content in `/src/Pages/`
 4. Update EmailJS credentials for contact form
-5. Add/remove projects in projects showcase
+5. Add/remove projects in `src/Pages/Projects/projectsData.js` (texts go in the translation files)
 6. Update CV download links
 
 ## Contact & Social
 
 - **Email**: peppeco98@gmail.com
 - **GitHub**: [@Josecontis](https://github.com/Josecontis)
-- **LinkedIn**: [giuseppe-conticchio](https://www.linkedin.com/in/giuseppe-conticchio-01a414159/)
+- **LinkedIn**: [giuseppe-conticchio](https://www.linkedin.com/in/giuseppe-conticchio/)
 - **Instagram**: [@giuseppe.conticchio](https://www.instagram.com/giuseppe.conticchio/)
 
 ## Credits
