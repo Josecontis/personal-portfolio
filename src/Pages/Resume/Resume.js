@@ -13,11 +13,11 @@ export const Resume = () => {
   const { t, i18n } = useTranslation();
 
   const resumeLinks = {
-    it: "https://drive.google.com/file/d/1Ii2HQtEBchAlnXpgOVG4iiPS4pk_oAcv/view?usp=sharing",
-    en: "https://drive.google.com/file/d/1lqyWowOpRn-TKHkrHK-em-x2MhJRQaHz/view?usp=sharing",
+    it: "https://drive.google.com/file/d/11APJUHOhYrlkzV8y7ruZU1eJarsM6V2j/view?usp=sharing",
+    en: "https://drive.google.com/file/d/1sZ2APNXDZBVldeW_xKhy6oExsxpCEM6K/view?usp=sharing",
   };
 
-  const currentLang = i18n.language;
+  const currentLang = i18n.resolvedLanguage;
 
   useEffect(() => {
     if (location && location.pathname === "/resume") {
@@ -33,7 +33,7 @@ export const Resume = () => {
           <Button
             className="resume-download-btn"
             variant="primary"
-            href={resumeLinks[currentLang] || resumeLinks.it}
+            href={resumeLinks[currentLang] || resumeLinks.en}
             target="_blank"
             aria-label={t("resume.download")}
           >
@@ -106,7 +106,7 @@ export const Resume = () => {
           <Button
             className="resume-download-btn"
             variant="primary"
-            href={resumeLinks[currentLang] || resumeLinks.it}
+            href={resumeLinks[currentLang] || resumeLinks.en}
             target="_blank"
             aria-label={t("resume.download")}
           >
