@@ -15,7 +15,7 @@
     "programmingLove": "I fell in love with programming and have been able to develop skills in the field of computer science 💻",
     "fluentIn": "I am fluent in classics like",
     "fieldOfInterestsPart1": "My fields of interests are building new",
-    "fieldOfInterestsPart2": "and also in areas related to",
+    "fieldOfInterestsPart2": "and also in areas related to ",
     "fieldOfInterestsPart3": ".",
     "passionForDevelopingPart1": "Whenever possible, I also apply my passion for developing products with ",
     "passionForDevelopingPart2": " and ",
@@ -73,7 +73,7 @@
       },
       "thesis": {
         "title": "BACHELOR'S THESIS IN COMPUTER NETWORKS",
-        "description": "Thesis to evaluate whether the dual propagation approach using rules is able to extract the direction of anger in programmers' comments."
+        "description": "Thesis to evaluate whether the double propagation approach using rules is able to extract the direction of anger in programmers' comments."
       },
       "bandb": {
         "title": "BED AND BREAKFAST WEBSITE",
@@ -85,7 +85,7 @@
       }
     },
     "tags": {
-      "title": "works",
+      "title": "Works",
       "description1": "FACE MASK DETECTION:",
       "description2": "EMOTION RECOGNITION:"
     }
@@ -93,7 +93,7 @@
   "about": {
     "pre": "Know who",
     "section": "Professional",
-    "section1": "I am",
+    "section1": "Tools",
     "section2": "Artificial",
     "title": "Hi Everyone, I'm",
     "place": "from Gravina in Puglia, Italy.",
@@ -117,19 +117,19 @@
     "experience": {
       "title": "Experience",
       "entries": {
-        "title2": "Mobile Developer Flutter - MACNIL",
+        "title2": "Mobile Developer Flutter - Macnil",
         "date2": "April 2024 - Present",
         "content2": "Mobile Flutter Developer for apps connected to Bluetooth devices and integrated with Fleet Management platforms, contributing to architecture design and the development of new cross-platform features.",
-        "title1": "Junior Developer - MACNIL",
+        "title1": "Junior Developer - Macnil",
         "date1": "March 2021 - March 2024",
         "content1": "Junior Developer in an AGILE team for the development and maintenance of the Fleet Manager web platform in the IoT, Automotive, and Fleet Management sectors, with activities on both front-end and back-end.",
-        "title": "E-commerce - BIOLAND",
+        "title": "E-commerce - Bioland",
         "date": "June 2016 - September 2018",
         "content": {
           "list": "Creation of listings on e-commerce sites",
           "list1": "Management of the e-commerce website www.puladifarro.com",
-          "list2": "Development of the database for the spelt husks website",
-          "list3": "Newsletter for spelt husk products, using Mozilla Thunderbird and its plug-ins"
+          "list2": "Development of the database for the Pula di Farro website",
+          "list3": "Newsletter for Pula di Farro products, using Mozilla Thunderbird and its plug-ins"
         }
       }
     },
