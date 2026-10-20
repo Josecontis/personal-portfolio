@@ -1,6 +1,6 @@
 # Giuseppe Conticchio — Full Stack Developer
 
-> Personal portfolio of Giuseppe Conticchio, Full Stack Developer with 4 years of experience in the Automotive sector.
+> Personal portfolio of Giuseppe Conticchio, Full Stack Developer working in the Automotive sector since 2021.
 
 ## Identity
 
@@ -12,7 +12,7 @@
 
 ## Professional Summary
 
-Full Stack Developer working at Macnil since 2021 in the IoT, Automotive and Fleet Management sector.
+Full Stack Developer working at Macnil since March 2021 in the IoT, Automotive and Fleet Management sector.
 Main tech stack: Flutter, React, Java SpringBoot.
 Strong communicator with a collaborative and proactive approach.
 Goal: grow steadily in a stable company, taking on progressive responsibilities.
@@ -26,8 +26,15 @@ Goal: grow steadily in a stable company, taking on progressive responsibilities.
 
 ## Education
 
-- **2018 – 2021** | Bachelor's Degree in Computer Science — University of Bari Aldo Moro (105/110)
+- **2018 – 2021** | Bachelor's Degree in Computer Science — University of Bari Aldo Moro (105/110). Thesis in Computer Networks (Reti di Calcolatori): "Riconoscimento del target di emozioni degli sviluppatori: il caso di Jira" (recognising the target of developers' emotions in Jira comments, using NLP and the double propagation approach), supervisor Dr. Nicole Novielli.
 - **2012 – 2018** | Technical High School Diploma in Computer Science — ITIS Galileo Galilei, Altamura (80/100)
+
+## Certifications
+
+- English B2 (FCE)
+- Course on workers' health and safety
+- Specific training course - low risk
+- School-work alternation certificate
 
 ## Technical Skills
 
@@ -38,13 +45,47 @@ Goal: grow steadily in a stable company, taking on progressive responsibilities.
 
 ## Projects
 
-- **Charging Stations Map** — Flutter, Google Maps API
-- **Il Belvedere (B&B Website)** — HTML, CSS, React.js
-- **House Price Prediction** — Python, Machine Learning (Daegu, South Korea dataset)
-- **Opinion Target Extraction** — Python, NLP, Double Propagation
+- **Charging Stations Map** — Flutter, Google Maps API — https://github.com/Josecontis/charging_stations_map
+- **FMD-ER** — Face mask detection and emotion recognition, developed for the COVID-19 emergency at university — https://github.com/Ocen5/FMD-ER
+- **Il Belvedere (B&B Website)** — HTML, CSS, React.js — https://github.com/Josecontis/ilbelvedere
+- **House Price Prediction** — Python, Machine Learning (Daegu, South Korea dataset) — https://github.com/Josecontis/House-Price-Prediction
+- **Opinion Target Extraction** — Python, NLP, Double Propagation (bachelor's thesis) — https://github.com/Josecontis/opinion_target_extraction
+
+## Hobbies
+
+- Painting
+- Music
+- 3D modelling and 3D printing (digital sculpting in Blender and creation of graphic floor plans)
+
+## Website Guide
+
+The portfolio has these pages, reachable from the top menu. When answering, use the page and button names of the visitor's language:
+
+| Page | Italian | English | French | Spanish |
+|---|---|---|---|---|
+| Home | Home | Home | Accueil | Inicio |
+| Info | Info | About | À propos | Acerca de |
+| Projects | Progetti | Projects | Projets | Proyectos |
+| Resume | Curriculum | Resume | CV | Currículum |
+| Contacts | Contatti | Contacts | Contacts | Contactos |
+| CV button | Scarica CV | Download CV | Télécharger CV | Descargar CV |
+
+
+- **Home** (/): introduction and links to GitHub, LinkedIn and Instagram.
+- **Info** (/about): short biography, hobbies, skills and tools.
+- **Projects** (/projects): project cards with links to the GitHub repositories.
+- **Resume** (/resume): work experience, education and certifications. The CV can be downloaded with the "Download CV" button at the top and at the bottom of this page: Italian visitors get the Italian CV, all other languages get the English CV.
+- **Contacts** (/contacts): contact form (name, email, subject, message) that sends an email to Giuseppe.
+
+The top menu also has a language selector (Italian, English, French, Spanish) and a button to play or stop background music. The chat button at the bottom right opens this AI assistant.
+
+Direct CV links:
+- Italian CV: https://drive.google.com/file/d/11APJUHOhYrlkzV8y7ruZU1eJarsM6V2j/view?usp=sharing
+- English CV: https://drive.google.com/file/d/1sZ2APNXDZBVldeW_xKhy6oExsxpCEM6K/view?usp=sharing
 
 ## Links
 
 - GitHub: https://github.com/Josecontis
 - LinkedIn: https://www.linkedin.com/in/giuseppe-conticchio/
+- Instagram: https://www.instagram.com/giuseppe.conticchio/
 - Portfolio: https://personalwebsite5.netlify.app
