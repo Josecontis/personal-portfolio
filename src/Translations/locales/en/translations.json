@@ -154,5 +154,17 @@
         }
       }
     }
+  },
+  "chatbot": {
+    "open": "Open the chat",
+    "close": "Close the chat",
+    "title": "Ask about me",
+    "intro": "Hi! I am an AI assistant. Ask me about Giuseppe's experience, education, skills or projects.",
+    "placeholder": "Type a question...",
+    "send": "Send",
+    "thinking": "Thinking...",
+    "answerError": "I could not answer, please try again later or write to me from the Contacts page.",
+    "empty": "I have no answer, try rephrasing the question.",
+    "limit": "Too many questions in a short time: wait a minute and try again."
   }
 }

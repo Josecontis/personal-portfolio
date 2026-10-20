@@ -154,5 +154,17 @@
         }
       }
     }
+  },
+  "chatbot": {
+    "open": "Apri la chat",
+    "close": "Chiudi la chat",
+    "title": "Chiedi di me",
+    "intro": "Ciao! Sono un assistente AI. Chiedimi di esperienze, studi, competenze o progetti di Giuseppe.",
+    "placeholder": "Scrivi una domanda...",
+    "send": "Invia",
+    "thinking": "Sto pensando...",
+    "answerError": "Non sono riuscito a rispondere, riprova più tardi o scrivimi dalla pagina Contatti.",
+    "empty": "Non ho una risposta, prova a riformulare la domanda.",
+    "limit": "Troppe domande in poco tempo: aspetta un minuto e riprova."
   }
 }

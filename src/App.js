@@ -2,6 +2,7 @@ import React, { Suspense, lazy, useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./App.css";
+import ChatBot from "./Components/ChatBot/ChatBot";
 import { Footer } from "./Components/Footer/Footer";
 import { Topbar } from "./Components/NavBar/Topbar";
 import Preloader from "./Components/Preloader/Preloader";
@@ -46,6 +47,7 @@ function App() {
           </Routes>
         </Suspense>
         <Footer />
+        <ChatBot />
       </div>
     </BrowserRouter>
   );

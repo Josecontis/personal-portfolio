@@ -154,5 +154,17 @@
         }
       }
     }
+  },
+  "chatbot": {
+    "open": "Ouvrir le chat",
+    "close": "Fermer le chat",
+    "title": "Posez-moi vos questions",
+    "intro": "Bonjour ! Je suis un assistant IA. Posez-moi des questions sur l'expérience, les études, les compétences ou les projets de Giuseppe.",
+    "placeholder": "Écrivez une question...",
+    "send": "Envoyer",
+    "thinking": "Je réfléchis...",
+    "answerError": "Je n'ai pas pu répondre, réessayez plus tard ou écrivez-moi depuis la page Contacts.",
+    "empty": "Je n'ai pas de réponse, essayez de reformuler la question.",
+    "limit": "Trop de questions en peu de temps : attendez une minute et réessayez."
   }
 }

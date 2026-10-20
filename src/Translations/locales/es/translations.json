@@ -154,5 +154,17 @@
         }
       }
     }
+  },
+  "chatbot": {
+    "open": "Abrir el chat",
+    "close": "Cerrar el chat",
+    "title": "Pregunta sobre mí",
+    "intro": "¡Hola! Soy un asistente de IA. Pregúntame sobre la experiencia, los estudios, las habilidades o los proyectos de Giuseppe.",
+    "placeholder": "Escribe una pregunta...",
+    "send": "Enviar",
+    "thinking": "Pensando...",
+    "answerError": "No he podido responder, inténtalo más tarde o escríbeme desde la página Contactos.",
+    "empty": "No tengo una respuesta, intenta reformular la pregunta.",
+    "limit": "Demasiadas preguntas en poco tiempo: espera un minuto e inténtalo de nuevo."
   }
 }
