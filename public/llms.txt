@@ -38,10 +38,13 @@ Goal: grow steadily in a stable company, taking on progressive responsibilities.
 
 ## Technical Skills
 
-**Languages**: TypeScript, JavaScript, Java, Dart, Python, HTML, CSS/SCSS, C
+**Languages**: TypeScript, JavaScript, Java, Dart, Python, HTML5, CSS/SCSS, C
 **Frameworks**: Flutter, React, Spring Boot, Node.js, Redux
-**Databases**: MySQL, MongoDB, Cassandra, DynamoDB
-**Tools**: Git, Docker, VS Code, Claude Code, Postman, Blender, Netlify
+**APIs**: REST API
+**Databases**: MySQL, PostgreSQL, MongoDB, Cassandra, DynamoDB
+**Tools**: Git, GitHub, Docker, VS Code, Claude Code, Postman, Blender
+**Hosting**: Netlify, Vercel, cPanel, ServerPlan
+**AI**: ML classifiers, Local LLMs, Claude, GPT, Claude Code, CLI AI agents, MCP (Model Context Protocol), Prompt Engineering
 
 ## Projects
 
