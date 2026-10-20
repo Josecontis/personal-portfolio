@@ -43,6 +43,11 @@ export const Contacts = () => {
       .then(
         function (response) {
           setTestFlag(1);
+          setName("");
+          setEmail("");
+          setObject("");
+          setMessage("");
+          setValidation(false);
         },
         function (error) {
           setTestFlag(-1);
@@ -79,6 +84,7 @@ export const Contacts = () => {
                   autoComplete="off"
                   id="name"
                   className="form-input"
+                  value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
@@ -95,6 +101,7 @@ export const Contacts = () => {
                 <input
                   autoComplete="off"
                   id="email"
+                  value={email}
                   className={
                     email === "" || validation
                       ? "form-input"
@@ -117,6 +124,7 @@ export const Contacts = () => {
                 autoComplete="off"
                 id="subject"
                 className="form-input"
+                value={object}
                 onChange={(e) => setObject(e.target.value)}
               />
             </div>
@@ -125,20 +133,14 @@ export const Contacts = () => {
               <textarea
                 id="message"
                 className="form-text-area"
+                value={message}
                 onChange={(e) => setMessage(e.target.value)}
               />
             </div>
             <button
               disabled={!validation && email !== ""}
               className="form-button"
-              onClick={(e) => {
-                sendEmail(e);
-                setName("");
-                setEmail("");
-                setObject("");
-                setMessage("");
-                setValidation(false);
-              }}
+              onClick={sendEmail}
             >
               {t("contacts.send")}
             </button>
