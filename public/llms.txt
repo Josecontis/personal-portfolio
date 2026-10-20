@@ -62,25 +62,25 @@ Goal: grow steadily in a stable company, taking on progressive responsibilities.
 
 ## Website Guide
 
-The portfolio has these pages, reachable from the top menu. When answering, use the page and button names of the visitor's language:
+The portfolio is in Italian and English and has these pages, reachable from the top menu. When answering in Italian use the Italian names, otherwise the English ones:
 
-| Page | Italian | English | French | Spanish |
-|---|---|---|---|---|
-| Home | Home | Home | Accueil | Inicio |
-| Info | Info | About | À propos | Acerca de |
-| Projects | Progetti | Projects | Projets | Proyectos |
-| Resume | Curriculum | Resume | CV | Currículum |
-| Contacts | Contatti | Contacts | Contacts | Contactos |
-| CV button | Scarica CV | Download CV | Télécharger CV | Descargar CV |
+| Page | Italian | English |
+|---|---|---|
+| Home | Home | Home |
+| Info | Info | About |
+| Projects | Progetti | Projects |
+| Resume | Curriculum | Resume |
+| Contacts | Contatti | Contacts |
+| CV button | Scarica CV | Download CV |
 
 
 - **Home** (/): introduction and links to GitHub, LinkedIn and Instagram.
 - **Info** (/about): short biography, hobbies, skills and tools.
 - **Projects** (/projects): project cards with links to the GitHub repositories.
-- **Resume** (/resume): work experience, education and certifications. The CV can be downloaded with the "Download CV" button at the top and at the bottom of this page: Italian visitors get the Italian CV, all other languages get the English CV.
+- **Resume** (/resume): work experience, education and certifications. The CV can be downloaded with the "Download CV" button at the top and at the bottom of this page: the Italian site gives the Italian CV, the English site the English CV.
 - **Contacts** (/contacts): contact form (name, email, subject, message) that sends an email to Giuseppe.
 
-The top menu also has a language selector (Italian, English, French, Spanish) and a button to play or stop background music. The chat button at the bottom right opens this AI assistant.
+The top menu also has a language button that switches between Italian and English, and a button to play or stop background music. The chat button at the bottom right opens this AI assistant.
 
 Direct CV links:
 - Italian CV: https://drive.google.com/file/d/11APJUHOhYrlkzV8y7ruZU1eJarsM6V2j/view?usp=sharing

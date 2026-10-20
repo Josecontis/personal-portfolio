@@ -13,7 +13,6 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
-import { availableLanguages } from "../../Translations/i18next.js";
 import SONG from "./Songs/LudovicoEinaudi-Experience.mp3";
 import "./Topbar.css";
 
@@ -40,8 +39,9 @@ export const Topbar = () => {
     isPlaying ? audio.play() : audio.pause();
   }, [isPlaying, audio]);
 
-  const changeLanguage = (e) => {
-    i18n.changeLanguage(e.target.value);
+  // One click switches between Italian and English
+  const toggleLanguage = () => {
+    i18n.changeLanguage(currentLanguage === "it" ? "en" : "it");
     updateExpanded(false);
   };
 
@@ -131,18 +131,14 @@ export const Topbar = () => {
             </Nav.Item>
             <Nav.Item>
               <div className="nav-link">
-                <select
+                <button
+                  type="button"
                   className="translate-btn"
-                  value={currentLanguage}
-                  onChange={changeLanguage}
-                  aria-label="Language"
+                  onClick={toggleLanguage}
+                  aria-label={currentLanguage === "it" ? "Switch to English" : "Passa all'italiano"}
                 >
-                  {availableLanguages.map((lng) => (
-                    <option key={lng} value={lng}>
-                      {lng.toUpperCase()}
-                    </option>
-                  ))}
-                </select>
+                  {currentLanguage.toUpperCase()}
+                </button>
               </div>
             </Nav.Item>
           </Nav>

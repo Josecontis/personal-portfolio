@@ -1,6 +1,6 @@
 # Personal Portfolio - Giuseppe Conticchio
 
-Modern, interactive personal portfolio website showcasing professional experience, projects, skills, and contact information. Built with React and Vite, with multilingual support (Italian, English, French, Spanish).
+Modern, interactive personal portfolio website showcasing professional experience, projects, skills, and contact information. Built with React and Vite, with bilingual support (Italian and English).
 
 **Live site:** [personalwebsite5.netlify.app](https://personalwebsite5.netlify.app/)
 
@@ -21,7 +21,7 @@ This is a single-page application (SPA) portfolio website designed to present a 
 
 ### Key Features & Libraries
 
-- **Internationalization**: i18next for Italian, English, French and Spanish
+- **Internationalization**: i18next for Italian and English
 - **Email Integration**: EmailJS for contact form functionality
 - **Animations**: Typewriter effects, starry background, solar system visualization
 - **Icons**: React Icons library
@@ -32,14 +32,14 @@ The application is organized into clear, maintainable sections:
 
 - **Pages**: Home, About, Projects, Resume, Contacts
 - **Components**: Reusable UI elements (NavBar, Footer, Preloader, etc.)
-- **Translations**: Locale files for IT, EN, FR and ES
+- **Translations**: Locale files for IT and EN (FR and ES files are kept but not active, see `src/Translations/i18next.js`)
 - **Assets**: Images, SVGs, and project screenshots
 
 ## Main Features
 
 ### Multilingual Support
 
-Pick Italian, English, French or Spanish from the language menu in the top bar. The browser language is detected on the first visit.
+The language button in the top bar switches between Italian and English with one click. The browser language is detected on the first visit (English for any language other than Italian).
 
 ### Interactive Elements
 
@@ -64,7 +64,7 @@ Featured projects including:
 
 ### Resume/CV
 
-- Downloadable CV in Italian and English (French and Spanish visitors get the English one)
+- Downloadable CV in Italian and English
 - Professional experience timeline
 - Educational background
 - Certifications and achievements

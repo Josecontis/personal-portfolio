@@ -161,10 +161,6 @@
   font-weight: bold;
 }
 
-.translate-btn option {
-  background-color: var(--background-top-bar);
-}
-
 @keyframes pulse {
   0% {
     transform: scale(0.95);
