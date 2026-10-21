@@ -65,6 +65,10 @@
     "viewProject": "Vedi Progetto",
     "viewBlog": "Vedi Blog",
     "projectCards": {
+      "arredareAmbienti": {
+        "title": "SITO WEB ARREDARE AMBIENTI",
+        "description": "Sito web per Arredare Ambienti, negozio di arredamento artigianale a Gravina in Puglia. Realizzato con React e Vite, presenta collezioni e catalogo prodotti con schede di dettaglio, modulo per richiedere un preventivo via email, versione in italiano e inglese e gestione del consenso ai cookie."
+      },
       "fmdEr": {
         "title": "FMD-ER",
         "description1": "Applicazione sviluppata per l'emergenza COVID-19 all'università, divisa in due fasi:",
