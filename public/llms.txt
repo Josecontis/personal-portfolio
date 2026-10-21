@@ -48,6 +48,7 @@ Goal: grow steadily in a stable company, taking on progressive responsibilities.
 
 ## Projects
 
+- **Arredare Ambienti (furniture shop website)** — React, Vite. Website for a handcrafted furniture shop in Gravina in Puglia: collections, product catalogue, quote request form by email, Italian and English versions — https://github.com/Josecontis/arredareambienti_website
 - **Charging Stations Map** — Flutter, Google Maps API — https://github.com/Josecontis/charging_stations_map
 - **FMD-ER** — Face mask detection and emotion recognition, developed for the COVID-19 emergency at university — https://github.com/Ocen5/FMD-ER
 - **Il Belvedere (B&B Website)** — HTML, CSS, React.js — https://github.com/Josecontis/ilbelvedere
